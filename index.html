@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>招聘标讯数据看板</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,"Microsoft YaHei","微软雅黑",sans-serif;background:#f0f2f5;color:#333}
+.header{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:white;padding:20px 32px;display:flex;justify-content:space-between;align-items:center}
+.header h1{font-size:22px;font-weight:600}.header .sub{font-size:13px;opacity:.85;margin-top:4px}.header .time{font-size:13px;opacity:.9}
+.kpi-row{display:flex;gap:16px;padding:20px 32px}
+.kpi-card{flex:1;background:white;border-radius:12px;padding:20px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08);position:relative;overflow:hidden}
+.kpi-card::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%}
+.kpi-card:nth-child(1)::before{background:#1a73e8}.kpi-card:nth-child(2)::before{background:#f9a825}
+.kpi-card:nth-child(3)::before{background:#43a047}.kpi-card:nth-child(4)::before{background:#e53935}
+.kpi-label{font-size:13px;color:#888;margin-bottom:8px}.kpi-val{font-size:32px;font-weight:700}
+.kpi-card:nth-child(1) .kpi-val{color:#1a73e8}.kpi-card:nth-child(2) .kpi-val{color:#f9a825}
+.kpi-card:nth-child(3) .kpi-val{color:#43a047}.kpi-card:nth-child(4) .kpi-val{color:#e53935}
+.kpi-unit{font-size:14px;color:#999;margin-left:4px}.kpi-sub{font-size:12px;color:#aaa;margin-top:6px}
+.charts-row{display:flex;gap:16px;padding:0 32px 20px;flex-wrap:wrap}
+.chart-box{background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08);flex:1;min-width:300px}
+.chart-box.wide{flex:2;min-width:500px}
+.chart-title{font-size:15px;font-weight:600;color:#333;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #eee}
+.table-section{padding:0 32px 32px}.table-box{background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.table-title{font-size:15px;font-weight:600;color:#333;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #eee}
+.filter-bar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:white;cursor:pointer;font-size:12px;color:#666;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:#1a73e8;color:white;border-color:#1a73e8}
+.filter-select{padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-size:12px;background:white;color:#666}
+.filter-select:focus{outline:none;border-color:#1a73e8}
+th{background:#f5f7fa;color:#555;font-weight:600;padding:10px 12px;text-align:left;border-bottom:2px solid #e0e0e0;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid #f0f0f0;vertical-align:top}tr:hover{background:#f8f9ff}
+.tag-diamond{color:#f9a825;font-size:16px}.tag-hot{color:#ff6f00;font-size:16px}.tag-normal{color:#43a047;font-size:16px}
+.money-cell{font-weight:600;color:#1a73e8}a{color:#1a73e8;text-decoration:none;font-size:12px}a:hover{text-decoration:underline}
+.prov-bar{display:flex;align-items:center;margin-bottom:8px;font-size:13px}
+.prov-name{width:80px;text-align:right;padding-right:12px;color:#555}
+.prov-fill{height:24px;border-radius:4px;background:linear-gradient(90deg,#1a73e8,#4fc3f7);color:white;display:flex;align-items:center;padding-left:8px;font-size:12px;font-weight:600;min-width:30px;transition:width .6s}
+@media(max-width:768px){.kpi-row{flex-direction:column}.charts-row{flex-direction:column}.header{flex-direction:column;align-items:flex-start}}
+.row-diamond{background:#fffde7!important}.row-hot{background:#fff3e0!important}
+.table-scroll{max-height:70vh;overflow-y:auto}.title-col{max-width:400px;overflow:hidden;text-overflow:ellipsis}.date-col{white-space:nowrap}
+</style></head><body>
+<div class="header"><div><h1>📊 全国招聘标讯数据看板</h1>
+<div class="sub">数据来源：乙方宝全网招投标数据 | 监控范围：招聘服务类标讯 | 覆盖 05-22 ~ 06-04</div></div>
+<div class="time">最近更新：2026-06-04</div></div>
+<div class="kpi-row">
+<div class="kpi-card"><div class="kpi-label">累计有效标讯</div><div class="kpi-val">232<span class="kpi-unit">条</span></div><div class="kpi-sub">覆盖 32 个省份</div></div>
+<div class="kpi-card"><div class="kpi-label">💎 高价值标讯（≥50万）</div><div class="kpi-val">39<span class="kpi-unit">条</span></div><div class="kpi-sub">占比 16%</div></div>
+<div class="kpi-card"><div class="kpi-label">累计预算总额</div><div class="kpi-val">¥1.55亿</div><div class="kpi-sub">其中 💎≥100万: 21条  🔥50-100万: 18条</div></div>
+<div class="kpi-card"><div class="kpi-label">🏷️ 服务类型</div><div class="kpi-val">15<span class="kpi-unit">种</span></div><div class="kpi-sub">共 11 个执行日</div></div>
+</div>
+<div class="charts-row">
+<div class="chart-box wide"><div class="chart-title">📈 每日有效标讯趋势</div><canvas id="trendChart" style="max-height:280px"></canvas></div>
+<div class="chart-box"><div class="chart-title">💰 全量价格分布</div><canvas id="pricePie" style="max-height:280px"></canvas></div>
+</div>
+<div class="charts-row">
+<div class="chart-box"><div class="chart-title">🔧 全量服务类型分布</div><canvas id="svcPie" style="max-height:280px"></canvas></div>
+<div class="chart-box wide"><div class="chart-title">🗺️ 省份累计分布（Top 15）</div><div id="provBars">
+<div class="prov-bar"><div class="prov-name">广东</div><div class="prov-fill" style="width:100.0%">20条</div></div>
+<div class="prov-bar"><div class="prov-name">山东</div><div class="prov-fill" style="width:90.0%">18条</div></div>
+<div class="prov-bar"><div class="prov-name">北京</div><div class="prov-fill" style="width:90.0%">18条</div></div>
+<div class="prov-bar"><div class="prov-name">四川</div><div class="prov-fill" style="width:80.0%">16条</div></div>
+<div class="prov-bar"><div class="prov-name">湖南</div><div class="prov-fill" style="width:60.0%">12条</div></div>
+<div class="prov-bar"><div class="prov-name">上海</div><div class="prov-fill" style="width:60.0%">12条</div></div>
+<div class="prov-bar"><div class="prov-name">贵州</div><div class="prov-fill" style="width:55.0%">11条</div></div>
+<div class="prov-bar"><div class="prov-name">江苏</div><div class="prov-fill" style="width:50.0%">10条</div></div>
+<div class="prov-bar"><div class="prov-name">黑龙江</div><div class="prov-fill" style="width:45.0%">9条</div></div>
+<div class="prov-bar"><div class="prov-name">江西</div><div class="prov-fill" style="width:45.0%">9条</div></div>
+<div class="prov-bar"><div class="prov-name">浙江</div><div class="prov-fill" style="width:40.0%">8条</div></div>
+<div class="prov-bar"><div class="prov-name">安徽</div><div class="prov-fill" style="width:40.0%">8条</div></div>
+<div class="prov-bar"><div class="prov-name">新疆</div><div class="prov-fill" style="width:35.0%">7条</div></div>
+<div class="prov-bar"><div class="prov-name">内蒙古</div><div class="prov-fill" style="width:30.0%">6条</div></div>
+<div class="prov-bar"><div class="prov-name">福建</div><div class="prov-fill" style="width:25.0%">5条</div></div>
+</div></div></div>
+<div class="charts-row">
+<div class="chart-box wide"><div class="chart-title">📊 每日价格档位分布（堆叠）</div><canvas id="priceStackChart" style="max-height:300px"></canvas></div>
+<div class="chart-box"><div class="chart-title">📈 每日预算金额趋势</div><canvas id="budgetChart" style="max-height:280px"></canvas></div>
+</div>
+<div class="table-section"><div class="table-box"><div class="table-title">📋 全量标讯明细（共 232 条）</div>
+<div class="filter-bar">
+<button class="filter-btn active" onclick="filterTable('all',this)">全部</button>
+<button class="filter-btn" onclick="filterTable('diamond',this)">💎 钻石级</button>
+<button class="filter-btn" onclick="filterTable('hot',this)">🔥 火热级</button>
+<button class="filter-btn" onclick="filterTable('normal',this)">🏆 有预算</button>
+<button class="filter-btn" onclick="filterTable('nobudget',this)">无预算</button>
+<span style="margin-left:16px;font-size:12px;color:#888">日期:</span>
+<select class="filter-select" id="dateSelect" onchange="filterByDate()"><option value="all">全部日期</option>
+<option value="2026-06-04">2026-06-04</option>
+<option value="2026-06-03">2026-06-03</option>
+<option value="2026-06-02">2026-06-02</option>
+<option value="2026-06-01">2026-06-01</option>
+<option value="2026-05-29">2026-05-29</option>
+<option value="2026-05-28">2026-05-28</option>
+<option value="2026-05-27">2026-05-27</option>
+<option value="2026-05-26">2026-05-26</option>
+<option value="2026-05-25">2026-05-25</option>
+<option value="2026-05-24">2026-05-24</option>
+<option value="2026-05-22">2026-05-22</option>
+</select>
+<button class="filter-btn" onclick="clearFilters()">✕ 清除筛选</button>
+<span id="filterCount" style="font-size:12px;color:#888;margin-left:8px"></span>
+</div><div class="table-scroll"><table><thead><tr>
+<th style="width:40px">#</th><th style="width:50px">档位</th><th style="width:35%">项目名称</th><th style="width:15%">招标方</th>
+<th style="width:80px">预算</th><th style="width:90px">服务类型</th><th style="width:50px">省份</th>
+<th style="width:85px">日期</th><th style="width:80px">截止日期</th><th style="width:50px">链接</th>
+</tr></thead><tbody id="tableBody">
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-04">
+<td>1</td><td class="tag-diamond">💎</td><td class="title-col">💎 阿克苏地区妇幼保健院（地区卫生健康服务中心）人力资源服务采购项目（二次）公开招标公告</td>
+<td>新疆维吾尔自治区阿克苏地区妇幼保健院</td><td class="money-cell">378.44万</td><td>综合招聘服务</td>
+<td>新疆</td><td class="date-col">2026-06-04</td><td>2026-06-11</td><td><a href="https://www.zhiliaobiaoxun.com/content/595437677/b1?sk=CBC3863E63C0D3C4385098CB267BC88070B0F1C0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-04">
+<td>2</td><td class="tag-diamond">💎</td><td class="title-col">💎 2026年中国联通长沙市分公司AI生态人力资源服务平台开发服务项目询比采购公告</td>
+<td>中国联合网络通信有限公司长沙市分公司</td><td class="money-cell">322.55万</td><td>综合招聘服务</td>
+<td>湖南</td><td class="date-col">2026-06-04</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595426408/b1?sk=5D284C1492C3EC58EC9FC01C5AC2F3CF71AB55EB&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-04">
+<td>3</td><td class="tag-diamond">💎</td><td class="title-col">💎 宁波市人力资源和社会保障局2026年7月政府采购意向</td>
+<td>宁波市人力资源和社会保障局</td><td class="money-cell">140.00万</td><td>综合招聘服务</td>
+<td>浙江</td><td class="date-col">2026-06-04</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595414928/b1?sk=953C4225B9BFDCFC66C21EDEC0E90BB50D21AB89&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-04">
+<td>4</td><td class="tag-hot">🔥</td><td class="title-col">🔥 安居（深圳）城市运营科技服务有限公司猎头服务</td>
+<td>安居（深圳）城市运营科技服务有限公司</td><td class="money-cell">72.43万</td><td>猎头/人才寻访</td>
+<td>广东</td><td class="date-col">2026-06-04</td><td>2026-06-25</td><td><a href="https://www.zhiliaobiaoxun.com/content/595432625/b1?sk=9D7A0A4D58E7B2E0D7FD62C07452DBD8BF8118E0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-04">
+<td>5</td><td class="tag-normal">🏆</td><td class="title-col">🏆 达州中医药职业学院2026届6月份校园招聘会服务项目（二次）询价公告</td>
+<td>达州中医药职业学院</td><td class="money-cell">2.80万</td><td>校招服务</td>
+<td>四川</td><td class="date-col">2026-06-04</td><td>2026-06-10</td><td><a href="https://www.zhiliaobiaoxun.com/content/595424379/b1?sk=1454EAFD1E9FD97FB261379F3A68A5C4FC37EE72&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>6</td><td class="tag-nobudget"></td><td class="title-col">中国邮政储蓄银行黑龙江省分行2026-2028年度招聘服务采购项目公开招标公告</td>
+<td>中国邮政储蓄银行股份有限公司黑龙江省分行</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>黑龙江</td><td class="date-col">2026-06-04</td><td>2026-06-11</td><td><a href="https://www.zhiliaobiaoxun.com/content/595407511/b1?sk=94DB3F0A50B0B07E4E1186249303C9FD2B037295&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>7</td><td class="tag-nobudget"></td><td class="title-col">ZB202606040003南航金城2026年6月10日毕业季专场招聘会物料采购预审公告</td>
+<td>南航金城</td><td class="money-cell">-</td><td>校招服务</td>
+<td></td><td class="date-col">2026-06-04</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595418376/b1?sk=F7BAD55254B70DC1497FBCB96949B37244DE70DD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>8</td><td class="tag-nobudget"></td><td class="title-col">关于《邹平人才集团项目运营人员人力资源服务项目》选取中介机构的公告</td>
+<td>邹平人才发展集团有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-06-04</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595426566/b1?sk=3CA2580D1BBC54F0357A7680BDB4298C91F80C15&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>9</td><td class="tag-nobudget"></td><td class="title-col">山西杏花村文化旅游有限公司北京分公司人力资源服务项目采购公告</td>
+<td>山西杏花村文化旅游有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>北京</td><td class="date-col">2026-06-04</td><td>2026-06-07</td><td><a href="https://www.zhiliaobiaoxun.com/content/595433938/b1?sk=343812AC1F7AD4D28707763AA4C758253B700FDF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>10</td><td class="tag-nobudget"></td><td class="title-col">招商银行厦门分行新员工培训项目供应商征集公告</td>
+<td>招商银行厦门分行</td><td class="money-cell">-</td><td>培训服务</td>
+<td>福建</td><td class="date-col">2026-06-04</td><td>2026-06-11</td><td><a href="https://www.zhiliaobiaoxun.com/content/595433641/b1?sk=5364546E1F8E3DBDEC00ACAE758B2942110C78B3&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>11</td><td class="tag-nobudget"></td><td class="title-col">上海银行招聘管理服务项目采购项目-上海银行招聘管理服务项目采购项目采购公告</td>
+<td>上海银行股份有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>上海</td><td class="date-col">2026-06-04</td><td>2026-06-12</td><td><a href="https://www.zhiliaobiaoxun.com/content/595423868/b1?sk=580A5B736FAA9B4035E36AE70FE71AB9328E70CF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-04">
+<td>12</td><td class="tag-nobudget"></td><td class="title-col">上海银行招聘管理服务项目采购项目-上海银行招聘管理服务项目采购项目采购公告</td>
+<td>上海银行</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>上海</td><td class="date-col">2026-06-04</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595424262/b1?sk=5E0BC531758EE05B6909815192CD1D9C4534173F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-03">
+<td>13</td><td class="tag-diamond">💎</td><td class="title-col">💎 [省本级]江西国政招标咨询有限公司关于江西省教育评估监测研究院采购2026年江西省高校毕业生线下校园招聘会项目（采购编号：JXGZ2026-06-1602）电子化政府采购竞争性磋商采购公告</td>
+<td>江西省教育评估监测研究院</td><td class="money-cell">115.00万</td><td>校招服务</td>
+<td>江西</td><td class="date-col">2026-06-03</td><td>2026-06-11 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595314249/b1?sk=0F2BB29E5E449CA7EDE7B4E485A77CB644EDFCDD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>14</td><td class="tag-normal">🏆</td><td class="title-col">🏆 2026年度人才专项猎头服务入围遴选遴选公告</td>
+<td>长沙市第一医院</td><td class="money-cell">45.00万</td><td>猎头/人才寻访</td>
+<td>湖南</td><td class="date-col">2026-06-03</td><td>2026-06-10 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595358968/b1?sk=D23ED9D4C0FB12B0F2BD87A5623C344FA8C03B03&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>15</td><td class="tag-normal">🏆</td><td class="title-col">🏆 青岛航空2026年-2028年第三方招聘服务采购项目询比采购公告</td>
+<td>青岛航空股份有限公司</td><td class="money-cell">22.54万</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-06-03</td><td>2026-06-10 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595362678/b1?sk=3029AD3994A447AF8B225AE280DB650ED5385BD9&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>16</td><td class="tag-normal">🏆</td><td class="title-col">🏆 中通服软件科技有限公司2026年招聘平台服务项目</td>
+<td>中通服软件科技有限公司</td><td class="money-cell">10.10万</td><td>招聘平台/系统</td>
+<td>上海</td><td class="date-col">2026-06-03</td><td>2026-06-08 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595327858/b1?sk=7A7EFA399A67E499645AF7DBCCA6DF909C0909DF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>17</td><td class="tag-normal">🏆</td><td class="title-col">🏆 上海铁路公安局徐州公安招聘驻队教官兼助训员项目竞争性磋商公告（二次）</td>
+<td>上海铁路公安局徐州公安处</td><td class="money-cell">9.00万</td><td>综合招聘服务</td>
+<td>江苏</td><td class="date-col">2026-06-03</td><td>2026-06-10 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595358714/b1?sk=F531AFD6ECF0069375F48566E26F0BA54B0E92FB&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>18</td><td class="tag-normal">🏆</td><td class="title-col">🏆 伊宁市第二十三小学2026年6月至7月政府采购意向</td>
+<td>伊宁市第二十三小学</td><td class="money-cell">5.24万</td><td>人力资源服务</td>
+<td>新疆</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595364963/b1?sk=14DFD1F8549D7238784042F1CF880119C0C8AEF8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>19</td><td class="tag-normal">🏆</td><td class="title-col">🏆 职引未来”—2026年全国城市巡回招聘四川绵阳站暨四川汽车职业技术学院“百日冲刺促就业”2026届毕业生就业双选会竞争性谈判公告</td>
+<td>绵阳市就业创业促进中心</td><td class="money-cell">3.00万</td><td>校招服务</td>
+<td>四川</td><td class="date-col">2026-06-03</td><td>2026-06-05 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595322227/b1?sk=AA6996626A52FDB2524D6B8C58B04A18DFAFC43E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-03">
+<td>20</td><td class="tag-normal">🏆</td><td class="title-col">🏆 大兴安岭地区行政公署人力资源和社会保障局2026年度政府采购意向公告(第2批)-2026年招聘高校毕业生春季专场活动详细情况</td>
+<td>大兴安岭地区行政公署人力资源和社会保障局</td><td class="money-cell">1.80万</td><td>综合招聘服务</td>
+<td>黑龙江</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595313094/b1?sk=F9143CF29CB498F94C8971F7BBBC4E22645C7D1E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>21</td><td class="tag-nobudget"></td><td class="title-col">深圳市人事人才公共服务中心2026年度专项经费背景调查服务项目采购公告</td>
+<td>深圳市人事人才公共服务中心</td><td class="money-cell">-</td><td>人才测评/背调</td>
+<td>广东</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595318068/b1?sk=D7BCEEF79FBC064A6FAB8A7088DD934F1F88F6DD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>22</td><td class="tag-nobudget"></td><td class="title-col">海航期货股份有限公司网络招聘服务询比价文件</td>
+<td>海航期货股份有限公司综合管理部</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>广东</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595343035/b1?sk=B9EFEAB9640597A1D7C409B134240CCEA194322D&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>23</td><td class="tag-nobudget"></td><td class="title-col">中色创新研究院（天津）有限公司人力资源部招聘平台服务采购询价公告</td>
+<td>中色创新研究院（天津）有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>天津</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595324067/b1?sk=6325F2044781B693D36BD91FD9E1322A487FE26C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>24</td><td class="tag-nobudget"></td><td class="title-col">观二十五幼人力资源服务采购</td>
+<td>观山湖区第二十五幼儿园</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>贵州</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595327764/b1?sk=022D962790B97E0212681A7F8605AC99244AACEE&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>25</td><td class="tag-nobudget"></td><td class="title-col">国投丰乐审计法务部部长招聘猎头服务(二次)询比采购公告</td>
+<td>国投丰乐种业股份有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>安徽</td><td class="date-col">2026-06-03</td><td>2026-06-08 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595354139/b1?sk=22C289A8004DA17C7E896E23786486F20FE08CBC&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>26</td><td class="tag-nobudget"></td><td class="title-col">国家人工智能应用中试基地（人力资源领域人力资源服务方向）建设项目招标代理机构服务</td>
+<td>国家人工智能应用中试基地</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td></td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595368716/b1?sk=9D980611CBE2F44ACFF4AFCBAD79E7A43CEFB697&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>27</td><td class="tag-nobudget"></td><td class="title-col">中广核2026-2029年人力资源服务集中采购项目项目谈判公告-集中采购项目</td>
+<td>中广核白鹭共享服务（深圳）有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>广东</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595313854/b1?sk=F52D6DABEE659ECB4D6FA47A96512CE05EF0BF20&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>28</td><td class="tag-nobudget"></td><td class="title-col">人力资源服务机构采购招标公告</td>
+<td>湖北省经贸有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>湖北</td><td class="date-col">2026-06-03</td><td>2026-06-09 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595343910/b1?sk=3CB534528187440DBD12C6CB8EB4F90CA7FC5CF8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>29</td><td class="tag-nobudget"></td><td class="title-col">云南红河山高公路运营有限公司2026年度人力资源服务外包与劳务派遣服务项目项目公告</td>
+<td>云南红河山高公路运营有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>云南</td><td class="date-col">2026-06-03</td><td>2026-06-06 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595365760/b1?sk=93675865CAFB54DAA26E274F6C51438517CD2D86&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>30</td><td class="tag-nobudget"></td><td class="title-col">贵州中医药大学第一附属医院【公开招聘面试试题命制服务】自行采购-谈价公告</td>
+<td>贵州中医药大学第一附属医院</td><td class="money-cell">-</td><td>考务服务</td>
+<td>贵州</td><td class="date-col">2026-06-03</td><td>2026-06-08 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/595327689/b1?sk=F22493BAEAEEEC1A7417A7ED87A33BC30761B565&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>31</td><td class="tag-nobudget"></td><td class="title-col">沈阳市市政工程设计研究院有限公司2026年度人才招聘服务二次公告</td>
+<td>沈阳市市政工程设计研究院有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>辽宁</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595344283/b1?sk=2C7B56882EB2FB384F0A370BEB78BCEABADF5427&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>32</td><td class="tag-nobudget"></td><td class="title-col">湖南湘科控股集团有限公司2026年度网络招聘平台机构询价比选</td>
+<td>湖南湘科控股集团有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>湖南</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595340089/b1?sk=E418F8FCBA41A8BBA2B2F9506C50C589E1644283&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>33</td><td class="tag-nobudget"></td><td class="title-col">青海省卫生人才交流服务中心招聘考试平台服务直接采购公告</td>
+<td>青海省卫生人才交流服务中心</td><td class="money-cell">-</td><td>考务服务</td>
+<td>青海</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595312215/b1?sk=2879DFF21ADA0BAE71DF1CD8E9FB796476B4F51A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-03">
+<td>34</td><td class="tag-nobudget"></td><td class="title-col">成都经开区人力资源服务中心（人才大厦）暨中国成都人力资源服务产业园（经开园区）委托招商运营服务采购项目招标公告</td>
+<td>成都经开汽车城建设开发集团有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>四川</td><td class="date-col">2026-06-03</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595309303/b1?sk=A1C85C126B851A3A55767061189FDDA580F29EF4&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-02">
+<td>35</td><td class="tag-diamond">💎</td><td class="title-col">中国人寿保险（海外）股份有限公司岗位劳务人力服务协议供应商采购项目招标公告</td>
+<td>中国人寿保险（海外）股份有限公司</td><td class="money-cell">1,975.00万</td><td>综合招聘服务</td>
+<td>广东</td><td class="date-col">2026-06-02</td><td>2026-06-23</td><td><a href="https://www.zhiliaobiaoxun.com/content/595267654/b1?sk=F2448DABAE38F1210B9D7B1BDCEB4C6AA6136EA8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-02">
+<td>36</td><td class="tag-diamond">💎</td><td class="title-col">华宁宁兴实业有限责任公司通海分公司2026-2028年度人力资源服务外委框架采购项目-采购公告</td>
+<td>华宁宁兴实业有限责任公司通海分公司</td><td class="money-cell">1,000.00万</td><td>综合招聘服务</td>
+<td>云南</td><td class="date-col">2026-06-02</td><td>2026-06-10</td><td><a href="https://www.zhiliaobiaoxun.com/content/595277768/b1?sk=4A48901D5BBE72A33FFB51D8342756BDE6416FC0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-02">
+<td>37</td><td class="tag-diamond">💎</td><td class="title-col">东辽县政府采购中心关于东辽县公安局临时用工人事外包采购项目的公开招标公告</td>
+<td>东辽县公安局</td><td class="money-cell">242.10万</td><td>综合招聘服务</td>
+<td>吉林</td><td class="date-col">2026-06-02</td><td>2026-06-23</td><td><a href="https://www.zhiliaobiaoxun.com/content/595273927/b1?sk=D433400325287827C9318D762D9809E695F1FD7F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-02">
+<td>38</td><td class="tag-diamond">💎</td><td class="title-col">九江学院第二附属医院2026年度政府采购意向公告(第7批)-人力资源服务采购项目详细情况</td>
+<td>九江学院第二附属医院</td><td class="money-cell">207.00万</td><td>综合招聘服务</td>
+<td>江西</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595199304/b1?sk=DB6FDD475ADAF39A5507CA1740CC66FDD3366ECC&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-02">
+<td>39</td><td class="tag-hot">🔥</td><td class="title-col">黄山市徽州区第二中学2026年6月至7月政府采购意向</td>
+<td>黄山市徽州区第二中学</td><td class="money-cell">70.00万</td><td>综合招聘服务</td>
+<td>安徽</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595214646/b1?sk=1310BB2F353933439299FFA01EEEB808B2454110&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-02">
+<td>40</td><td class="tag-hot">🔥</td><td class="title-col">2026年联通数字科技有限公司招聘管理系统服务集中采购项目询比采购公告（三次）-集中采购项目</td>
+<td>联通数字科技有限公司</td><td class="money-cell">66.55万</td><td>招聘平台/系统</td>
+<td>北京</td><td class="date-col">2026-06-02</td><td>2026-06-12</td><td><a href="https://www.zhiliaobiaoxun.com/content/595264600/b1?sk=593B9D53BF36172AA72365593A8BEAE7E0D20601&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-02">
+<td>41</td><td class="tag-hot">🔥</td><td class="title-col">福建闽投湄洲湾发电有限公司2026-2028年度委托第三方全流程招聘服务项目公告</td>
+<td>福建闽投湄洲湾发电有限公司</td><td class="money-cell">55.40万</td><td>RPO/招聘流程外包</td>
+<td>福建</td><td class="date-col">2026-06-02</td><td>2026-07-09</td><td><a href="https://www.zhiliaobiaoxun.com/content/595207753/b1?sk=F74C3D9015D1427FC15D551980A83F05893AC43B&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-02">
+<td>42</td><td class="tag-hot">🔥</td><td class="title-col">唐山市人力资源和社会保障局信息管理中心唐山市人力资源服务产业园公共服务平台（双盲评审）公开招标公告</td>
+<td>唐山市人力资源和社会保障局信息管理中心</td><td class="money-cell">54.48万</td><td>综合招聘服务</td>
+<td>河北</td><td class="date-col">2026-06-02</td><td>2026-06-25</td><td><a href="https://www.zhiliaobiaoxun.com/content/595256348/b1?sk=6F4A68E0409C1CC3EE25FA0E758B8A1069ECE1BD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-02">
+<td>43</td><td class="tag-hot">🔥</td><td class="title-col">国际关系学院心理测评系统公开招标公告</td>
+<td>国际关系学院</td><td class="money-cell">50.00万</td><td>人才测评/背调</td>
+<td>北京</td><td class="date-col">2026-06-02</td><td>2026-06-24</td><td><a href="https://www.zhiliaobiaoxun.com/content/595241721/b1?sk=8B246DD284CABC261155CE4C1CF7A1F5B7C21128&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>44</td><td class="tag-normal">🏆</td><td class="title-col">校园招聘服务询比采购公告</td>
+<td>联通（黑龙江）产业互联网有限公司</td><td class="money-cell">28.50万</td><td>校招服务</td>
+<td>黑龙江</td><td class="date-col">2026-06-02</td><td>2026-06-11</td><td><a href="https://www.zhiliaobiaoxun.com/content/595199052/b1?sk=459EBE0701EEDCDBB9EFED69CA0A86C543813649&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>45</td><td class="tag-normal">🏆</td><td class="title-col">空港人力资源服务产业园直播电商实训中心设备采购项目竞争性磋商公告</td>
+<td>成都空港人才职业培训学校有限公司</td><td class="money-cell">28.35万</td><td>综合招聘服务</td>
+<td>四川</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595227786/b1?sk=445A48FC89E59A37BFB0DE123A62BA1C5404127F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>46</td><td class="tag-normal">🏆</td><td class="title-col">惠来县2026年“百日千万招聘”暨“高校毕业生离校未就业”招聘活动服务采购项目竞争性磋商公告</td>
+<td>惠来县人力资源和社会保障局</td><td class="money-cell">17.50万</td><td>校招服务</td>
+<td>广东</td><td class="date-col">2026-06-02</td><td>2026-06-15</td><td><a href="https://www.zhiliaobiaoxun.com/content/595272198/b1?sk=38A05618B1F59D68503AE42311231BB7E3DB9C48&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>47</td><td class="tag-normal">🏆</td><td class="title-col">湖北省歌剧舞剧院有限责任公司2026年公开招聘工作人员服务项目（第二次）询比采购公告</td>
+<td>湖北省歌剧舞剧院有限责任公司</td><td class="money-cell">15.00万</td><td>综合招聘服务</td>
+<td>湖北</td><td class="date-col">2026-06-02</td><td>2026-06-10</td><td><a href="https://www.zhiliaobiaoxun.com/content/595238707/b1?sk=14E233FF357AF84552E8D786C53B5C113CC38F63&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>48</td><td class="tag-normal">🏆</td><td class="title-col">无锡学院心理健康测评系统项目招标公告</td>
+<td>无锡学院</td><td class="money-cell">15.00万</td><td>人才测评/背调</td>
+<td>江苏</td><td class="date-col">2026-06-02</td><td>2026-06-23</td><td><a href="https://www.zhiliaobiaoxun.com/content/595247601/b1?sk=565F2A6273B32A096FF4DFFDE59E06EE239ADF30&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>49</td><td class="tag-normal">🏆</td><td class="title-col">济南市儿童医院人力资源第三方公开招聘服务项目竞争性磋商公告</td>
+<td>济南市儿童医院</td><td class="money-cell">14.50万</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595205784/b1?sk=31C6E81D29025EDDF0AFDD0CFB0A1F095DF2D441&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>50</td><td class="tag-normal">🏆</td><td class="title-col">香港城市大学（东莞）2026年行政及教辅人员人才测评服务采购采购公告</td>
+<td>人力资源处</td><td class="money-cell">14.40万</td><td>人才测评/背调</td>
+<td>广东</td><td class="date-col">2026-06-02</td><td>2026-06-09</td><td><a href="https://www.zhiliaobiaoxun.com/content/595252843/b1?sk=862DD02A116B922204E610E54B11AFCECB5746AB&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>51</td><td class="tag-normal">🏆</td><td class="title-col">2026年退役军人及军属专场招聘会项目比选采购公告</td>
+<td>中共四川天府新区工作委员会社会工作部</td><td class="money-cell">6.00万</td><td>综合招聘服务</td>
+<td>四川</td><td class="date-col">2026-06-02</td><td>2026-06-10</td><td><a href="https://www.zhiliaobiaoxun.com/content/595261418/b1?sk=CF2BAFA25BB0FD1ED02D8A47BC5FC321619EBD93&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-02">
+<td>52</td><td class="tag-normal">🏆</td><td class="title-col">2026年上半年事业单位公开招聘工作人员面试服务</td>
+<td>黑龙江省政务大数据中心</td><td class="money-cell">3.95万</td><td>考务服务</td>
+<td>黑龙江</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595212340/b1?sk=5BDDF0A789272D8AF63315A2DA904D7016857911&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>53</td><td class="tag-nobudget"></td><td class="title-col">​中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第三次）</td>
+<td>中国建设银行广东省分行</td><td class="money-cell">-</td><td>培训服务</td>
+<td>广东</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595216898/b1?sk=DB443922C2F07DDC94FFE0FD0CDDDE3BD4C1A4D0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>54</td><td class="tag-nobudget"></td><td class="title-col">2026年市直医疗卫生事业单位公开招聘笔试，面试服务项目</td>
+<td>湘潭市第一人民医院</td><td class="money-cell">-</td><td>考务服务</td>
+<td>湖南</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595234263/b1?sk=2BFDFE5D2F43DAF0E3CEA348428EE19031808F11&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>55</td><td class="tag-nobudget"></td><td class="title-col">赤峰市喀喇沁旗牛营子镇家门口就业服务站—招聘活动服务采购项目(二次）竞争性谈判公告</td>
+<td>喀喇沁旗牛营子镇人民政府</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>内蒙古</td><td class="date-col">2026-06-02</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595227514/b1?sk=82C6E48FB8ED82A7692E42240317579A9262462F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>56</td><td class="tag-nobudget"></td><td class="title-col">贵州锦麟化工有限责任公司2026年度社会招聘服务机构采购项目(二次)询比采购公告</td>
+<td>贵州锦麟化工有限责任公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>贵州</td><td class="date-col">2026-06-02</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595242441/b1?sk=7466348F7C9BD0BE4DF0895DE1A0A3C4794E16A3&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>57</td><td class="tag-nobudget"></td><td class="title-col">中国资源循环集团有限公司中国资源循环集团有限公司招聘2026—2027年度招聘招标公告</td>
+<td>中国资源循环集团有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>天津</td><td class="date-col">2026-06-02</td><td>2026-06-24</td><td><a href="https://www.zhiliaobiaoxun.com/content/595245231/b1?sk=305AB1E2190825F25FAE83C69D4AEB492ACE5F96&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>58</td><td class="tag-nobudget"></td><td class="title-col">济南大学工作人员公开招聘相关服务采购项目竞争性磋商公告</td>
+<td>济南大学</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595257752/b1?sk=D1FAE2006B6318A1313EE98EA1D129C72D6FBF7F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>59</td><td class="tag-nobudget"></td><td class="title-col">贵阳贵安2026年高校毕业生留（引）筑活动--大学城校园专场招聘活动贵州财经大学专场招聘会采购公告</td>
+<td>贵阳市南明区就业与职业技能开发中心</td><td class="money-cell">-</td><td>校招服务</td>
+<td>贵州</td><td class="date-col">2026-06-02</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595272264/b1?sk=5A049AD286F5D6466734A188BBBEC7CF7A076240&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>60</td><td class="tag-nobudget"></td><td class="title-col">贵阳贵安2026年高校毕业生留（引）筑活动--高校毕业生等青年就业服务攻坚行动贵州医科大学专场专场招聘会采购公告</td>
+<td>贵阳市南明区就业与职业技能开发中心</td><td class="money-cell">-</td><td>校招服务</td>
+<td>贵州</td><td class="date-col">2026-06-02</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595272313/b1?sk=7ED1603A8857D31E4BA59784A513478C6369273D&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>61</td><td class="tag-nobudget"></td><td class="title-col">景德镇市总工会2026年就业招聘会活动项目</td>
+<td>景德镇市总工会</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>江西</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595224188/b1?sk=109FBE2B85F1EFF79A50C4787DD70607EDE6C77F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>62</td><td class="tag-nobudget"></td><td class="title-col">昆明市人力资源服务有限公司关于公开选聘引进无纸化面试系统项目（二次）竞争性谈判采购公告</td>
+<td>昆明市人力资源服务有限公司</td><td class="money-cell">-</td><td>考务服务</td>
+<td>云南</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595203823/b1?sk=A680797006EE32C63C3CD6A3300F6B92B97299F1&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>63</td><td class="tag-nobudget"></td><td class="title-col">贵阳贵安2026年高校毕业生留（引）筑活动--“职引未来，筑梦青春”百日千万专项招聘活动贵州理工学院专场招聘会采购</td>
+<td>贵阳市南明区就业与职业技能开发中心</td><td class="money-cell">-</td><td>校招服务</td>
+<td>贵州</td><td class="date-col">2026-06-02</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595272302/b1?sk=959C2C3C503C3F75C7AB374DD6764D106C00EC6A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>64</td><td class="tag-nobudget"></td><td class="title-col">中国太平洋保险(集团)股份有限公司猎头服务供应商补充采购项目征集公告</td>
+<td>中国太平洋保险（集团）股份有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>上海</td><td class="date-col">2026-06-02</td><td>2026-06-15</td><td><a href="https://www.zhiliaobiaoxun.com/content/595212568/b1?sk=202E5FAABFA270217D40E5647CAFD893C186915F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>65</td><td class="tag-nobudget"></td><td class="title-col">分谈分签+中国船舶集团有限公司第七二六研究所+服务委外采购智联招聘服务项目FW26040137人力资源处的询价书</td>
+<td>中国船舶集团有限公司第七二六研究所</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>上海</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595236091/b1?sk=E077BA180769818C81BF08EDC3BC31DEC2F5FE58&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>66</td><td class="tag-nobudget"></td><td class="title-col">全国中小企业股份转让系统有限责任公司中证股转科技有限公司2026年招聘服务项目报名公告</td>
+<td>全国中小企业股份转让系统有限责任公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>北京</td><td class="date-col">2026-06-02</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595209887/b1?sk=D8FF3A60905EB372A06EB6CA02E6F40C4F922B9C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-02">
+<td>67</td><td class="tag-nobudget"></td><td class="title-col">某单位技能岗位文职人员招聘理论考试服务采购招标公告（2026-ZALCZG-F40002）（二次招标）</td>
+<td>某单位</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>江苏</td><td class="date-col">2026-06-02</td><td>2026-06-05</td><td><a href="https://www.zhiliaobiaoxun.com/content/595254679/b1?sk=53EA611E258BFF2FB8F990F723AC06ED17DE2591&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-01">
+<td>68</td><td class="tag-diamond">💎</td><td class="title-col">河南省第一地质矿产调查院有限公司人力资源服务采购项目招标公告</td>
+<td>河南省第一地质矿产调查院有限公司</td><td class="money-cell">985.00万</td><td>人力资源服务</td>
+<td>河南</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595145403/b1?sk=AEB14FAF0A68BFA1F37141A575BB7476091836E1&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-06-01">
+<td>69</td><td class="tag-diamond">💎</td><td class="title-col">全省农商银行2026年招聘项目-招标公告</td>
+<td>江西农村商业联合银行股份有限公司</td><td class="money-cell">120.00万</td><td>综合招聘服务</td>
+<td>江西</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595144542/b1?sk=9B6A7AAD051F726F8816875DE209C77F36FF9F67&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-01">
+<td>70</td><td class="tag-hot">🔥</td><td class="title-col">成都市龙泉驿区人民政府东安街道办事处便民服务中心人力资源服务采购项目竞争性磋商公告</td>
+<td>成都市龙泉驿区人民政府东安街道办事处</td><td class="money-cell">84.00万</td><td>人力资源服务</td>
+<td>四川</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595148705/b1?sk=E70F0DECA034D4E9BF7C3079ECEA8FE3B343E613&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-06-01">
+<td>71</td><td class="tag-hot">🔥</td><td class="title-col">乌鲁木齐经济技术开发区（乌鲁木齐市头屯河区）人力资源和社会保障局2026年6月至7月政府采购意向</td>
+<td>乌鲁木齐经济技术开发区人力资源和社会保障局</td><td class="money-cell">55.00万</td><td>人力资源服务</td>
+<td>新疆</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595141758/b1?sk=885817D2C1408EE83DA5503F82F7E7B1191EA57D&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-01">
+<td>72</td><td class="tag-normal">🏆</td><td class="title-col">芜湖高级职业技术学校2026年校医招聘第三方服务采购项目招标公告</td>
+<td>芜湖高级职业技术学校</td><td class="money-cell">48.50万</td><td>综合招聘服务</td>
+<td>安徽</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595126059/b1?sk=37B9EC93202439D0C022C6F658E6223ADA061A7F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-01">
+<td>73</td><td class="tag-normal">🏆</td><td class="title-col">联网公司2026年度招聘服务采购项目询比采购公告</td>
+<td>安徽省高速公路联网运营有限公司</td><td class="money-cell">36.49万</td><td>人才测评/背调</td>
+<td>安徽</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595135177/b1?sk=423DFB2BCEF11E2060BA7AC29C90F2AC85A4922F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-01">
+<td>74</td><td class="tag-normal">🏆</td><td class="title-col">海林市新城区经济开发有限公司下属子公司招聘服务竞争性磋商公告</td>
+<td>海林市新城区经济开发有限公司</td><td class="money-cell">28.60万</td><td>综合招聘服务</td>
+<td>黑龙江</td><td class="date-col">2026-06-01</td><td>2026-06-05</td><td><a href="https://www.zhiliaobiaoxun.com/content/595103665/b1?sk=7F056751DD4B9080B038133A6843F23C575288B6&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-01">
+<td>75</td><td class="tag-normal">🏆</td><td class="title-col">国产化心理测评系统采购（第二次）招标公告(2026-JLSJBK-W1001)</td>
+<td>某部</td><td class="money-cell">19.00万</td><td>人才测评/背调</td>
+<td>四川</td><td class="date-col">2026-06-01</td><td>2026-06-05</td><td><a href="https://www.zhiliaobiaoxun.com/content/595137348/b1?sk=33A402BC1DA74F8E1C4C931EAF5D9A707631A42B&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-06-01">
+<td>76</td><td class="tag-normal">🏆</td><td class="title-col">黑龙江省交投高速公路集团有限公司监控分公司采购内部竞争性选聘第三方代理机构项目集团内部企业采购公示</td>
+<td>黑龙江省交投高速公路集团有限公司监控分公司</td><td class="money-cell">4.71万</td><td>考务服务</td>
+<td>黑龙江</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595098903/b1?sk=CEE3C88ED20FC503783362ECCFA2C54D7E0EEEE9&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>77</td><td class="tag-nobudget"></td><td class="title-col">三一集团有限公司职能总部残疾人招聘服务合作项目询比价公告</td>
+<td>三一集团有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>湖南</td><td class="date-col">2026-06-01</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/595101749/b1?sk=B247BAA0CBA01656C7DA4C53E0CED94C69237CFD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>78</td><td class="tag-nobudget"></td><td class="title-col">上海银行2026-2028年度B模式CRM领域战略人力资源服务采购项目-上海银行2026-2028年度B模式CRM领域战略人力资源服务采购项目采购公告</td>
+<td>上海银行</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>上海</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595110603/b1?sk=984381620B6C88F1F78945264AB4F49313A73D34&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>79</td><td class="tag-nobudget"></td><td class="title-col">公开比选四川省人才发展集团猎头招聘供应商项目比选公告</td>
+<td>四川省人才发展集团有限责任公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>四川</td><td class="date-col">2026-06-01</td><td>2026-06-05</td><td><a href="https://www.zhiliaobiaoxun.com/content/595137104/b1?sk=A15C34AD43D896DD59F3EB73E722BB3819F91169&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>80</td><td class="tag-nobudget"></td><td class="title-col">人保科技2026年95518南方客服中心第三方人力外包服务项目（二次）招标公告</td>
+<td>中国人民保险集团股份有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>北京</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595154827/b1?sk=347767903C5B2E2C48CDF636C7C91038048057F0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>81</td><td class="tag-nobudget"></td><td class="title-col">赤峰市喀喇沁旗牛家营子镇家门口就业服务站—招聘活动服务采购项目</td>
+<td>喀喇沁旗牛家营子镇人民政府</td><td class="money-cell">-</td><td>招聘活动服务</td>
+<td>内蒙古</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595106085/b1?sk=240590CBCCE5808EC8A37F4149B702A1995AED60&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>82</td><td class="tag-nobudget"></td><td class="title-col">分谈分签+中国船舶集团物资有限公司+招聘机构选聘的询价书</td>
+<td>中国船舶集团物资有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>北京</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595108644/b1?sk=41111A9E1085C52C5FFCED3E102D8B6B6C87C10F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>83</td><td class="tag-nobudget"></td><td class="title-col">【非医疗】NDSY-FYL2026-021期智能心理测评系统采购项目采购公告</td>
+<td>（未公开）</td><td class="money-cell">-</td><td>人才测评/背调</td>
+<td></td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595130191/b1?sk=8455F5E7C69D00977E93BE7B9D030D8AD63BFD8E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>84</td><td class="tag-nobudget"></td><td class="title-col">横琴人寿保险有限公司猎头服务采购项目招标公告</td>
+<td>横琴人寿保险有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>北京</td><td class="date-col">2026-06-01</td><td>2026-06-10</td><td><a href="https://www.zhiliaobiaoxun.com/content/595135094/b1?sk=102C9CDC7D372C827019FF31862EFA6C030208A5&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>85</td><td class="tag-nobudget"></td><td class="title-col">2026年贷后风控专员委托招聘服务项目项目公告</td>
+<td>（未公开）</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td></td><td class="date-col">2026-06-01</td><td>2026-06-12</td><td><a href="https://www.zhiliaobiaoxun.com/content/595096968/b1?sk=7A36A5A243684FC8552B0A3F5B1A210C2C29426A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>86</td><td class="tag-nobudget"></td><td class="title-col">中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第三次）</td>
+<td>中国建设银行广东省分行</td><td class="money-cell">-</td><td>培训服务</td>
+<td>广东</td><td class="date-col">2026-06-01</td><td>2026-06-04</td><td><a href="https://www.zhiliaobiaoxun.com/content/595154997/b1?sk=1AE26579957644BC3F2857C02AAC958BFABD94DC&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>87</td><td class="tag-nobudget"></td><td class="title-col">人力资源招聘服务外包项目公开招标公告</td>
+<td>青岛云路先进材料技术股份有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-06-01</td><td>2026-06-06</td><td><a href="https://www.zhiliaobiaoxun.com/content/595113411/b1?sk=3B60D4F2AF0F6492F80FC107F371ED484F817679&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>88</td><td class="tag-nobudget"></td><td class="title-col">中国建设银行青岛市分行2026年暑期实习生招聘，培训及运营服务采购项目</td>
+<td>中国建设银行股份有限公司青岛市分行</td><td class="money-cell">-</td><td>校招/培训服务</td>
+<td>山东</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595131017/b1?sk=71DCFF5C433C4CCB53CC24C2C48AF24DCE517B12&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>89</td><td class="tag-nobudget"></td><td class="title-col">深圳港集团招聘管理数智员工（AI智能体）市场询价公告</td>
+<td>深圳港集团有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>广东</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595151870/b1?sk=E71C1A5A3D361D6568A0C4801C81FA57184D8384&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>90</td><td class="tag-nobudget"></td><td class="title-col">蚌埠市高新福田城市运营服务有限公司人力资源服务项目采买公告</td>
+<td>蚌埠市高新福田城市运营服务有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>安徽</td><td class="date-col">2026-06-01</td><td>2026-06-08</td><td><a href="https://www.zhiliaobiaoxun.com/content/595153266/b1?sk=9F80C4A65D4657D3E46ACD38653CC5C165308563&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>91</td><td class="tag-nobudget"></td><td class="title-col">全省农商银行2026年招聘项目-招标公告</td>
+<td>全省农商银行</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td></td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595155633/b1?sk=317E265E6EB4948A9F685E6A0E23602C73F984A4&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>92</td><td class="tag-nobudget"></td><td class="title-col">吕梁云时代技术有限公司2026年人力资源服务采购项目采购公告</td>
+<td>吕梁云时代技术有限公司</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>山西</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595156889/b1?sk=6722C3CA2356427AB5EEC3AA5593C1D692C18CBE&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>93</td><td class="tag-nobudget"></td><td class="title-col">2026年智科人才猎聘服务</td>
+<td>招商局工业智能科技（江苏）有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>江苏</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595131791/b1?sk=9F2BD6512F0E9F553D5B670275BC5E34081B6421&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>94</td><td class="tag-nobudget"></td><td class="title-col">关于2026年及2027年招聘系统SaaS项目的采购公告</td>
+<td>（未公开）</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td></td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595141837/b1?sk=7DC69BA2702861F2A6A9E3824103584D77603B93&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>95</td><td class="tag-nobudget"></td><td class="title-col">干部领导力培训项目询比采购公告</td>
+<td>（未公开）</td><td class="money-cell">-</td><td>培训服务</td>
+<td></td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595113825/b1?sk=AB850FE6B385EC23E791ED33AA0A17AF488329F0&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>96</td><td class="tag-nobudget"></td><td class="title-col">额河水管中心2026年人力资源服务外包项目（第二批）（二次）竞争性磋商公告</td>
+<td>额河水管中心</td><td class="money-cell">-</td><td>人力资源服务</td>
+<td>新疆</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595103434/b1?sk=7F9C5A7AE495755DEEECFC5D1301F2C3A89F6583&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>97</td><td class="tag-nobudget"></td><td class="title-col">2026-2027年度招聘网站使用及社会招聘猎头服务</td>
+<td>中国五矿集团有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>北京</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595118885/b1?sk=DCAB5687EB014D76EC3F34EC7BE77373B81A4DFF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-06-01">
+<td>98</td><td class="tag-nobudget"></td><td class="title-col">26GG000894;猎头服务供应商补充采购项目公告（包件4:国际化领域头部猎头服务包）</td>
+<td>中国太平洋保险（集团）股份有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>上海</td><td class="date-col">2026-06-01</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/595157088/b1?sk=352E80E2677392FD8951DAD747E7778488F32719&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-29">
+<td>99</td><td class="tag-diamond">💎</td><td class="title-col">中国电信股份有限公司湖北分公司2026-2027年员工培训服务项目（标段一）招标公告</td>
+<td>中国电信股份有限公司湖北分公司</td><td class="money-cell">3,557.80万</td><td>校招/招聘活动服务</td>
+<td>湖北</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-29">
+<td>100</td><td class="tag-diamond">💎</td><td class="title-col">中交公路规划设计院有限公司桥隧监测养护分公司桥隧监测养护分公司选聘人力资源服务供应商项目</td>
+<td>中交公路规划设计院有限公司桥隧监测养护分公司</td><td class="money-cell">280.00万</td><td>人力资源综合服务</td>
+<td>北京</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-29">
+<td>101</td><td class="tag-diamond">💎</td><td class="title-col">河北省人力资源和社会保障厅2026年京津冀劳务协作专项活动项目公开招标公告</td>
+<td>河北省人力资源和社会保障厅</td><td class="money-cell">100.00万</td><td>校招/招聘活动服务</td>
+<td>河北</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-29">
+<td>102</td><td class="tag-diamond">💎</td><td class="title-col">赤峰市红山区人力资源和社会保障局赤峰人力资源服务产业园运营项目竞争性磋商公告</td>
+<td>赤峰市红山区人力资源和社会保障局</td><td class="money-cell">100.00万</td><td>人力资源综合服务</td>
+<td>内蒙古</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-29">
+<td>103</td><td class="tag-hot">🔥</td><td class="title-col">河南职业技术学院智能制造智慧人才评价与创新发展产教融合实训中心建设项目-竞争性磋商公告</td>
+<td>河南职业技术学院</td><td class="money-cell">70.00万</td><td>综合招聘服务</td>
+<td>河南</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>104</td><td class="tag-normal">🏆</td><td class="title-col">遵义市人员招聘笔试采购项目采购公告</td>
+<td>遵义市人力资源和社会保障局</td><td class="money-cell">45.90万</td><td>考务服务</td>
+<td>贵州</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>105</td><td class="tag-normal">🏆</td><td class="title-col">安徽省交通控股集团有限公司2026年招聘服务询比采购采购公告</td>
+<td>安徽省交通控股集团有限公司</td><td class="money-cell">40.00万</td><td>校招/招聘活动服务</td>
+<td>安徽</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>106</td><td class="tag-normal">🏆</td><td class="title-col">黑龙江农业经济职业学院2026年公开招聘笔试面试考核竞争性磋商公告</td>
+<td>黑龙江农业经济职业学院</td><td class="money-cell">20.00万</td><td>考务服务</td>
+<td>黑龙江</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>107</td><td class="tag-normal">🏆</td><td class="title-col">四川省人才交流中心四川招聘云平台运维服务项目采购比选公告</td>
+<td>四川省人才交流中心</td><td class="money-cell">12.80万</td><td>招聘平台/系统</td>
+<td>四川</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>108</td><td class="tag-normal">🏆</td><td class="title-col">2026年广西金秋招聘月活动项目采购公告</td>
+<td>广西壮族自治区就业服务中心</td><td class="money-cell">10.00万</td><td>校招/招聘活动服务</td>
+<td>广西</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>109</td><td class="tag-normal">🏆</td><td class="title-col">济南泉永印务有限公司社会招聘服务项目-询比公告</td>
+<td>济南泉永印务有限公司</td><td class="money-cell">9.71万</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-29">
+<td>110</td><td class="tag-normal">🏆</td><td class="title-col">达州中医药职业学院2026届6月份校园招聘会服务项目询价公告</td>
+<td>达州中医药职业学院</td><td class="money-cell">2.80万</td><td>校招/招聘活动服务</td>
+<td>四川</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>111</td><td class="tag-nobudget"></td><td class="title-col">2026-2027年度招聘网站使用及社会招聘猎头服务</td>
+<td>中冶京诚工程技术有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>北京</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>112</td><td class="tag-nobudget"></td><td class="title-col">F2-中国核建中核二二检测分公司人力资源猎头服务框架询比采购采购公告</td>
+<td>中国核工业建设股份有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>浙江</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>113</td><td class="tag-nobudget"></td><td class="title-col">三一重装各岗系关键岗猎头招聘服务采购-宝华领客项目询比价公告</td>
+<td>三一集团</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>湖南</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>114</td><td class="tag-nobudget"></td><td class="title-col">三一重装各岗系关键岗猎头招聘服务采购-搜米项目询比价公告</td>
+<td>三一集团</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>湖南</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>115</td><td class="tag-nobudget"></td><td class="title-col">三一重装销服及研发岗系RPO招聘服务-西安精讯项目询比价公告</td>
+<td>三一集团</td><td class="money-cell">-</td><td>RPO/招聘流程外包</td>
+<td>陕西</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>116</td><td class="tag-nobudget"></td><td class="title-col">三一重装销服及研发岗系RPO招聘服务采购-搜米项目询比价公告</td>
+<td>三一集团</td><td class="money-cell">-</td><td>RPO/招聘流程外包</td>
+<td>湖南</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>117</td><td class="tag-nobudget"></td><td class="title-col">中国人寿资产管理有限公司人力资源基础服务（社保公积金代理）征集公告</td>
+<td>中国人寿资产管理有限公司</td><td class="money-cell">-</td><td>人力资源综合服务</td>
+<td>北京</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>118</td><td class="tag-nobudget"></td><td class="title-col">中国西安人才市场管理委员会办公室2026年公共就业招聘专项活动招标公告</td>
+<td>中国西安人才市场管理委员会</td><td class="money-cell">-</td><td>校招/招聘活动服务</td>
+<td>陕西</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>119</td><td class="tag-nobudget"></td><td class="title-col">人力资源猎头服务谈判采购</td>
+<td>四川九华光子通信技术有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>四川</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>120</td><td class="tag-nobudget"></td><td class="title-col">人才招聘服务供应商（2026）询比采购公告</td>
+<td>国投瑞银基金管理有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>上海</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>121</td><td class="tag-nobudget"></td><td class="title-col">公司2026年猎头服务谈判采购公告</td>
+<td>山东汇通金融租赁有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>山东</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>122</td><td class="tag-nobudget"></td><td class="title-col">国电南京自动化股份有限公司SAC-XB-01-2026214国电南自2026年新员工培训采购项目询比采购公告</td>
+<td>国电南京自动化股份有限公司</td><td class="money-cell">-</td><td>培训服务</td>
+<td>江苏</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>123</td><td class="tag-nobudget"></td><td class="title-col">宁夏分行新员工培训辅助服务项目公开招标公告</td>
+<td>中国农业银行股份有限公司宁夏回族自治区分行</td><td class="money-cell">-</td><td>培训服务</td>
+<td>宁夏</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>124</td><td class="tag-nobudget"></td><td class="title-col">广州珠江城市管理服务集团股份有限公司战略合作供应商库采购项目（人力资源服务）招标公告</td>
+<td>广州珠江城市管理服务集团股份有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>广东</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>125</td><td class="tag-nobudget"></td><td class="title-col">广投资本管理集团有限公司2026年招聘服务直接采购</td>
+<td>广投资本管理集团有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>广西</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>126</td><td class="tag-nobudget"></td><td class="title-col">招商银行青岛分行2026年新员工培训项目供应商征集公告</td>
+<td>招商银行青岛分行人力资源部</td><td class="money-cell">-</td><td>培训服务</td>
+<td>山东</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>127</td><td class="tag-nobudget"></td><td class="title-col">某部人力资源服务（第二次）招标公告（2026-VGBBJK-F4004）</td>
+<td>某部</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>河北</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>128</td><td class="tag-nobudget"></td><td class="title-col">锦泰财产保险股份有限公司猎头服务供应商库补充采购项目竞争性磋商采购公告</td>
+<td>锦泰财产保险股份有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>四川</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>129</td><td class="tag-nobudget"></td><td class="title-col">（询比采购）【招聘网站服务采购/5583-PS202605200510】采购公告</td>
+<td>陕西中化蓝天化工新材料有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>陕西</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-29">
+<td>130</td><td class="tag-nobudget"></td><td class="title-col">（询比采购）【猎头服务协议1年（入围）/7152-PS202605290296】采购公告</td>
+<td>埃肯有机硅（上海）有限公司</td><td class="money-cell">-</td><td>猎头/人才寻访</td>
+<td>上海</td><td class="date-col">2026-05-29</td><td>未注明</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-28">
+<td>131</td><td class="tag-diamond">💎</td><td class="title-col">💎 天津市环湖医院政府采购意向公告</td>
+<td>天津市环湖医院</td><td class="money-cell">1,950.00万</td><td>综合招聘服务</td>
+<td>天津</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594849905/b1?sk=AF027B06241F12896C9B41B341375ED0613A513B&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-28">
+<td>132</td><td class="tag-hot">🔥</td><td class="title-col">🔥 驿达集团2026-2028年招聘服务项目询比采购采购公告</td>
+<td>安徽交控驿达服务开发集团有限公司</td><td class="money-cell">89.95万</td><td>综合招聘服务</td>
+<td>安徽</td><td class="date-col">2026-05-28</td><td>2026-06-09 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594909924/b1?sk=B53EF87DF437984C62798440A961D9865C50FC08&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-28">
+<td>133</td><td class="tag-normal">🏆</td><td class="title-col">🏆 2026年华灿实业接装纸生产线扩能招聘服务采购项目招标公告</td>
+<td>贵州贵定华灿实业有限公司</td><td class="money-cell">18.00万</td><td>综合招聘服务</td>
+<td>贵州</td><td class="date-col">2026-05-28</td><td>2026-06-05 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594912935/b1?sk=348EC5E9ACF5ABE03A5C9DA1B8AAB98D000D3B07&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-28">
+<td>134</td><td class="tag-normal">🏆</td><td class="title-col">🏆 乾安县严字乡美字村招聘农田灌溉井维护电工1名</td>
+<td>乾安县严字乡美字村村民委员会</td><td class="money-cell">2.00万</td><td>综合招聘服务</td>
+<td>吉林</td><td class="date-col">2026-05-28</td><td>2026-06-03 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594928705/b1?sk=F785A0D4927849B9CD7FD2897AFB0A770F2DD813&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>135</td><td class="tag-nobudget"></td><td class="title-col">润加物业服务(上海)有限公司物业华东江浙区域2026-2027年基础岗位人事外包集中采购公告-集中采购项目</td>
+<td>润加物业服务（上海）有限公司</td><td class="money-cell">-</td><td>人事外包</td>
+<td>上海</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594878922/b1?sk=2967FFE8EA1BAEBB1397E7B22BC018743F926879&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>136</td><td class="tag-nobudget"></td><td class="title-col">某求职招聘一体化系统技术服务平台项目谈判采购公告</td>
+<td>浪潮软件股份有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-05-28</td><td>2026-05-28 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594863091/b1?sk=09045D52DEBA0BA586901066096B46A07901834C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>137</td><td class="tag-nobudget"></td><td class="title-col">某单位技能岗位文职人员招聘理论考试服务采购竞争性谈判公告(2026-JLGCZG-F3001)</td>
+<td>某单位</td><td class="money-cell">-</td><td>考务服务</td>
+<td>江苏</td><td class="date-col">2026-05-28</td><td>2026-06-01 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594910284/b1?sk=795B2540F9FD884C0515F2667D4CF79D2FF28D5D&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>138</td><td class="tag-nobudget"></td><td class="title-col">人力资源服务项目（北京）竞争性磋商公告</td>
+<td>北京邮科易通信息科技有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>黑龙江</td><td class="date-col">2026-05-28</td><td>2026-06-01 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594865827/b1?sk=8B842850F5C7AC1481DF37945346B5B12B48CAB5&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>139</td><td class="tag-nobudget"></td><td class="title-col">贵州省第二人民医院公开（自主）招聘工作人员相关考务外包项目（二次）公开比选采购公告</td>
+<td>贵州省第二人民医院</td><td class="money-cell">-</td><td>考务服务</td>
+<td>贵州</td><td class="date-col">2026-05-28</td><td>2026-06-04 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594912709/b1?sk=DC8AAF3EFB57CEF5EB353D8A94F4D154035AC3DA&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>140</td><td class="tag-nobudget"></td><td class="title-col">光水水务（安阳）有限公司网络招聘平台会员服务采购询价公告</td>
+<td>光水水务（安阳）有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>河南</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594845988/b1?sk=181E8105B148E29529B54D3798F19A1C6068E97F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>141</td><td class="tag-nobudget"></td><td class="title-col">2026年华灿实业接装纸生产线扩能招聘服务采购项目招标公告</td>
+<td>华灿实业</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td></td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594926237/b1?sk=7A3158850BE551C8D058A715278DB3E62BB775B2&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>142</td><td class="tag-nobudget"></td><td class="title-col">榆林煤化人力资源服务项目采购公告</td>
+<td>陕西延长石油榆林煤化有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>陕西</td><td class="date-col">2026-05-28</td><td>2026-06-03 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594928124/b1?sk=AB999C37C7E8158952DDE04F3906C5A4C023528C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>143</td><td class="tag-nobudget"></td><td class="title-col">中国建设银行远程智能银行中心天津分中心招聘体检采购供应商征集公告</td>
+<td>中国建设银行远程智能银行中心天津分中心</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>天津</td><td class="date-col">2026-05-28</td><td>2026-06-04 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594847416/b1?sk=DE26CFE66577FC7771E5156B963BA5E44DC6881C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>144</td><td class="tag-nobudget"></td><td class="title-col">天津未来城咨询服务公司人力资源服务供应商库项目公开招标公告</td>
+<td>天津未来城咨询服务公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>天津</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594901783/b1?sk=FE680D9CC4C0AB75CA38C15E6557AC7D206ECD85&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>145</td><td class="tag-nobudget"></td><td class="title-col">蕺山文苑酒店2026年度人力资源服务(第二次)</td>
+<td>绍兴蕺山文苑酒店管理有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>浙江</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594850011/b1?sk=D23ED842012C7CC9D83862CE023ACC5841B64A13&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>146</td><td class="tag-nobudget"></td><td class="title-col">娄底市人力资源和社会保障局关于面向社会公开征集人力资源服务领域涉嫌违法违规行为线索的公告</td>
+<td>娄底市人力资源和社会保障局</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>湖南</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594903578/b1?sk=75A0EF9EB49D97FB377C4EDB6A35BD9D2524967C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>147</td><td class="tag-nobudget"></td><td class="title-col">国药集团人力资源与改革服务项目（第一包：招聘服务）谈判采购公告</td>
+<td>国药集团</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>四川</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594931865/b1?sk=4AC77383708C5D9FFD70F21423859198B3A2B09A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>148</td><td class="tag-nobudget"></td><td class="title-col">2026-2028年紫云英海外（亚太区域）蓝领招聘服务采购项目采购公告</td>
+<td></td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td></td><td class="date-col">2026-05-28</td><td>2026-06-04 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594852912/b1?sk=14CE03EC4DD09FCABCD6FBDF8B77A8DB92285E3D&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>149</td><td class="tag-nobudget"></td><td class="title-col">中冶京诚2026-2027年度背景调查服务</td>
+<td>中国五矿集团有限公司</td><td class="money-cell">-</td><td>人才测评/背调</td>
+<td>北京</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594874404/b1?sk=53F5B96183A37C4530DE21BB65E2DF099159417E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>150</td><td class="tag-nobudget"></td><td class="title-col">智航（云南）信息产业有限公司2026年-2027年人才招聘服务项目公开竞价比选采购公告</td>
+<td>智航(云南)信息产业有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>云南</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594876557/b1?sk=6533CC716710185B4399E30138497F0BA3D0055A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>151</td><td class="tag-nobudget"></td><td class="title-col">20260529人力资源服务公司代招聘服务</td>
+<td>中复神鹰碳纤维连云港有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>江苏</td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594878745/b1?sk=8A7DCA1A79685AF40EE6B6813F363B98567534DD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>152</td><td class="tag-nobudget"></td><td class="title-col">人力资源服务项目（黑龙江）竞争性磋商公告</td>
+<td>黑龙江邮政易通信息网络有限责任公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>黑龙江</td><td class="date-col">2026-05-28</td><td>2026-06-01 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594865843/b1?sk=C5F976D61FB28DB71DAF0AB527E9ABA0BC341461&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>153</td><td class="tag-nobudget"></td><td class="title-col">招聘网站服务</td>
+<td></td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td></td><td class="date-col">2026-05-28</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594903620/b1?sk=4FA68F0FCADFAA390FE5D4B716A0376EAE1F3C3A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-28">
+<td>154</td><td class="tag-nobudget"></td><td class="title-col">中核集团2026年招聘管理系统优化建设项目（总部采购）采购公告</td>
+<td>中国核工业集团有限公司</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>北京</td><td class="date-col">2026-05-28</td><td>2026-06-08 00:00:00</td><td><a href="https://www.zhiliaobiaoxun.com/content/594918574/b1?sk=24C97FD743F38460674B4F9ECF93A9234FCAB9AF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-27">
+<td>155</td><td class="tag-diamond">💎</td><td class="title-col">💎 抚州市人力资源和社会保障局2026年度政府采购意向公告(第1批)-抚州市就业之家暨抚州人力资源服务产业园运营外包采购项目</td>
+<td>抚州市人力资源和社会保障局</td><td class="money-cell">229.25万</td><td>综合招聘服务</td>
+<td>江西</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-27">
+<td>156</td><td class="tag-diamond">💎</td><td class="title-col">💎 2026年6月-2028年5月招聘会场地布展服务项目</td>
+<td>福建海峡人才网络资讯有限公司</td><td class="money-cell">180.00万</td><td>招聘活动服务</td>
+<td>福建</td><td class="date-col">2026-05-27</td><td>2026-06-03</td><td></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-27">
+<td>157</td><td class="tag-hot">🔥</td><td class="title-col">🔥 通辽市科尔沁区第一人民医院2026年05月至2027年05月政府采购意向-高质量发展项目委托招聘学科带头人，急需紧缺人才及实用型人才服务项目详细情况</td>
+<td>通辽市科尔沁区第一人民医院</td><td class="money-cell">71.50万</td><td>猎头/人才寻访</td>
+<td>内蒙古</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-27">
+<td>158</td><td class="tag-hot">🔥</td><td class="title-col">🔥 杭州中浙招标有限公司关于杭州市就业管理服务中心2026年度东西部劳务协作招聘服务项目的公开招标公告</td>
+<td>杭州市就业管理服务中心</td><td class="money-cell">70.00万</td><td>招聘活动服务</td>
+<td>浙江</td><td class="date-col">2026-05-27</td><td>2026-06-04</td><td></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-27">
+<td>159</td><td class="tag-hot">🔥</td><td class="title-col">🔥 2026年潍坊高质量充分就业系列招聘活动竞争性磋商公告</td>
+<td>潍坊市人力资源和社会保障局</td><td class="money-cell">60.00万</td><td>综合招聘服务</td>
+<td>山东</td><td class="date-col">2026-05-27</td><td>2026-06-03</td><td></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-27">
+<td>160</td><td class="tag-hot">🔥</td><td class="title-col">🔥 滑县人民医院2026年7至8月政府采购意向-滑县人民医院心理测评系统平台项目详细情况</td>
+<td>滑县人民医院</td><td class="money-cell">53.00万</td><td>招聘平台/系统</td>
+<td>河南</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>161</td><td class="tag-normal">🏆</td><td class="title-col">🏆 天翼支付科技有限公司2026年招聘平台询比公告</td>
+<td>天翼支付科技有限公司</td><td class="money-cell">47.17万</td><td>招聘平台/系统</td>
+<td>广东</td><td class="date-col">2026-05-27</td><td>2026-06-01</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>162</td><td class="tag-normal">🏆</td><td class="title-col">🏆 2026-FW-XX001项目-人力招聘系统（北森）采购事前公示</td>
+<td>广西北投信创科技投资集团有限公司</td><td class="money-cell">26.05万</td><td>招聘平台/系统</td>
+<td>广西</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>163</td><td class="tag-normal">🏆</td><td class="title-col">🏆 江西电力职业技术学院2026年“百企百董”校企共建主题活动暨2027届毕业生秋季校园招聘会服务项目竞价公告</td>
+<td>江西电力职业技术学院</td><td class="money-cell">10.00万</td><td>校招服务</td>
+<td>江西</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>164</td><td class="tag-normal">🏆</td><td class="title-col">🏆 体育中心2026年人力资源服务项目</td>
+<td>深圳市体育中心运营管理有限公司</td><td class="money-cell">9.95万</td><td>综合招聘服务</td>
+<td>广东</td><td class="date-col">2026-05-27</td><td>2026-05-28</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>165</td><td class="tag-normal">🏆</td><td class="title-col">🏆 青海农牧科技职业学院2026届毕业生校园招聘会会务服务采购询价公告</td>
+<td>青海农牧科技职业学院招生就业部</td><td class="money-cell">3.48万</td><td>校招服务</td>
+<td>青海</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-27">
+<td>166</td><td class="tag-normal">🏆</td><td class="title-col">🏆 新塘边镇2026年度护林员招聘管理委托项目</td>
+<td>江山市新塘边镇人民政府</td><td class="money-cell">0.80万</td><td>招聘管理委托</td>
+<td>浙江</td><td class="date-col">2026-05-27</td><td>2026-05-28</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>167</td><td class="tag-nobudget"></td><td class="title-col">中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第二次）</td>
+<td>中国建设银行广东省分行</td><td class="money-cell">-</td><td>培训服务</td>
+<td>广东</td><td class="date-col">2026-05-27</td><td>2026-05-31</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>168</td><td class="tag-nobudget"></td><td class="title-col">集团2026-2031年度校园招聘认知能力测评工具项目谈判公告</td>
+<td>中广核工程有限公司</td><td class="money-cell">-</td><td>校招服务</td>
+<td>广东</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>169</td><td class="tag-nobudget"></td><td class="title-col">江苏长电科技股份有限公司2026年度委托代理招聘服务采购项目公告</td>
+<td>江苏长电科技股份有限公司</td><td class="money-cell">-</td><td>RPO/招聘流程外包</td>
+<td>江苏</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>170</td><td class="tag-nobudget"></td><td class="title-col">华能贵州清洁能源分公司公开招聘（选拔）咨询服务框架（HC）询比采购公告</td>
+<td>中国华能集团有限公司北京睿采数动科技分公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>北京</td><td class="date-col">2026-05-27</td><td>2026-06-01</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>171</td><td class="tag-nobudget"></td><td class="title-col">“青春集结就在内蒙古”--内蒙古自治区2026届高校毕业生专场招聘会</td>
+<td>未知</td><td class="money-cell">-</td><td>校招服务</td>
+<td>内蒙古</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>172</td><td class="tag-nobudget"></td><td class="title-col">中冶京诚2026-2027年度背景调查服务</td>
+<td>中冶京诚工程技术有限公司</td><td class="money-cell">-</td><td>人才测评/背调</td>
+<td>北京</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>173</td><td class="tag-nobudget"></td><td class="title-col">陶家屯服务区人力资源服务采购项目招标公告</td>
+<td>陶家屯服务区</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>未知</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>174</td><td class="tag-nobudget"></td><td class="title-col">塔里木油田共享服务中心2026-2027年人力资源服务合同公开招标公告</td>
+<td>中国石油天然气股份有限公司塔里木油田分公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>新疆</td><td class="date-col">2026-05-27</td><td>2026-06-03</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>175</td><td class="tag-nobudget"></td><td class="title-col">山西医科大学口腔医院选聘招聘服务商三次谈判采购公告</td>
+<td>山西医科大学口腔医院</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山西</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>176</td><td class="tag-nobudget"></td><td class="title-col">关于开展三亚市第二人民医院2026年公开（考核）招聘工作人员考试命题项目采购公告</td>
+<td>三亚市第二人民医院</td><td class="money-cell">-</td><td>考务服务</td>
+<td>海南</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>177</td><td class="tag-nobudget"></td><td class="title-col">塔里木油田共享服务中心2026-2027年人力资源服务合同公开招标公告</td>
+<td>塔里木油田共享服务中心</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>未知</td><td class="date-col">2026-05-27</td><td>2026-06-03</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>178</td><td class="tag-nobudget"></td><td class="title-col">浙大一院干部考核和民主测评系统供应商征集</td>
+<td>浙江大学医学院附属第一医院</td><td class="money-cell">-</td><td>招聘平台/系统</td>
+<td>浙江</td><td class="date-col">2026-05-27</td><td>2026-06-03</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>179</td><td class="tag-nobudget"></td><td class="title-col">人力资源代招服务（猎头及RPO）采购项目供应商报名邀请公告</td>
+<td>未知</td><td class="money-cell">-</td><td>RPO/招聘流程外包</td>
+<td>未知</td><td class="date-col">2026-05-27</td><td>未注明</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>180</td><td class="tag-nobudget"></td><td class="title-col">2026年昌都市招聘会服务项目</td>
+<td>昌都市人力资源和社会保障局</td><td class="money-cell">-</td><td>招聘活动服务</td>
+<td>西藏</td><td class="date-col">2026-05-27</td><td>2026-06-01</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>181</td><td class="tag-nobudget"></td><td class="title-col">华新燃气集团有限公司人员招聘服务询比采购公告</td>
+<td>华新燃气集团有限公司</td><td class="money-cell">-</td><td>综合招聘服务</td>
+<td>山西</td><td class="date-col">2026-05-27</td><td>2026-05-29</td><td></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-27">
+<td>182</td><td class="tag-nobudget"></td><td class="title-col">XHR公司招聘对接项目采购谈判采购公告</td>
+<td>浪潮海岳云技术（深圳）有限公司</td><td class="money-cell">-</td><td>RPO/招聘流程外包</td>
+<td>山东</td><td class="date-col">2026-05-27</td><td>2026-06-01</td><td></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-26">
+<td>183</td><td class="tag-diamond">💎</td><td class="title-col">🏆 中国移动通信集团四川有限公司2026-2029年招聘服务采购项目_询比公告</td>
+<td>中国移动通信集团四川有限公司</td><td class="money-cell">900.00万</td><td></td>
+<td>四川</td><td class="date-col">2026-05-26</td><td>2026-05-29</td><td><a href="https://www.zhiliaobiaoxun.com/content/594631580/b1?sk=A4471F43A5F4A8E6821EB11AB90D289A1C627ACD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-26">
+<td>184</td><td class="tag-hot">🔥</td><td class="title-col">🏆 临高县2026年事业单位公开招聘工作人员考务服务项目（二次招标）竞争性磋商公告</td>
+<td>临高县人力资源和社会保障局</td><td class="money-cell">97.06万</td><td></td>
+<td>海南</td><td class="date-col">2026-05-26</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/594583707/b1?sk=2B07E21EA18C50A332B1AAE2B805A5901CDF04B6&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-26">
+<td>185</td><td class="tag-hot">🔥</td><td class="title-col">🏆 临高县2026年事业单位公开招聘工作人员命题服务项目（二次招标）竞争性磋商公告</td>
+<td>临高县人力资源和社会保障局</td><td class="money-cell">81.94万</td><td></td>
+<td>海南</td><td class="date-col">2026-05-26</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/594584473/b1?sk=FDD59EADB6BE81CBDC0745322DF8836814A8F734&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-26">
+<td>186</td><td class="tag-hot">🔥</td><td class="title-col">🏆 中鑫正能工程管理有限公司关于定南县就业创业服务中心2026年招聘会服务竞争性磋商公告</td>
+<td>定南县就业创业服务中心</td><td class="money-cell">75.50万</td><td></td>
+<td>江西</td><td class="date-col">2026-05-26</td><td>2026-06-05</td><td><a href="https://www.zhiliaobiaoxun.com/content/594643188/b1?sk=A31C9BA713EFB38528C8C327378A13A642362DCD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-26">
+<td>187</td><td class="tag-normal">🏆</td><td class="title-col">🏆 公司HCM系统招聘模块建设服务直接采购公告</td>
+<td>山东汇通金融租赁有限公司</td><td class="money-cell">37.00万</td><td></td>
+<td>山东</td><td class="date-col">2026-05-26</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594622183/b1?sk=E1BD4B0C2FFB04A936A337576B5084DCD813D27A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-26">
+<td>188</td><td class="tag-normal">🏆</td><td class="title-col">🏆 厦门政采-竞争性磋商-ZC2026-813-校园招聘赴外引才活动服务-采购公告</td>
+<td>厦门市医学交流与人才服务中心</td><td class="money-cell">1.80万</td><td></td>
+<td>福建</td><td class="date-col">2026-05-26</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/594642464/b1?sk=B84642034F7DED82CAF9A78AC0DF3847336B1DC8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-26">
+<td>189</td><td class="tag-normal">🏆</td><td class="title-col">🏆 中山市黄圃人民医院人才招聘平台服务项目（二次）采购公告</td>
+<td>中山市黄圃人民医院</td><td class="money-cell">0.99万</td><td></td>
+<td>广东</td><td class="date-col">2026-05-26</td><td>2026-05-28</td><td><a href="https://www.zhiliaobiaoxun.com/content/594595628/b1?sk=76220FC04F8B03E652D212871E252FE9411146F2&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>190</td><td class="tag-nobudget"></td><td class="title-col">2026年中车成都公司领导力培训项目2026050799采购公告</td>
+<td>中车成都机车车辆有限公司</td><td class="money-cell">-</td><td></td>
+<td>四川</td><td class="date-col">2026-05-26</td><td>2026-05-29</td><td><a href="https://www.zhiliaobiaoxun.com/content/594614736/b1?sk=062F26EB3F4FC827C2BB3D31B5E2A669C0D14787&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>191</td><td class="tag-nobudget"></td><td class="title-col">中国建设银行股份有限公司海南省分行2026年新员工培训场地及食宿项目供应商征集公告</td>
+<td>中国建设银行股份有限公司海南省分行</td><td class="money-cell">-</td><td></td>
+<td>海南</td><td class="date-col">2026-05-26</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/594591081/b1?sk=3E6B69DC76133BE708EE4F5EE2F3F375DC6E5BC9&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>192</td><td class="tag-nobudget"></td><td class="title-col">北京京能酒店管理有限公司提升管理人员领导力培训采购公告</td>
+<td>北京京能酒店管理有限公司</td><td class="money-cell">-</td><td></td>
+<td>北京</td><td class="date-col">2026-05-26</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594598215/b1?sk=AC78E671AC1DF5886ECCCC241A66DBE5ECDBDFAD&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>193</td><td class="tag-nobudget"></td><td class="title-col">关于公开遴选越秀区2026年社区专职工作人员公开招聘项目承接机构的公告</td>
+<td>中共广州市越秀区委社会工作部</td><td class="money-cell">-</td><td></td>
+<td>广东</td><td class="date-col">2026-05-26</td><td>2026-06-02</td><td><a href="https://www.zhiliaobiaoxun.com/content/594630039/b1?sk=ECD12F7126BB8244177AC0A156EE60796D199A57&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>194</td><td class="tag-nobudget"></td><td class="title-col">山西医科大学口腔医院选聘招聘服务商二次谈判采购公告</td>
+<td>山西医科大学口腔医院</td><td class="money-cell">-</td><td></td>
+<td>山西</td><td class="date-col">2026-05-26</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594636963/b1?sk=15967B53CA48E01C933F06158CF7DD0C2A6B3B81&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-26">
+<td>195</td><td class="tag-nobudget"></td><td class="title-col">【人才招聘服务】采购公告</td>
+<td>湖北华中长江光电科技有限公司</td><td class="money-cell">-</td><td></td>
+<td>湖北</td><td class="date-col">2026-05-26</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594627544/b1?sk=A0EF43DEB6661067AAF86248B4DD415440E6C904&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-25">
+<td>196</td><td class="tag-diamond">💎</td><td class="title-col">🏆 江苏金服数字集团有限公司2026年度招聘服务项目的竞争性谈判公告</td>
+<td>江苏金服数字集团有限公司</td><td class="money-cell">369.80万</td><td></td>
+<td>江苏</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594516315/b1?sk=4ECCE60DBF0BC26AEB46624D5F59A69EC7A4086E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-25">
+<td>197</td><td class="tag-diamond">💎</td><td class="title-col">🏆 广州美术学院2026年05月至2026年06月政府采购意向（含招聘系统/人力资源服务平台建设）</td>
+<td>广州美术学院</td><td class="money-cell">120.00万</td><td></td>
+<td>广东</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594549441/b1?sk=488CE08BACE10F78B2F46B76E8038464BAB90EA9&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-diamond" data-tag="diamond" data-date="2026-05-25">
+<td>198</td><td class="tag-diamond">💎</td><td class="title-col">🏆 中国银行湖南省分行外部招聘面试测评服务采购项目招标公告</td>
+<td>中国银行股份有限公司湖南省分行</td><td class="money-cell">112.50万</td><td></td>
+<td>湖南</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594547251/b1?sk=0EB0F106A7DA94424BB93F0C80FCD0F9FA501DCA&from=skill" target="_blank">查看</a></td></tr>
+<tr class="row-hot" data-tag="hot" data-date="2026-05-25">
+<td>199</td><td class="tag-hot">🔥</td><td class="title-col">🏆 2026年广西重点领域急需紧缺高层次人才招聘活动服务项目竞争性磋商公告</td>
+<td>广西壮族自治区人力资源和社会保障厅</td><td class="money-cell">73.00万</td><td></td>
+<td>广西</td><td class="date-col">2026-05-25</td><td>2026-06-01</td><td><a href="https://www.zhiliaobiaoxun.com/content/594479663/b1?sk=D0060B1636E63567B65658B22ADE4AD31A9EE191&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>200</td><td class="tag-normal">🏆</td><td class="title-col">🏆 [政采云]2026年本级招聘大厅功能拓展项目竞争性磋商公告</td>
+<td>新疆维吾尔自治区公共就业服务中心</td><td class="money-cell">45.00万</td><td></td>
+<td>新疆</td><td class="date-col">2026-05-25</td><td>2026-06-04</td><td><a href="https://www.zhiliaobiaoxun.com/content/594549654/b1?sk=B7C9B5C43E49CF4F3ED0685994085534A1694467&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>201</td><td class="tag-normal">🏆</td><td class="title-col">东航2026年度"东航招聘"微信公众号运营外包服务项目</td>
+<td>中国东方航空股份有限公司</td><td class="money-cell">23.58万</td><td></td>
+<td>上海</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594479090/b1?sk=D608457A957649EAD3246ED8C1B498DD354E8CD4&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>202</td><td class="tag-normal">🏆</td><td class="title-col">🏆 东航2026年度"东航招聘"微信公众号运营外包服务项目</td>
+<td>中国东方航空股份有限公司</td><td class="money-cell">23.58万</td><td></td>
+<td>上海</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594479090/b1?sk=D608457A957649EAD3246ED8C1B498DD354E8CD4&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>203</td><td class="tag-normal">🏆</td><td class="title-col">江西智拓工程管理有限公司关于南昌农商银行聘请人力资源公司向社会招聘2名陪执员项目（项目编号：JXZTCG-2026220）竞争性磋商采购公告</td>
+<td>南昌农村商业银行股份有限公司</td><td class="money-cell">16.00万</td><td></td>
+<td>江西</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594494410/b1?sk=067899C359536C4C2B689EDCA8C245427557575E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>204</td><td class="tag-normal">🏆</td><td class="title-col">🏆 江西智拓工程管理有限公司关于南昌农商银行聘请人力资源公司向社会招聘2名陪执员项目竞争性磋商采购公告</td>
+<td>南昌农村商业银行股份有限公司</td><td class="money-cell">16.00万</td><td></td>
+<td>江西</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594494410/b1?sk=067899C359536C4C2B689EDCA8C245427557575E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>205</td><td class="tag-normal">🏆</td><td class="title-col">🏆 甘肃省水利厅2026年上半年所属事业单位公开招聘面试及体检工作项目招标公告</td>
+<td>甘肃省水利厅</td><td class="money-cell">13.00万</td><td></td>
+<td>甘肃</td><td class="date-col">2026-05-25</td><td>2026-05-26</td><td><a href="https://www.zhiliaobiaoxun.com/content/594476476/b1?sk=50753ACE407BEA627899E040C595C1FA8511BC93&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>206</td><td class="tag-normal">🏆</td><td class="title-col">🏆 罗源县教育局教师招聘笔试干部遴选面试购买考务服务竞争性磋商公告</td>
+<td>福建省罗源县教育局</td><td class="money-cell">12.50万</td><td></td>
+<td>福建</td><td class="date-col">2026-05-25</td><td>2026-06-01</td><td><a href="https://www.zhiliaobiaoxun.com/content/594536687/b1?sk=8318CA2971ECFC941C2ACFF8A8833E1212453912&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>207</td><td class="tag-normal">🏆</td><td class="title-col">🏆 湖南怀化公路运输集团有限责任公司2026年度员工招聘全流程服务公开比选公告</td>
+<td>湖南怀化公路运输集团有限责任公司</td><td class="money-cell">6.00万</td><td></td>
+<td>湖南</td><td class="date-col">2026-05-25</td><td>2026-05-28</td><td><a href="https://www.zhiliaobiaoxun.com/content/594510054/b1?sk=0FEC51E134334C7EEC2EFC4012400301D34A47B5&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-25">
+<td>208</td><td class="tag-normal">🏆</td><td class="title-col">劳务派遣服务项目询价采购公告</td>
+<td>重庆美丽两江环境科技有限公司</td><td class="money-cell">0.01万</td><td></td>
+<td>重庆</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594511698/b1?sk=4246DFA5ADF972CAFFA26D6700C127F603DD27F6&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>209</td><td class="tag-nobudget"></td><td class="title-col">深圳中电投资有限公司招聘平台服务供应商遴选项目项目公告</td>
+<td>深圳中电投资有限公司</td><td class="money-cell">-</td><td></td>
+<td>广东</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594521722/b1?sk=3E7C133FB64B33AC73118A159277757AD16BE595&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>210</td><td class="tag-nobudget"></td><td class="title-col">江苏金服数字集团有限公司关于江苏金服数字集团有限公司2026年度招聘服务项目的竞争性谈判公告</td>
+<td>江苏金服数字集团有限公司</td><td class="money-cell">-</td><td></td>
+<td>江苏</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594516315/b1?sk=4ECCE60DBF0BC26AEB46624D5F59A69EC7A4086E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>211</td><td class="tag-nobudget"></td><td class="title-col">[阳光采购服务平台]2026年海发控股招聘流程外包服务</td>
+<td>宁波市海曙发展控股集团有限公司</td><td class="money-cell">-</td><td></td>
+<td>浙江</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594499503/b1?sk=749B4EEA3539818335C41DBBEB223DA88B4D381A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>212</td><td class="tag-nobudget"></td><td class="title-col">大堂保安服务(三次)谈判采购公告</td>
+<td>施秉县农村信用合作联社</td><td class="money-cell">-</td><td></td>
+<td>贵州</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594510000/b1?sk=6DF0EF56236C605F70229D0067E3D3405ABF0DA8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>213</td><td class="tag-nobudget"></td><td class="title-col">昆明市2026年事业单位公开招聘工作人员宜良县面试考务工作服务竞争性谈判公告</td>
+<td>宜良县教育体育系统</td><td class="money-cell">-</td><td></td>
+<td>云南</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594560108/b1?sk=A7B28E264A349447EC3F395ACAD7932ACDC21D21&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>214</td><td class="tag-nobudget"></td><td class="title-col">深圳中电投资有限公司招聘平台服务供应商遴选项目公告</td>
+<td>深圳中电投资有限公司</td><td class="money-cell">-</td><td></td>
+<td>广东</td><td class="date-col">2026-05-25</td><td>2026-05-29</td><td><a href="https://www.zhiliaobiaoxun.com/content/594521722/b1?sk=3E7C133FB64B33AC73118A159277757AD16BE595&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>215</td><td class="tag-nobudget"></td><td class="title-col">济南市中心医院2026年度人力资源第三方公开招聘服务项目</td>
+<td>济南市中心医院</td><td class="money-cell">-</td><td></td>
+<td>山东</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594560392/b1?sk=DB41D54630E3AFAE9862C01EE5C3427CE7AA176B&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>216</td><td class="tag-nobudget"></td><td class="title-col">安徽中烟再造烟叶科技有限责任公司人员招聘服务招标公告</td>
+<td>安徽中烟再造烟叶科技有限责任公司</td><td class="money-cell">-</td><td></td>
+<td>安徽</td><td class="date-col">2026-05-25</td><td>2026-06-01</td><td><a href="https://www.zhiliaobiaoxun.com/content/594501470/b1?sk=34D4E3E5645837F0CC83624D4CDA436C3627D9E8&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>217</td><td class="tag-nobudget"></td><td class="title-col">[阳光采购服务平台]2026年海发控股招聘流程外包服务</td>
+<td>宁波市海曙发展控股集团有限公司</td><td class="money-cell">-</td><td></td>
+<td>浙江</td><td class="date-col">2026-05-25</td><td>2026-05-29</td><td><a href="https://www.zhiliaobiaoxun.com/content/594499503/b1?sk=749B4EEA3539818335C41DBBEB223DA88B4D381A&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>218</td><td class="tag-nobudget"></td><td class="title-col">中国银行湖南省分行外部招聘面试测评采购项目招标公告</td>
+<td>中国银行湖南省分行</td><td class="money-cell">-</td><td></td>
+<td>湖南</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594564959/b1?sk=4836731E209ED8FE630C9F892896B72FC7ABF087&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>219</td><td class="tag-nobudget"></td><td class="title-col">新疆公司招聘信息发布服务询价通知</td>
+<td>中煤集团新疆能源有限公司</td><td class="money-cell">-</td><td></td>
+<td>新疆</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594559310/b1?sk=6C9EB966780822A88947CC617D763E0EEE1E8D29&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>220</td><td class="tag-nobudget"></td><td class="title-col">赤峰市喀喇沁旗牛家营子镇家门口就业服务站招聘活动服务采购项目竞争性谈判公告</td>
+<td>赤峰市喀喇沁旗牛家营子镇家门口就业服务站</td><td class="money-cell">-</td><td></td>
+<td>内蒙古</td><td class="date-col">2026-05-25</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594547094/b1?sk=2822DA7F7A07BDCAA2809884A0C10EADF87DC259&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-25">
+<td>221</td><td class="tag-nobudget"></td><td class="title-col">宜宾市人力资源和社会保障局2026年"乐业宜宾.四季送岗"大型招聘活动第三方招标代理机构征集公告</td>
+<td>宜宾市人力资源和社会保障局</td><td class="money-cell">-</td><td></td>
+<td>四川</td><td class="date-col">2026-05-25</td><td>2026-05-27</td><td><a href="https://www.zhiliaobiaoxun.com/content/594544011/b1?sk=550E8B2861A25A29C9E36F2BE62B8BA142424E3E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-24">
+<td>222</td><td class="tag-nobudget"></td><td class="title-col">CG202605240003创新精密劳供应商招聘询价公告</td>
+<td>山东创新精密科技有限公司</td><td class="money-cell">-</td><td></td>
+<td>山东</td><td class="date-col">2026-05-24</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594457790/b1?sk=D23FCB8103B926D439C49E0073D7F5FFFE07A272&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-22">
+<td>223</td><td class="tag-normal">🏆</td><td class="title-col">济宁学院2026年学生招聘会及毕业、开学典礼会场布展服务项目</td>
+<td>济宁学院</td><td class="money-cell">13.50万</td><td></td>
+<td>山东</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594379735/b1?sk=AFC86F717A30A95F52C856D5D82EA87D2E9FF708&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-22">
+<td>224</td><td class="tag-normal">🏆</td><td class="title-col">海南省环境科学研究院2026年公开招聘事业编制专业技术人员命题和考务项目</td>
+<td>海南省环境科学研究院</td><td class="money-cell">8.20万</td><td></td>
+<td>海南</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594423455/b1?sk=8B21B6D90FB35F9673AF8059D24E72B28DD797C2&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-22">
+<td>225</td><td class="tag-normal">🏆</td><td class="title-col">2026年公开招聘面试工作服务项目</td>
+<td>济南市机关医院</td><td class="money-cell">4.00万</td><td></td>
+<td>山东</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594421437/b1?sk=0CD42BE0133FD02692E38DFCA90B0BC5660FB0FF&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="normal" data-date="2026-05-22">
+<td>226</td><td class="tag-normal">🏆</td><td class="title-col">线上笔试服务平台项目</td>
+<td>泰山财产保险股份有限公司</td><td class="money-cell">2.00万</td><td></td>
+<td>山东</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594354907/b1?sk=12C6B3387BFDAA9794C5652A905043BA243C577E&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>227</td><td class="tag-nobudget"></td><td class="title-col">市直属学校2026年教师招聘服务项目</td>
+<td>市直属学校</td><td class="money-cell">-</td><td></td>
+<td>辽宁</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594401947/b1?sk=845F82865E15BEBD09EC929BB8D3EA64C257048C&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>228</td><td class="tag-nobudget"></td><td class="title-col">校园招聘数字化平台项目</td>
+<td>中国航天科工集团公司培训中心</td><td class="money-cell">-</td><td></td>
+<td>北京</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594386408/b1?sk=ED54A9AF646CB266D9766B2DFDDED8F4B33973B5&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>229</td><td class="tag-nobudget"></td><td class="title-col">2026年度社会招聘服务机构采购项目</td>
+<td>贵州锦麟化工有限责任公司</td><td class="money-cell">-</td><td></td>
+<td>贵州</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594359220/b1?sk=15EE38EA6D472E3744820C500869D7E3F5465CD9&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>230</td><td class="tag-nobudget"></td><td class="title-col">2026年社会招聘项目</td>
+<td>北京京能同鑫投资管理有限公司</td><td class="money-cell">-</td><td></td>
+<td>北京</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594385929/b1?sk=D31BD103F311918320C13AE7FB028E05E023BA2F&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>231</td><td class="tag-nobudget"></td><td class="title-col">2026年度人才招聘服务</td>
+<td>沈阳市市政工程设计研究院有限公司</td><td class="money-cell">-</td><td></td>
+<td>辽宁</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594394872/b1?sk=36A69C2A4A9F027AAAD35F91A3E0C6061F95B0A6&from=skill" target="_blank">查看</a></td></tr>
+<tr class="" data-tag="nobudget" data-date="2026-05-22">
+<td>232</td><td class="tag-nobudget"></td><td class="title-col">中介服务机构备选库建库项目（含人力资源/招聘/培训等7类）</td>
+<td>河南省农业信贷担保有限责任公司</td><td class="money-cell">-</td><td></td>
+<td>河南</td><td class="date-col">2026-05-22</td><td>未注明</td><td><a href="https://www.zhiliaobiaoxun.com/content/594423772/b1?sk=A358ACFB895C54F638D32024A9E857A8A1547121&from=skill" target="_blank">查看</a></td></tr>
+</tbody></table></div></div></div>
+<script>
+const HIST_DATES=["05-22", "05-24", "05-25", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04"];
+const HIST_VALID=[10, 1, 26, 13, 28, 24, 32, 31, 33, 22, 12];
+const HIST_P100=[0, 0, 3, 1, 2, 1, 4, 2, 4, 1, 3];
+const HIST_P50=[0, 0, 1, 3, 4, 1, 1, 2, 5, 0, 1];
+const HIST_PLT=[4, 0, 9, 3, 6, 2, 7, 5, 9, 7, 1];
+const HIST_P0=[6, 1, 13, 6, 16, 20, 20, 22, 15, 14, 7];
+const HIST_MONEY=[27.7, 0.0, 830.97, 1194.29, 761.1999999999999, 2059.95, 4249.01, 1381.3, 3863.73, 211.68, 916.22];
+var SVC_LABELS=["综合招聘服务", "招聘平台/系统", "猎头/人才寻访", "人力资源服务", "校招服务", "考务服务", "人才测评/背调", "培训服务", "RPO/招聘流程外包", "校招/招聘活动服务", "招聘活动服务", "人力资源综合服务", "校招/培训服务", "人事外包", "招聘管理委托"];
+var SVC_DATA=[70, 18, 16, 15, 13, 11, 9, 8, 6, 6, 4, 3, 1, 1, 1];
+var PRICE_PIE=[21,18,53,140];
+var PRICE_PIE_LABELS=["\u{1f48e} \u2265100\u4e07","\u{1f525} 50-100\u4e07","\u{1f3c6} <50\u4e07","\u65e0\u9884\u7b97"];
+
+new Chart(document.getElementById('trendChart'),{type:'line',data:{labels:HIST_DATES,datasets:[{label:'\u6709\u6548\u6807\u8baf\u6570',data:HIST_VALID,borderColor:'#1a73e8',backgroundColor:'rgba(26,115,232,0.1)',fill:true,tension:0.4,pointRadius:5,pointHoverRadius:7}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('pricePie'),{type:'doughnut',data:{labels:PRICE_PIE_LABELS,datasets:[{data:PRICE_PIE,backgroundColor:['#ffd700','#ff6f00','#43a047','#e0e0e0'],borderWidth:2,borderColor:'white'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom'}}}});
+
+new Chart(document.getElementById('svcPie'),{type:'doughnut',data:{labels:SVC_LABELS,datasets:[{data:SVC_DATA,backgroundColor:['#1a73e8','#43a047','#f9a825','#e53935','#8e24aa','#00897b','#3949ab','#d81b60','#00acc1','#7cb342','#c0ca33','#ff7043','#5c6bc0','#26a69a','#ab47bc'],borderWidth:2,borderColor:'white'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11}}}}}});
+
+new Chart(document.getElementById('priceStackChart'),{type:'bar',data:{labels:HIST_DATES,datasets:[{label:'\u{1f48e} \u2265100\u4e07',data:HIST_P100,backgroundColor:'#ffd700',stack:'a'},{label:'\u{1f525} 50-100\u4e07',data:HIST_P50,backgroundColor:'#ff6f00',stack:'a'},{label:'\u{1f3c6} <50\u4e07',data:HIST_PLT,backgroundColor:'#43a047',stack:'a'},{label:'\u65e0\u9884\u7b97',data:HIST_P0,backgroundColor:'#e0e0e0',stack:'a'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},scales:{x:{grid:{display:false}},y:{beginAtZero:true,grid:{color:'#f0f0f0'}}}}});
+
+new Chart(document.getElementById('budgetChart'),{type:'bar',data:{labels:HIST_DATES,datasets:[{label:'\u9884\u7b97\u91d1\u989d(\u4e07)',data:HIST_MONEY,backgroundColor:'rgba(26,115,232,0.6)',borderColor:'#1a73e8',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}}});
+
+let currentTag='all',currentDate='all';
+function applyFilters(){const rows=document.querySelectorAll('#tableBody tr');let count=0;rows.forEach(tr=>{const tag=tr.dataset.tag,date=tr.dataset.date;let show=true;if(currentTag==='diamond')show=tag==='diamond';else if(currentTag==='hot')show=tag==='hot';else if(currentTag==='normal')show=(tag==='normal'||tag==='hot'||tag==='diamond');else if(currentTag==='nobudget')show=tag==='nobudget';if(show&&currentDate!=='all')show=date===currentDate;tr.style.display=show?'':'none';if(show)count++});document.getElementById('filterCount').textContent='\u663e\u793a '+count+' \u6761'}
+function filterTable(tag,btn){document.querySelectorAll('.filter-bar .filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentTag=tag;applyFilters()}
+function filterByDate(){currentDate=document.getElementById('dateSelect').value;applyFilters()}
+function clearFilters(){currentTag='all';currentDate='all';document.getElementById('dateSelect').value='all';document.querySelectorAll('.filter-bar .filter-btn').forEach(b=>b.classList.remove('active'));document.querySelector('.filter-bar .filter-btn').classList.add('active');applyFilters()}
+applyFilters();
+
+</script></body></html>
