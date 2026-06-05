@@ -1,6 +1,754 @@
 {
   "items": [
     {
+      "bid_id": 595665465,
+      "title": "华润化学材料科技股份有限公司华润化学材料科技股份有限公司人才盘点与组织能力提升项目询比采购公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "江苏",
+      "city": "常州",
+      "county": "新北区",
+      "caller_name": "华润化学材料科技股份有限公司",
+      "caller_id": 352121143,
+      "caller_base_type": "其他",
+      "caller_type": "化工制造",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人才盘点与组织能力提升项目"
+      ],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "HXCLXYGG202606030037",
+      "signup_time": "",
+      "tender_time": "2026-06-13 00:00:00",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595665465/b1?sk=4E1E6D7D1AB0E226A246B23C718F00D24E943D76&from=skill",
+      "service_type": "人才测评/背调",
+      "序号": 1
+    },
+    {
+      "bid_id": 595665454,
+      "title": "玉溪农业职业技术学院关于采购2026届毕业生“百日冲刺”招聘会服务的比选公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "云南",
+      "city": "玉溪",
+      "county": "",
+      "caller_name": "玉溪农业职业技术学院",
+      "caller_id": 232985,
+      "caller_base_type": "",
+      "caller_type": "职业教育",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "招聘会服务"
+      ],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "2026-06-07 00:00:00",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595665454/b1?sk=440638E138F9D8ABC0BC883EBE8061F36C0009E7&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 2
+    },
+    {
+      "bid_id": 595708242,
+      "title": "征集项目:中信信托2026年中信信托2026年人才招聘代理采购项目",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "",
+      "city": "",
+      "county": "",
+      "caller_name": "中信信托",
+      "caller_id": 1413135604,
+      "caller_base_type": "",
+      "caller_type": "金融服务",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人才招聘代理"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595708242/b1?sk=7E71FCF67580E989C74FED78FC8C17987ADA5C73&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 3
+    },
+    {
+      "bid_id": 595707428,
+      "title": "华泰证券股份有限公司外部成熟人才招聘渠道项目竞争性磋商公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "江苏",
+      "city": "南京",
+      "county": "建邺区",
+      "caller_name": "华泰证券股份有限公司",
+      "caller_id": 615762,
+      "caller_base_type": "军队",
+      "caller_type": "证券",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人才招聘渠道项目"
+      ],
+      "brand_names": [],
+      "bid_method": "询价",
+      "bid_no": "JSHC-2026050367C6",
+      "signup_time": "2026-06-12 00:00:00",
+      "tender_time": "2026-06-16 00:00:00",
+      "service_end_date": "2029-06-01",
+      "agency_name": "江苏省华采招标有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595707428/b1?sk=001D3154F298F3F03B435DE931260EC1773D00C4&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 4
+    },
+    {
+      "bid_id": 595729372,
+      "title": "兴业银行广州分行2026年“青蓝飞扬”应届新员工培训项目供应商征集公告",
+      "bid_type": "招标",
+      "bid_process": "预招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "广东",
+      "city": "广州",
+      "county": "",
+      "caller_name": "兴业银行广州分行",
+      "caller_id": 870049466,
+      "caller_base_type": "医院",
+      "caller_type": "银行",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "",
+      "signup_time": "2026-06-12 00:00:00",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595729372/b1?sk=B26C5461CA455B6DC2B6B7E3F5245BB4116BE0C0&from=skill",
+      "service_type": "培训服务",
+      "序号": 5
+    },
+    {
+      "bid_id": 595723699,
+      "title": "园区企业用工引才招聘服务外包项目竞争性磋商公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "",
+      "city": "",
+      "county": "",
+      "caller_name": "",
+      "caller_id": 0,
+      "caller_base_type": "",
+      "caller_type": "其他",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "企业用工引才招聘服务外包项目"
+      ],
+      "brand_names": [],
+      "bid_method": "询价",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595723699/b1?sk=05E4278CEB1AC211D7E20181D8DCB3C4F7C13933&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 6
+    },
+    {
+      "bid_id": 595657005,
+      "title": "2026~2029猎头服务年度框架谈判采购公告[采购公告]",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "天津",
+      "city": "天津",
+      "county": "东丽区",
+      "caller_name": "中国汽车技术研究中心有限公司",
+      "caller_id": 48628,
+      "caller_base_type": "政府",
+      "caller_type": "整车厂",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "猎头服务"
+      ],
+      "brand_names": [],
+      "bid_method": "单一来源",
+      "bid_no": "XM-GYLY20260602003",
+      "signup_time": "2026-06-09 00:00:00",
+      "tender_time": "2026-06-09 00:00:00",
+      "service_end_date": "2029-06-05",
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595657005/b1?sk=9964FE1AF2D2F127359E17F393832BC090E60FE1&from=skill",
+      "service_type": "猎头/人才寻访",
+      "序号": 7
+    },
+    {
+      "bid_id": 595739616,
+      "title": "华夏银行上海分行人力资源招聘服务项目供应商征集公告",
+      "bid_type": "招标",
+      "bid_process": "预招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "上海",
+      "city": "上海",
+      "county": "徐汇区",
+      "caller_name": "华夏银行股份有限公司上海分行",
+      "caller_id": 21006785,
+      "caller_base_type": "医院",
+      "caller_type": "银行",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人力资源招聘服务项目供应商",
+        "人力资源猎头服务"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "上海沪港建设咨询有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595739616/b1?sk=2FBEF03805147DA908FCC69A323F10D25756E1C5&from=skill",
+      "service_type": "猎头/人才寻访",
+      "序号": 8
+    },
+    {
+      "bid_id": 595732066,
+      "title": "某单位人力资源服务采购项目招标公告（2026-VGBCKG-F1001）",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "山西",
+      "city": "临汾",
+      "county": "襄汾县",
+      "caller_name": "某单位",
+      "caller_id": 410917427,
+      "caller_base_type": "学校",
+      "caller_type": "其他政府部门",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人力资源服务项目"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "2026-VGBCKG-F1001",
+      "signup_time": "",
+      "tender_time": "2026-06-29 00:00:00",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595732066/b1?sk=8126108CA613D037D7F9474E5E35B0979A42E502&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 9
+    },
+    {
+      "bid_id": 595711652,
+      "title": "2026-2027总院社会招聘服务采购招聘服务",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "北京",
+      "city": "北京",
+      "county": "朝阳区",
+      "caller_name": "中国建筑材料科学研究总院有限公司",
+      "caller_id": 18956916,
+      "caller_base_type": "政府",
+      "caller_type": "建筑开发",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "社会招聘服务"
+      ],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "CNBM2026060500426",
+      "signup_time": "2026-06-17 00:00:00",
+      "tender_time": "2026-06-17 00:00:00",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595711652/b1?sk=B33BF736D065F22F3FC4F1813BD35C6E8C970C8F&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 10
+    },
+    {
+      "bid_id": 595695683,
+      "title": "关于人力资源服务采购项目拟单一来源公示",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "辽宁",
+      "city": "大连",
+      "county": "",
+      "caller_name": "大连航空",
+      "caller_id": 1447736668,
+      "caller_base_type": "",
+      "caller_type": "航空运输",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人力资源服务"
+      ],
+      "brand_names": [],
+      "bid_method": "其他",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595695683/b1?sk=91C47C6043692A8C0E9930D0C436B3ADDD83C1DE&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 11
+    },
+    {
+      "bid_id": 595674456,
+      "title": "松雅湖人工智能创新中心合格猎头服务公司采购询价公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "湖南",
+      "city": "长沙",
+      "county": "长沙县",
+      "caller_name": "松雅湖人工智能创新中心",
+      "caller_id": 1456616441,
+      "caller_base_type": "",
+      "caller_type": "人工智能",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595674456/b1?sk=B9D6BD47FF464B0C82104ACD02A17CACB2D0F12D&from=skill",
+      "service_type": "猎头/人才寻访",
+      "序号": 12
+    },
+    {
+      "bid_id": 595692940,
+      "title": "东方日立招聘渠道服务采购-采购公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "四川",
+      "city": "成都",
+      "county": "郫都区",
+      "caller_name": "东方日立（成都）电控设备有限公司",
+      "caller_id": 882767,
+      "caller_base_type": "其他",
+      "caller_type": "其他",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "劳务中介服务",
+        "招聘渠道服务"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "DEC1002X202602012",
+      "signup_time": "",
+      "tender_time": "2026-06-08 00:00:00",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595692940/b1?sk=574163357BC5AA19CBC5ED5CBE9A47A83BCA44E8&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 13
+    },
+    {
+      "bid_id": 595708981,
+      "title": "中国铁塔股份有限公司黑龙江省分公司2027-2028年校园招聘项目",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 0,
+      "money_wan": 0.0,
+      "province": "黑龙江",
+      "city": "哈尔滨",
+      "county": "呼兰区",
+      "caller_name": "中国铁塔股份有限公司黑龙江省分公司",
+      "caller_id": 650789,
+      "caller_base_type": "事业单位",
+      "caller_type": "运营商",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "校园招聘项目"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595708981/b1?sk=1886FBE77C695C35F5998CD03AEFBE96A34A036F&from=skill",
+      "service_type": "校招服务",
+      "序号": 14
+    },
+    {
+      "bid_id": 595667987,
+      "title": "正定县农业农村局关于公开比选人力资源服务公司的公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 2400,
+      "money_wan": 0.24,
+      "province": "河北",
+      "city": "石家庄",
+      "county": "正定县",
+      "caller_name": "正定县农业农村局",
+      "caller_id": 17918608,
+      "caller_base_type": "",
+      "caller_type": "自然资源",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "",
+      "signup_time": "2026-06-11 00:00:00",
+      "tender_time": "",
+      "service_end_date": "2027-06-01",
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595667987/b1?sk=9039BE0286C22579670EA6BB7B545E732094F50B&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 15
+    },
+    {
+      "bid_id": 595722004,
+      "title": "福建医科大学孟超肝胆医院2026年度采购意向（5）",
+      "bid_type": "招标",
+      "bid_process": "采购意向",
+      "pub_time": "2026-06-05",
+      "money": 180000,
+      "money_wan": 18.0,
+      "province": "福建",
+      "city": "",
+      "county": "",
+      "caller_name": "福建医科大学孟超肝胆医院",
+      "caller_id": 167100,
+      "caller_base_type": "",
+      "caller_type": "医疗服务",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "第三方消防安全检查服务",
+        "人才招聘考试服务"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595722004/b1?sk=F940F3A4CCB496CDFFCAB4119C67C7EA7DAAED2D&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 16
+    },
+    {
+      "bid_id": 595676109,
+      "title": "“技能报桑梓·轻纺聚英才”返乡就业创业专场招聘会磋商邀请公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 253000,
+      "money_wan": 25.3,
+      "province": "四川",
+      "city": "广安",
+      "county": "前锋区",
+      "caller_name": "广安市前锋区人力资源和社会保障局",
+      "caller_id": 21060007,
+      "caller_base_type": "",
+      "caller_type": "民生医疗",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [],
+      "brand_names": [],
+      "bid_method": "询价",
+      "bid_no": "SCJR2026001",
+      "signup_time": "2026-06-10 00:00:00",
+      "tender_time": "2026-06-11 00:00:00",
+      "service_end_date": null,
+      "agency_name": "四川骏尔建设工程咨询有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595676109/b1?sk=1EF6E2AC7B553BB616C1240D1EDD6A1E2D08FA15&from=skill",
+      "service_type": "综合招聘服务",
+      "序号": 17
+    },
+    {
+      "bid_id": 595727906,
+      "title": "宝安区2026年度人才专项资金背景调查服务项目的采购公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 470000,
+      "money_wan": 47.0,
+      "province": "广东",
+      "city": "深圳",
+      "county": "宝安区",
+      "caller_name": "深圳市宝安区人力资源服务中心",
+      "caller_id": 29710642,
+      "caller_base_type": "",
+      "caller_type": "地方政府",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "人才专项资金背景调查服务项目"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "BAZXDL-2026-00393",
+      "signup_time": "2026-06-12 00:00:00",
+      "tender_time": "2026-06-16 00:00:00",
+      "service_end_date": "2027-06-01",
+      "agency_name": "采联国际招标采购集团有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595727906/b1?sk=277EF405586774596B0E88F40EB0A1FB01694719&from=skill",
+      "service_type": "人才测评/背调",
+      "序号": 18
+    },
+    {
+      "bid_id": 595715351,
+      "title": "天府绛溪实验室2026-2028年度招聘全流程服务采购比选公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 849500,
+      "money_wan": 84.95,
+      "province": "四川",
+      "city": "成都",
+      "county": "简阳市",
+      "caller_name": "天府绛溪实验室",
+      "caller_id": 1446825365,
+      "caller_base_type": "",
+      "caller_type": "科研机构",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "招聘全流程服务"
+      ],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "",
+      "signup_time": "2026-06-09 00:00:00",
+      "tender_time": "2026-06-11 00:00:00",
+      "service_end_date": null,
+      "agency_name": "四川成与诚招标代理有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595715351/b1?sk=E7D2FEE3AB191B0A3388AE9BF87DA3550D446011&from=skill",
+      "service_type": "RPO/招聘流程外包",
+      "序号": 19
+    },
+    {
+      "bid_id": 595719080,
+      "title": "厦门政采-竞争性磋商-ZC2026-812-校园招聘赴外引才活动服务-采购公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 915000,
+      "money_wan": 91.5,
+      "province": "福建",
+      "city": "厦门",
+      "county": "湖里区",
+      "caller_name": "厦门市禾穆实验幼儿园",
+      "caller_id": 1392718723,
+      "caller_base_type": "",
+      "caller_type": "基础教育/K12",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "弱电智能化系统",
+        "校园招聘赴外引才活动服务"
+      ],
+      "brand_names": [],
+      "bid_method": "询价",
+      "bid_no": "ZC2026-812",
+      "signup_time": "2026-06-12 00:00:00",
+      "tender_time": "2026-06-16 00:00:00",
+      "service_end_date": null,
+      "agency_name": "厦门政采招标咨询有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595719080/b1?sk=9E68E65B80927AF0F6809FEB2715A96EBADB8284&from=skill",
+      "service_type": "校招服务",
+      "序号": 20
+    },
+    {
+      "bid_id": 595734407,
+      "title": "2026-2028年员工招聘猎头服务采购项目-比选公告",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 960000,
+      "money_wan": 96.0,
+      "province": "广东",
+      "city": "广州",
+      "county": "天河区",
+      "caller_name": "广东省电信规划设计院有限公司",
+      "caller_id": 35938,
+      "caller_base_type": "政府",
+      "caller_type": "专业技术服务",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "员工招聘猎头服务"
+      ],
+      "brand_names": [],
+      "bid_method": "邀请招标",
+      "bid_no": "",
+      "signup_time": "2026-06-09 00:00:00",
+      "tender_time": "2026-06-16 00:00:00",
+      "service_end_date": "2028-06-01",
+      "agency_name": "",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595734407/b1?sk=8EAD37718248767C47889B00ADAB1AB862999A10&from=skill",
+      "service_type": "猎头/人才寻访",
+      "序号": 21
+    },
+    {
+      "bid_id": 595731981,
+      "title": "中国联通北京市分公司2026-2028届校园招聘服务集中采购项目（第三次）招标公告-集中采购项目",
+      "bid_type": "招标",
+      "bid_process": "招标",
+      "pub_time": "2026-06-05",
+      "money": 1320000,
+      "money_wan": 132.0,
+      "province": "北京",
+      "city": "北京",
+      "county": "西城区",
+      "caller_name": "中国联合网络通信有限公司北京市分公司",
+      "caller_id": 35710,
+      "caller_base_type": "事业单位",
+      "caller_type": "运营商",
+      "winner_names": [],
+      "winner_ids": [],
+      "winner_moneys": [],
+      "tender_names": [],
+      "sm_names": [
+        "校园招聘服务",
+        "校园宣讲",
+        "招聘信息发布",
+        "笔试测评执行",
+        "面试测评执行"
+      ],
+      "brand_names": [],
+      "bid_method": "公开招标",
+      "bid_no": "TXZBL0000395ZX0403",
+      "signup_time": "",
+      "tender_time": "",
+      "service_end_date": null,
+      "agency_name": "中通服咨询设计研究院有限公司",
+      "exists_bid_file": 0,
+      "url": "https://www.zhiliaobiaoxun.com/content/595731981/b1?sk=641312A9CA2C128C6C7D4267CE37E7CDD0A67BE6&from=skill",
+      "service_type": "校招服务",
+      "序号": 22
+    },
+    {
       "title": "陕西省人民医院2026年06月至2026年07月政府采购意向",
       "buyer": "陕西省人民医院",
       "budget": 120,
@@ -11,7 +759,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595678059/b1?sk=E3989194059568C52EEFCCC69ED3393B61F94EEF&from=skill",
-      "seq": 1
+      "seq": 1,
+      "序号": 23
     },
     {
       "title": "“技能报桑梓·轻纺聚英才”返乡就业创业专场招聘会磋商邀请公告",
@@ -24,7 +773,8 @@
       "deadline": "2026-06-10 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595676109/b1?sk=1EF6E2AC7B553BB616C1240D1EDD6A1E2D08FA15&from=skill",
-      "seq": 2
+      "seq": 2,
+      "序号": 24
     },
     {
       "title": "浙江豪圣建设项目管理有限公司关于杭州市长河高级中学2026年外籍教师招聘项目的竞争性磋商公告",
@@ -37,7 +787,8 @@
       "deadline": "2026-06-17 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595658176/b1?sk=F9BFDCDA5ACE48BC8263413B282459175E8ADD46&from=skill",
-      "seq": 3
+      "seq": 3,
+      "序号": 25
     },
     {
       "title": "正定县农业农村局关于公开比选人力资源服务公司的公告",
@@ -50,7 +801,8 @@
       "deadline": "2026-06-11 00:00:00",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595667987/b1?sk=9039BE0286C22579670EA6BB7B545E732094F50B&from=skill",
-      "seq": 4
+      "seq": 4,
+      "序号": 26
     },
     {
       "title": "华润化学材料科技股份有限公司华润化学材料科技股份有限公司人才盘点与组织能力提升项目询比采购公告",
@@ -63,7 +815,8 @@
       "deadline": "2026-06-13 00:00:00",
       "keyword": "人才盘点",
       "url": "https://www.zhiliaobiaoxun.com/content/595665465/b1?sk=4E1E6D7D1AB0E226A246B23C718F00D24E943D76&from=skill",
-      "seq": 5
+      "seq": 5,
+      "序号": 27
     },
     {
       "title": "玉溪农业职业技术学院关于采购2026届毕业生“百日冲刺”招聘会服务的比选公告",
@@ -76,7 +829,8 @@
       "deadline": "2026-06-07 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595665454/b1?sk=440638E138F9D8ABC0BC883EBE8061F36C0009E7&from=skill",
-      "seq": 6
+      "seq": 6,
+      "序号": 28
     },
     {
       "title": "2026~2029猎头服务年度框架谈判采购公告",
@@ -89,7 +843,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595675046/b1?sk=5068927C23231D9D0A4F729EDBAA72173FE6B27C&from=skill",
-      "seq": 7
+      "seq": 7,
+      "序号": 29
     },
     {
       "title": "2026~2029猎头服务年度框架谈判采购公告[采购公告]",
@@ -102,7 +857,8 @@
       "deadline": "2026-06-09 00:00:00",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595657005/b1?sk=9964FE1AF2D2F127359E17F393832BC090E60FE1&from=skill",
-      "seq": 8
+      "seq": 8,
+      "序号": 30
     },
     {
       "title": "关于人力资源服务采购项目拟单一来源公示",
@@ -115,7 +871,8 @@
       "deadline": "",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595695683/b1?sk=91C47C6043692A8C0E9930D0C436B3ADDD83C1DE&from=skill",
-      "seq": 9
+      "seq": 9,
+      "序号": 31
     },
     {
       "title": "松雅湖人工智能创新中心合格猎头服务公司采购询价公告",
@@ -128,7 +885,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595674456/b1?sk=B9D6BD47FF464B0C82104ACD02A17CACB2D0F12D&from=skill",
-      "seq": 10
+      "seq": 10,
+      "序号": 32
     },
     {
       "title": "东方日立招聘渠道服务采购-采购公告",
@@ -141,7 +899,8 @@
       "deadline": "2026-06-08 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595692940/b1?sk=574163357BC5AA19CBC5ED5CBE9A47A83BCA44E8&from=skill",
-      "seq": 11
+      "seq": 11,
+      "序号": 33
     },
     {
       "title": "阿克苏地区妇幼保健院（地区卫生健康服务中心）人力资源服务采购项目（二次）公开招标公告",
@@ -154,7 +913,8 @@
       "deadline": "2026-06-11",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595415797/b1?sk=5607FE8B67133C53AF301827C04921EEC7F8E1BE&from=skill",
-      "seq": 12
+      "seq": 12,
+      "序号": 34
     },
     {
       "title": "2026年中国联通长沙市分公司AI生态人力资源服务平台开发服务项目询比采购公告",
@@ -167,7 +927,8 @@
       "deadline": "2026-06-08",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595426408/b1?sk=5D284C1492C3EC58EC9FC01C5AC2F3CF71AB55EB&from=skill",
-      "seq": 13
+      "seq": 13,
+      "序号": 35
     },
     {
       "title": "宁波市人力资源和社会保障局2026年7月政府采购意向",
@@ -180,7 +941,8 @@
       "deadline": "",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595414928/b1?sk=953C4225B9BFDCFC66C21EDEC0E90BB50D21AB89&from=skill",
-      "seq": 14
+      "seq": 14,
+      "序号": 36
     },
     {
       "title": "武汉“数智人社”人力资源供需对接服务平台（求职招聘专区）委托运营项目竞争性磋商公告",
@@ -193,7 +955,8 @@
       "deadline": "2026-06-11",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595461912/b1?sk=79A3C5281434BC322AB48E24DEFBE674D047242E&from=skill",
-      "seq": 15
+      "seq": 15,
+      "序号": 37
     },
     {
       "title": "长庆油田（榆林）油气有限公司全流程人才培训体系建设服务项目谈判采购公告",
@@ -206,7 +969,8 @@
       "deadline": "",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595412547/b1?sk=6099646DE1C27D592AFADAC0918B70D1ADF7DA0F&from=skill",
-      "seq": 16
+      "seq": 16,
+      "序号": 38
     },
     {
       "title": "浙江国际招投标有限公司关于上海浦东发展银行股份有限公司杭州分行2026年“启明·新程”校招新员工培训项目的公开招标公告",
@@ -219,7 +983,8 @@
       "deadline": "2026-06-12",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595444187/b1?sk=981D33CB083985431BE294018ECE032D9432A2CE&from=skill",
-      "seq": 17
+      "seq": 17,
+      "序号": 39
     },
     {
       "title": "安居（深圳）城市运营科技服务有限公司猎头服务",
@@ -232,7 +997,8 @@
       "deadline": "2026-06-25",
       "keyword": "招聘, 猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595432625/b1?sk=9D7A0A4D58E7B2E0D7FD62C07452DBD8BF8118E0&from=skill",
-      "seq": 18
+      "seq": 18,
+      "序号": 40
     },
     {
       "title": "中国电信股份有限公司天津分公司2026-2027年度天津公司实战型培训服务项目询比公告",
@@ -245,7 +1011,8 @@
       "deadline": "2026-06-09",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595455828/b1?sk=2BB58F656C33F383A1A711CE0077E64E2495E1B8&from=skill",
-      "seq": 19
+      "seq": 19,
+      "序号": 41
     },
     {
       "title": "兰州市就业和人才服务局现代产业体系系列专场招聘活动项目竞争性磋商公告",
@@ -258,7 +1025,8 @@
       "deadline": "2026-06-11",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595460264/b1?sk=4639B71FBEB5011D3D38A4AA1AC4B61EFAC39C73&from=skill",
-      "seq": 20
+      "seq": 20,
+      "序号": 42
     },
     {
       "title": "中国邮政储蓄银行2026年三农“金”英计划培训服务采购项目公开竞争性磋商公告",
@@ -271,7 +1039,8 @@
       "deadline": "2026-06-10",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595449596/b1?sk=F77E013EC547D9F0FA45C71553843DBD78CC5CAA&from=skill",
-      "seq": 21
+      "seq": 21,
+      "序号": 43
     },
     {
       "title": "达州中医药职业学院2026届6月份校园招聘会服务项目（二次）询价公告",
@@ -284,7 +1053,8 @@
       "deadline": "",
       "keyword": "招聘, 校园招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595424379/b1?sk=1454EAFD1E9FD97FB261379F3A68A5C4FC37EE72&from=skill",
-      "seq": 22
+      "seq": 22,
+      "序号": 44
     },
     {
       "title": "贵州医科大学第三附属医院第十四届贵州人才博览会引才工作线上初评及线下评审以及2026年公开招聘工作人员面试服务项目磋商公告",
@@ -297,7 +1067,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘, 面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595409611/b1?sk=B56DB1708DE91B290DE979080A7EC5020B6AD2E8&from=skill",
-      "seq": 23
+      "seq": 23,
+      "序号": 45
     },
     {
       "title": "2026年中国建材总院第三期财务“菁英人才”培训定制化培训服务",
@@ -310,7 +1081,8 @@
       "deadline": "2026-06-05",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595469921/b1?sk=B64CFDAE98540E66548B4DC3114539784B635F8B&from=skill",
-      "seq": 24
+      "seq": 24,
+      "序号": 46
     },
     {
       "title": "2026年中车成都公司领导力培训项目2026050799采购公告",
@@ -323,7 +1095,8 @@
       "deadline": "2026-06-08",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595451521/b1?sk=70F3098115468B7F2A68E09D0F3E386F7857E7D4&from=skill",
-      "seq": 25
+      "seq": 25,
+      "序号": 47
     },
     {
       "title": "ZB202606040003南航金城2026年6月10日毕业季专场招聘会物料采购预审公告",
@@ -336,7 +1109,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595418376/b1?sk=F7BAD55254B70DC1497FBCB96949B37244DE70DD&from=skill",
-      "seq": 26
+      "seq": 26,
+      "序号": 48
     },
     {
       "title": "【广东江门】新会区医共体中医院总院罗坑分院2026年合同制工作人员招聘公告-集中采购项目",
@@ -349,7 +1123,8 @@
       "deadline": "2026-06-10",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595430824/b1?sk=63F6CABD3340116F48933C470E90352318DD7B04&from=skill",
-      "seq": 27
+      "seq": 27,
+      "序号": 49
     },
     {
       "title": "上饶市中小企业数字化转型城市试点工作人才培训服务项目价格公开征询公告",
@@ -362,7 +1137,8 @@
       "deadline": "2026-06-08",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595416540/b1?sk=3AAF263D90ADF448108379A79F2D4B3FD9B23334&from=skill",
-      "seq": 28
+      "seq": 28,
+      "序号": 50
     },
     {
       "title": "中国邮政储蓄银行黑龙江省分行2026-2028年度招聘服务采购项目公开招标公告",
@@ -375,7 +1151,8 @@
       "deadline": "2026-06-11",
       "keyword": "招聘, 招聘平台",
       "url": "https://www.zhiliaobiaoxun.com/content/595407511/b1?sk=94DB3F0A50B0B07E4E1186249303C9FD2B037295&from=skill",
-      "seq": 29
+      "seq": 29,
+      "序号": 51
     },
     {
       "title": "儿童健康测评系统项目市场咨询邀请",
@@ -388,7 +1165,8 @@
       "deadline": "",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595460069/b1?sk=8876783C26901D9F400BE36A7D2F1D61FD02B248&from=skill",
-      "seq": 30
+      "seq": 30,
+      "序号": 52
     },
     {
       "title": "关于《邹平人才集团项目运营人员人力资源服务项目》选取中介机构的公告",
@@ -401,7 +1179,8 @@
       "deadline": "2026-06-08",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595426566/b1?sk=3CA2580D1BBC54F0357A7680BDB4298C91F80C15&from=skill",
-      "seq": 31
+      "seq": 31,
+      "序号": 53
     },
     {
       "title": "四川中彩源建设工程有限公司四川定弘邦路桥工程有限公司2026年6月面向社会公开招聘项目制专业技术人才的公告",
@@ -414,7 +1193,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595463182/b1?sk=89E4CD85933141D90096A7260EE765F2C99F8793&from=skill",
-      "seq": 32
+      "seq": 32,
+      "序号": 54
     },
     {
       "title": "国新国际（中国）有限公司2026年采购猎头供应商项目采购公告",
@@ -427,7 +1207,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595465788/b1?sk=85C9A8910C7FF83BF30DB65D116A0E581202691E&from=skill",
-      "seq": 33
+      "seq": 33,
+      "序号": 55
     },
     {
       "title": "山东第二医科大学附属医院引进高层次人才猎头服务项目（1562）竞争性磋商公告",
@@ -440,7 +1221,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595451569/b1?sk=12F00DFD7C0959ECD2C510FE2FB92F80256B28EC&from=skill",
-      "seq": 34
+      "seq": 34,
+      "序号": 56
     },
     {
       "title": "山西杏花村文化旅游有限公司北京分公司人力资源服务项目采购公告",
@@ -453,7 +1235,8 @@
       "deadline": "2026-06-07",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595433938/b1?sk=343812AC1F7AD4D28707763AA4C758253B700FDF&from=skill",
-      "seq": 35
+      "seq": 35,
+      "序号": 57
     },
     {
       "title": "恒口示范区2026年医共体（中医医院）公开招聘编制备案制医学类专业技术人员笔试公告-集中采购项目",
@@ -466,7 +1249,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595409748/b1?sk=C94C043252D88B18B5BCD8D7C48219ECB0921C6F&from=skill",
-      "seq": 36
+      "seq": 36,
+      "序号": 58
     },
     {
       "title": "成都信息工程大学后勤基建处物业服务中心公开招聘公告",
@@ -479,7 +1263,8 @@
       "deadline": "2026-06-04",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595425278/b1?sk=06F1FD2CEE0D6C04635F8581AEA5557EE8D7CFBE&from=skill",
-      "seq": 37
+      "seq": 37,
+      "序号": 59
     },
     {
       "title": "招商银行厦门分行新员工培训项目供应商征集公告",
@@ -492,7 +1277,8 @@
       "deadline": "",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595433641/b1?sk=5364546E1F8E3DBDEC00ACAE758B2942110C78B3&from=skill",
-      "seq": 38
+      "seq": 38,
+      "序号": 60
     },
     {
       "title": "洱源县紧密型医共体2026年度第一批公开招聘编外聘用工作人员笔试面试注意事项的通告-集中采购项目",
@@ -505,7 +1291,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595467920/b1?sk=729874A01C0693137E6B7CE214F657C0A411664F&from=skill",
-      "seq": 39
+      "seq": 39,
+      "序号": 61
     },
     {
       "title": "济南市第五人民医院2026年度人力资源第三方公开招聘服务项目询价公告",
@@ -518,7 +1305,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595458863/b1?sk=B82D1FE03282C4A3D0DA0F75DFC34185C5CE66F1&from=skill",
-      "seq": 40
+      "seq": 40,
+      "序号": 62
     },
     {
       "title": "海港人寿河南分公司周口营销服务部银保业务部2026年上半年总结暨下半年启动会培训服务项目",
@@ -531,7 +1319,8 @@
       "deadline": "",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595401863/b1?sk=D7F1B59393D577A79775E49353B8213259220A15&from=skill",
-      "seq": 41
+      "seq": 41,
+      "序号": 63
     },
     {
       "title": "海港人寿河南分公司银保业务部培训服务项目",
@@ -544,7 +1333,8 @@
       "deadline": "",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595401898/b1?sk=15C9FCF95E0C90F881D9D9DD0AAA5703E9EE78DB&from=skill",
-      "seq": 42
+      "seq": 42,
+      "序号": 64
     },
     {
       "title": "质量人力资源服务采购公告",
@@ -557,7 +1347,8 @@
       "deadline": "2026-06-10",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595471586/b1?sk=E41CC61FA054045956B1C3B98D27730013D17616&from=skill",
-      "seq": 43
+      "seq": 43,
+      "序号": 65
     },
     {
       "title": "邦银金融租赁股份有限公司2026年“远航计划”优秀员工培训服务采购项目公告",
@@ -570,7 +1361,8 @@
       "deadline": "2026-06-10",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595418587/b1?sk=B9A25843B6CDCB05DF7891318F2727FFC4CCCC5B&from=skill",
-      "seq": 44
+      "seq": 44,
+      "序号": 66
     },
     {
       "title": "金隅电气（唐山）有限责任公司新型学徒培训服务项目询比价",
@@ -583,7 +1375,8 @@
       "deadline": "",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595430117/b1?sk=9343EFA571AFF23671663FF72484E1128EC5C2CD&from=skill",
-      "seq": 45
+      "seq": 45,
+      "序号": 67
     },
     {
       "title": "长庆油田（榆林）油气有限公司全流程人才培训体系建设服务项目谈判采购公告",
@@ -596,7 +1389,8 @@
       "deadline": "2026-06-08",
       "keyword": "培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595426795/b1?sk=2F3E71365B125B1D11828DBD3A897CEF071001CE&from=skill",
-      "seq": 46
+      "seq": 46,
+      "序号": 68
     },
     {
       "title": "[省本级]江西国政招标咨询有限公司关于江西省教育评估监测研究院采购2026年江西省高校毕业生线下校园招聘会项目（采购编号：JXGZ2026-06-1602）电子化政府采购竞争性磋商采购公告",
@@ -609,7 +1403,8 @@
       "deadline": "2026-06-11 00:00:00",
       "keyword": "招聘,校园招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595314249/b1?sk=0F2BB29E5E449CA7EDE7B4E485A77CB644EDFCDD&from=skill",
-      "seq": 47
+      "seq": 47,
+      "序号": 69
     },
     {
       "title": "2026年度人才专项猎头服务入围遴选遴选公告",
@@ -622,7 +1417,8 @@
       "deadline": "2026-06-10 00:00:00",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595358968/b1?sk=D23ED9D4C0FB12B0F2BD87A5623C344FA8C03B03&from=skill",
-      "seq": 48
+      "seq": 48,
+      "序号": 70
     },
     {
       "title": "青岛航空2026年-2028年第三方招聘服务采购项目询比采购公告",
@@ -635,7 +1431,8 @@
       "deadline": "2026-06-10 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595362678/b1?sk=3029AD3994A447AF8B225AE280DB650ED5385BD9&from=skill",
-      "seq": 49
+      "seq": 49,
+      "序号": 71
     },
     {
       "title": "中通服软件科技有限公司2026年招聘平台服务项目",
@@ -648,7 +1445,8 @@
       "deadline": "2026-06-08 00:00:00",
       "keyword": "招聘,招聘平台",
       "url": "https://www.zhiliaobiaoxun.com/content/595327858/b1?sk=7A7EFA399A67E499645AF7DBCCA6DF909C0909DF&from=skill",
-      "seq": 50
+      "seq": 50,
+      "序号": 72
     },
     {
       "title": "上海铁路公安局徐州公安招聘驻队教官兼助训员项目竞争性磋商公告（二次）",
@@ -661,7 +1459,8 @@
       "deadline": "2026-06-10 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595358714/b1?sk=F531AFD6ECF0069375F48566E26F0BA54B0E92FB&from=skill",
-      "seq": 51
+      "seq": 51,
+      "序号": 73
     },
     {
       "title": "职引未来”—2026年全国城市巡回招聘四川绵阳站暨四川汽车职业技术学院“百日冲刺促就业”2026届毕业生就业双选会竞争性谈判公告",
@@ -674,7 +1473,8 @@
       "deadline": "2026-06-05 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595322227/b1?sk=AA6996626A52FDB2524D6B8C58B04A18DFAFC43E&from=skill",
-      "seq": 52
+      "seq": 52,
+      "序号": 74
     },
     {
       "title": "大兴安岭地区行政公署人力资源和社会保障局2026年度政府采购意向公告(第2批)-2026年招聘高校毕业生春季专场活动详细情况",
@@ -687,7 +1487,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595313094/b1?sk=F9143CF29CB498F94C8971F7BBBC4E22645C7D1E&from=skill",
-      "seq": 53
+      "seq": 53,
+      "序号": 75
     },
     {
       "title": "深圳市人事人才公共服务中心2026年度专项经费背景调查服务项目采购公告",
@@ -700,7 +1501,8 @@
       "deadline": "未注明",
       "keyword": "背景调查",
       "url": "https://www.zhiliaobiaoxun.com/content/595318068/b1?sk=D7BCEEF79FBC064A6FAB8A7088DD934F1F88F6DD&from=skill",
-      "seq": 54
+      "seq": 54,
+      "序号": 76
     },
     {
       "title": "海航期货股份有限公司网络招聘服务询比价文件",
@@ -713,7 +1515,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595343035/b1?sk=B9EFEAB9640597A1D7C409B134240CCEA194322D&from=skill",
-      "seq": 55
+      "seq": 55,
+      "序号": 77
     },
     {
       "title": "中色创新研究院（天津）有限公司人力资源部招聘平台服务采购询价公告",
@@ -726,7 +1529,8 @@
       "deadline": "未注明",
       "keyword": "招聘,招聘平台",
       "url": "https://www.zhiliaobiaoxun.com/content/595324067/b1?sk=6325F2044781B693D36BD91FD9E1322A487FE26C&from=skill",
-      "seq": 56
+      "seq": 56,
+      "序号": 78
     },
     {
       "title": "国投丰乐审计法务部部长招聘猎头服务(二次)询比采购公告",
@@ -739,7 +1543,8 @@
       "deadline": "2026-06-08 00:00:00",
       "keyword": "招聘,猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595354139/b1?sk=22C289A8004DA17C7E896E23786486F20FE08CBC&from=skill",
-      "seq": 57
+      "seq": 57,
+      "序号": 79
     },
     {
       "title": "中广核2026-2029年人力资源服务集中采购项目项目谈判公告-集中采购项目",
@@ -752,7 +1557,8 @@
       "deadline": "未注明",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595313854/b1?sk=F52D6DABEE659ECB4D6FA47A96512CE05EF0BF20&from=skill",
-      "seq": 58
+      "seq": 58,
+      "序号": 80
     },
     {
       "title": "人力资源服务机构采购招标公告",
@@ -765,7 +1571,8 @@
       "deadline": "2026-06-09 00:00:00",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595343910/b1?sk=3CB534528187440DBD12C6CB8EB4F90CA7FC5CF8&from=skill",
-      "seq": 59
+      "seq": 59,
+      "序号": 81
     },
     {
       "title": "贵州中医药大学第一附属医院【公开招聘面试试题命制服务】自行采购-谈价公告",
@@ -778,7 +1585,8 @@
       "deadline": "2026-06-08 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595327689/b1?sk=F22493BAEAEEEC1A7417A7ED87A33BC30761B565&from=skill",
-      "seq": 60
+      "seq": 60,
+      "序号": 82
     },
     {
       "title": "沈阳市市政工程设计研究院有限公司2026年度人才招聘服务二次公告",
@@ -791,7 +1599,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595344283/b1?sk=2C7B56882EB2FB384F0A370BEB78BCEABADF5427&from=skill",
-      "seq": 61
+      "seq": 61,
+      "序号": 83
     },
     {
       "title": "湖南湘科控股集团有限公司2026年度网络招聘平台机构询价比选",
@@ -804,7 +1613,8 @@
       "deadline": "未注明",
       "keyword": "招聘,招聘平台",
       "url": "https://www.zhiliaobiaoxun.com/content/595340089/b1?sk=E418F8FCBA41A8BBA2B2F9506C50C589E1644283&from=skill",
-      "seq": 62
+      "seq": 62,
+      "序号": 84
     },
     {
       "title": "青海省卫生人才交流服务中心招聘考试平台服务直接采购公告",
@@ -817,7 +1627,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595312215/b1?sk=2879DFF21ADA0BAE71DF1CD8E9FB796476B4F51A&from=skill",
-      "seq": 63
+      "seq": 63,
+      "序号": 85
     },
     {
       "title": "中国人寿保险（海外）股份有限公司岗位劳务人力服务协议供应商采购项目招标公告",
@@ -830,7 +1641,8 @@
       "deadline": "2026-06-23",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595267654/b1?sk=F2448DABAE38F1210B9D7B1BDCEB4C6AA6136EA8&from=skill",
-      "seq": 64
+      "seq": 64,
+      "序号": 86
     },
     {
       "title": "东辽县政府采购中心关于东辽县公安局临时用工人事外包采购项目的公开招标公告",
@@ -843,7 +1655,8 @@
       "deadline": "2026-06-23",
       "keyword": "人事外包",
       "url": "https://www.zhiliaobiaoxun.com/content/595273927/b1?sk=D433400325287827C9318D762D9809E695F1FD7F&from=skill",
-      "seq": 65
+      "seq": 65,
+      "序号": 87
     },
     {
       "title": "九江学院第二附属医院2026年度政府采购意向公告(第7批)-人力资源服务采购项目详细情况",
@@ -856,7 +1669,8 @@
       "deadline": "",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595199304/b1?sk=DB6FDD475ADAF39A5507CA1740CC66FDD3366ECC&from=skill",
-      "seq": 66
+      "seq": 66,
+      "序号": 88
     },
     {
       "title": "黄山市徽州区第二中学2026年6月至7月政府采购意向",
@@ -869,7 +1683,8 @@
       "deadline": "",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595214646/b1?sk=1310BB2F353933439299FFA01EEEB808B2454110&from=skill",
-      "seq": 67
+      "seq": 67,
+      "序号": 89
     },
     {
       "title": "2026年联通数字科技有限公司招聘管理系统服务集中采购项目询比采购公告（三次）-集中采购项目",
@@ -882,7 +1697,8 @@
       "deadline": "2026-06-12",
       "keyword": "招聘、招聘系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595264600/b1?sk=593B9D53BF36172AA72365593A8BEAE7E0D20601&from=skill",
-      "seq": 68
+      "seq": 68,
+      "序号": 90
     },
     {
       "title": "福建闽投湄洲湾发电有限公司2026-2028年度委托第三方全流程招聘服务项目公告",
@@ -895,7 +1711,8 @@
       "deadline": "2026-07-09",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595207753/b1?sk=F74C3D9015D1427FC15D551980A83F05893AC43B&from=skill",
-      "seq": 69
+      "seq": 69,
+      "序号": 91
     },
     {
       "title": "国际关系学院心理测评系统公开招标公告",
@@ -908,7 +1725,8 @@
       "deadline": "2026-06-24",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595241721/b1?sk=8B246DD284CABC261155CE4C1CF7A1F5B7C21128&from=skill",
-      "seq": 70
+      "seq": 70,
+      "序号": 92
     },
     {
       "title": "校园招聘服务询比采购公告",
@@ -921,7 +1739,8 @@
       "deadline": "2026-06-11",
       "keyword": "招聘、校园招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595199052/b1?sk=459EBE0701EEDCDBB9EFED69CA0A86C543813649&from=skill",
-      "seq": 71
+      "seq": 71,
+      "序号": 93
     },
     {
       "title": "惠来县2026年“百日千万招聘”暨“高校毕业生离校未就业”招聘活动服务采购项目竞争性磋商公告",
@@ -934,7 +1753,8 @@
       "deadline": "2026-06-15",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595272198/b1?sk=38A05618B1F59D68503AE42311231BB7E3DB9C48&from=skill",
-      "seq": 72
+      "seq": 72,
+      "序号": 94
     },
     {
       "title": "湖北省歌剧舞剧院有限责任公司2026年公开招聘工作人员服务项目（第二次）询比采购公告",
@@ -947,7 +1767,8 @@
       "deadline": "2026-06-10",
       "keyword": "招聘、人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595238707/b1?sk=14E233FF357AF84552E8D786C53B5C113CC38F63&from=skill",
-      "seq": 73
+      "seq": 73,
+      "序号": 95
     },
     {
       "title": "无锡学院心理健康测评系统项目招标公告",
@@ -960,7 +1781,8 @@
       "deadline": "2026-06-23",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595247601/b1?sk=565F2A6273B32A096FF4DFFDE59E06EE239ADF30&from=skill",
-      "seq": 74
+      "seq": 74,
+      "序号": 96
     },
     {
       "title": "济南市儿童医院人力资源第三方公开招聘服务项目竞争性磋商公告",
@@ -973,7 +1795,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595205784/b1?sk=31C6E81D29025EDDF0AFDD0CFB0A1F095DF2D441&from=skill",
-      "seq": 75
+      "seq": 75,
+      "序号": 97
     },
     {
       "title": "香港城市大学（东莞）2026年行政及教辅人员人才测评服务采购采购公告",
@@ -986,7 +1809,8 @@
       "deadline": "2026-06-09",
       "keyword": "人才测评",
       "url": "https://www.zhiliaobiaoxun.com/content/595252843/b1?sk=862DD02A116B922204E610E54B11AFCECB5746AB&from=skill",
-      "seq": 76
+      "seq": 76,
+      "序号": 98
     },
     {
       "title": "2026年退役军人及军属专场招聘会项目比选采购公告",
@@ -999,7 +1823,8 @@
       "deadline": "2026-06-10",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595261418/b1?sk=CF2BAFA25BB0FD1ED02D8A47BC5FC321619EBD93&from=skill",
-      "seq": 77
+      "seq": 77,
+      "序号": 99
     },
     {
       "title": "2026年上半年事业单位公开招聘工作人员面试服务",
@@ -1012,7 +1837,8 @@
       "deadline": "",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595212340/b1?sk=5BDDF0A789272D8AF63315A2DA904D7016857911&from=skill",
-      "seq": 78
+      "seq": 78,
+      "序号": 100
     },
     {
       "title": "​中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第三次）",
@@ -1025,7 +1851,8 @@
       "deadline": "",
       "keyword": "新员工培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595216898/b1?sk=DB443922C2F07DDC94FFE0FD0CDDDE3BD4C1A4D0&from=skill",
-      "seq": 79
+      "seq": 79,
+      "序号": 101
     },
     {
       "title": "2026年市直医疗卫生事业单位公开招聘笔试，面试服务项目",
@@ -1038,7 +1865,8 @@
       "deadline": "",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595234263/b1?sk=2BFDFE5D2F43DAF0E3CEA348428EE19031808F11&from=skill",
-      "seq": 80
+      "seq": 80,
+      "序号": 102
     },
     {
       "title": "赤峰市喀喇沁旗牛营子镇家门口就业服务站—招聘活动服务采购项目(二次）竞争性谈判公告",
@@ -1051,7 +1879,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595227514/b1?sk=82C6E48FB8ED82A7692E42240317579A9262462F&from=skill",
-      "seq": 81
+      "seq": 81,
+      "序号": 103
     },
     {
       "title": "贵州锦麟化工有限责任公司2026年度社会招聘服务机构采购项目(二次)询比采购公告",
@@ -1064,7 +1893,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595242441/b1?sk=7466348F7C9BD0BE4DF0895DE1A0A3C4794E16A3&from=skill",
-      "seq": 82
+      "seq": 82,
+      "序号": 104
     },
     {
       "title": "中国资源循环集团有限公司中国资源循环集团有限公司招聘2026—2027年度招聘招标公告",
@@ -1077,7 +1907,8 @@
       "deadline": "2026-06-24",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595245231/b1?sk=305AB1E2190825F25FAE83C69D4AEB492ACE5F96&from=skill",
-      "seq": 83
+      "seq": 83,
+      "序号": 105
     },
     {
       "title": "济南大学工作人员公开招聘相关服务采购项目竞争性磋商公告",
@@ -1090,7 +1921,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595257752/b1?sk=D1FAE2006B6318A1313EE98EA1D129C72D6FBF7F&from=skill",
-      "seq": 84
+      "seq": 84,
+      "序号": 106
     },
     {
       "title": "贵阳贵安2026年高校毕业生留（引）筑活动--大学城校园专场招聘活动贵州财经大学专场招聘会采购公告",
@@ -1103,7 +1935,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595272264/b1?sk=5A049AD286F5D6466734A188BBBEC7CF7A076240&from=skill",
-      "seq": 85
+      "seq": 85,
+      "序号": 107
     },
     {
       "title": "贵阳贵安2026年高校毕业生留（引）筑活动--高校毕业生等青年就业服务攻坚行动贵州医科大学专场专场招聘会采购公告",
@@ -1116,7 +1949,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595272313/b1?sk=7ED1603A8857D31E4BA59784A513478C6369273D&from=skill",
-      "seq": 86
+      "seq": 86,
+      "序号": 108
     },
     {
       "title": "景德镇市总工会2026年就业招聘会活动项目",
@@ -1129,7 +1963,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595224188/b1?sk=109FBE2B85F1EFF79A50C4787DD70607EDE6C77F&from=skill",
-      "seq": 87
+      "seq": 87,
+      "序号": 109
     },
     {
       "title": "贵阳贵安2026年高校毕业生留（引）筑活动--“职引未来，筑梦青春”百日千万专项招聘活动贵州理工学院专场招聘会采购",
@@ -1142,7 +1977,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595272302/b1?sk=959C2C3C503C3F75C7AB374DD6764D106C00EC6A&from=skill",
-      "seq": 88
+      "seq": 88,
+      "序号": 110
     },
     {
       "title": "中国太平洋保险(集团)股份有限公司猎头服务供应商补充采购项目征集公告",
@@ -1155,7 +1991,8 @@
       "deadline": "2026-06-15",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595212568/b1?sk=202E5FAABFA270217D40E5647CAFD893C186915F&from=skill",
-      "seq": 89
+      "seq": 89,
+      "序号": 111
     },
     {
       "title": "分谈分签+中国船舶集团有限公司第七二六研究所+服务委外采购智联招聘服务项目FW26040137人力资源处的询价书",
@@ -1168,7 +2005,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595236091/b1?sk=E077BA180769818C81BF08EDC3BC31DEC2F5FE58&from=skill",
-      "seq": 90
+      "seq": 90,
+      "序号": 112
     },
     {
       "title": "全国中小企业股份转让系统有限责任公司中证股转科技有限公司2026年招聘服务项目报名公告",
@@ -1181,7 +2019,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595209887/b1?sk=D8FF3A60905EB372A06EB6CA02E6F40C4F922B9C&from=skill",
-      "seq": 91
+      "seq": 91,
+      "序号": 113
     },
     {
       "title": "某单位技能岗位文职人员招聘理论考试服务采购招标公告（2026-ZALCZG-F40002）（二次招标）",
@@ -1194,7 +2033,8 @@
       "deadline": "2026-06-05",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595254679/b1?sk=53EA611E258BFF2FB8F990F723AC06ED17DE2591&from=skill",
-      "seq": 92
+      "seq": 92,
+      "序号": 114
     },
     {
       "title": "河南省第一地质矿产调查院有限公司人力资源服务采购项目招标公告",
@@ -1207,7 +2047,8 @@
       "deadline": "2026-06-08",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595145403/b1?sk=AEB14FAF0A68BFA1F37141A575BB7476091836E1&from=skill",
-      "seq": 93
+      "seq": 93,
+      "序号": 115
     },
     {
       "title": "全省农商银行2026年招聘项目-招标公告",
@@ -1220,7 +2061,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595144542/b1?sk=9B6A7AAD051F726F8816875DE209C77F36FF9F67&from=skill",
-      "seq": 94
+      "seq": 94,
+      "序号": 116
     },
     {
       "title": "成都市龙泉驿区人民政府东安街道办事处便民服务中心人力资源服务采购项目竞争性磋商公告",
@@ -1233,7 +2075,8 @@
       "deadline": "2026-06-08",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595148705/b1?sk=E70F0DECA034D4E9BF7C3079ECEA8FE3B343E613&from=skill",
-      "seq": 95
+      "seq": 95,
+      "序号": 117
     },
     {
       "title": "乌鲁木齐经济技术开发区（乌鲁木齐市头屯河区）人力资源和社会保障局2026年6月至7月政府采购意向",
@@ -1246,7 +2089,8 @@
       "deadline": "",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595141758/b1?sk=885817D2C1408EE83DA5503F82F7E7B1191EA57D&from=skill",
-      "seq": 96
+      "seq": 96,
+      "序号": 118
     },
     {
       "title": "芜湖高级职业技术学校2026年校医招聘第三方服务采购项目招标公告",
@@ -1259,7 +2103,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595126059/b1?sk=37B9EC93202439D0C022C6F658E6223ADA061A7F&from=skill",
-      "seq": 97
+      "seq": 97,
+      "序号": 119
     },
     {
       "title": "联网公司2026年度招聘服务采购项目询比采购公告",
@@ -1272,7 +2117,8 @@
       "deadline": "",
       "keyword": "招聘、背景调查",
       "url": "https://www.zhiliaobiaoxun.com/content/595135177/b1?sk=423DFB2BCEF11E2060BA7AC29C90F2AC85A4922F&from=skill",
-      "seq": 98
+      "seq": 98,
+      "序号": 120
     },
     {
       "title": "海林市新城区经济开发有限公司下属子公司招聘服务竞争性磋商公告",
@@ -1285,7 +2131,8 @@
       "deadline": "2026-06-05",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595103665/b1?sk=7F056751DD4B9080B038133A6843F23C575288B6&from=skill",
-      "seq": 99
+      "seq": 99,
+      "序号": 121
     },
     {
       "title": "国产化心理测评系统采购（第二次）招标公告(2026-JLSJBK-W1001)",
@@ -1298,7 +2145,8 @@
       "deadline": "2026-06-05",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595137348/b1?sk=33A402BC1DA74F8E1C4C931EAF5D9A707631A42B&from=skill",
-      "seq": 100
+      "seq": 100,
+      "序号": 122
     },
     {
       "title": "黑龙江省交投高速公路集团有限公司监控分公司采购内部竞争性选聘第三方代理机构项目集团内部企业采购公示",
@@ -1311,7 +2159,8 @@
       "deadline": "",
       "keyword": "笔面试",
       "url": "https://www.zhiliaobiaoxun.com/content/595098903/b1?sk=CEE3C88ED20FC503783362ECCFA2C54D7E0EEEE9&from=skill",
-      "seq": 101
+      "seq": 101,
+      "序号": 123
     },
     {
       "title": "三一集团有限公司职能总部残疾人招聘服务合作项目询比价公告",
@@ -1324,7 +2173,8 @@
       "deadline": "2026-06-02",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595101749/b1?sk=B247BAA0CBA01656C7DA4C53E0CED94C69237CFD&from=skill",
-      "seq": 102
+      "seq": 102,
+      "序号": 124
     },
     {
       "title": "公开比选四川省人才发展集团猎头招聘供应商项目比选公告",
@@ -1337,7 +2187,8 @@
       "deadline": "2026-06-05",
       "keyword": "招聘、猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595137104/b1?sk=A15C34AD43D896DD59F3EB73E722BB3819F91169&from=skill",
-      "seq": 103
+      "seq": 103,
+      "序号": 125
     },
     {
       "title": "赤峰市喀喇沁旗牛家营子镇家门口就业服务站—招聘活动服务采购项目",
@@ -1350,7 +2201,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595106085/b1?sk=240590CBCCE5808EC8A37F4149B702A1995AED60&from=skill",
-      "seq": 104
+      "seq": 104,
+      "序号": 126
     },
     {
       "title": "分谈分签+中国船舶集团物资有限公司+招聘机构选聘的询价书",
@@ -1363,7 +2215,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595108644/b1?sk=41111A9E1085C52C5FFCED3E102D8B6B6C87C10F&from=skill",
-      "seq": 105
+      "seq": 105,
+      "序号": 127
     },
     {
       "title": "【非医疗】NDSY-FYL2026-021期智能心理测评系统采购项目采购公告",
@@ -1376,7 +2229,8 @@
       "deadline": "",
       "keyword": "测评系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595130191/b1?sk=8455F5E7C69D00977E93BE7B9D030D8AD63BFD8E&from=skill",
-      "seq": 106
+      "seq": 106,
+      "序号": 128
     },
     {
       "title": "横琴人寿保险有限公司猎头服务采购项目招标公告",
@@ -1389,7 +2243,8 @@
       "deadline": "2026-06-10",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595135094/b1?sk=102C9CDC7D372C827019FF31862EFA6C030208A5&from=skill",
-      "seq": 107
+      "seq": 107,
+      "序号": 129
     },
     {
       "title": "2026年贷后风控专员委托招聘服务项目项目公告",
@@ -1402,7 +2257,8 @@
       "deadline": "2026-06-12",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595096968/b1?sk=7A36A5A243684FC8552B0A3F5B1A210C2C29426A&from=skill",
-      "seq": 108
+      "seq": 108,
+      "序号": 130
     },
     {
       "title": "中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第三次）",
@@ -1415,7 +2271,8 @@
       "deadline": "2026-06-04",
       "keyword": "新员工培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595154997/b1?sk=1AE26579957644BC3F2857C02AAC958BFABD94DC&from=skill",
-      "seq": 109
+      "seq": 109,
+      "序号": 131
     },
     {
       "title": "人力资源招聘服务外包项目公开招标公告",
@@ -1428,7 +2285,8 @@
       "deadline": "2026-06-06",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595113411/b1?sk=3B60D4F2AF0F6492F80FC107F371ED484F817679&from=skill",
-      "seq": 110
+      "seq": 110,
+      "序号": 132
     },
     {
       "title": "中国建设银行青岛市分行2026年暑期实习生招聘，培训及运营服务采购项目",
@@ -1441,7 +2299,8 @@
       "deadline": "2026-06-08",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595131017/b1?sk=71DCFF5C433C4CCB53CC24C2C48AF24DCE517B12&from=skill",
-      "seq": 111
+      "seq": 111,
+      "序号": 133
     },
     {
       "title": "深圳港集团招聘管理数智员工（AI智能体）市场询价公告",
@@ -1454,7 +2313,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595151870/b1?sk=E71C1A5A3D361D6568A0C4801C81FA57184D8384&from=skill",
-      "seq": 112
+      "seq": 112,
+      "序号": 134
     },
     {
       "title": "蚌埠市高新福田城市运营服务有限公司人力资源服务项目采买公告",
@@ -1467,7 +2327,8 @@
       "deadline": "2026-06-08",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595153266/b1?sk=9F80C4A65D4657D3E46ACD38653CC5C165308563&from=skill",
-      "seq": 113
+      "seq": 113,
+      "序号": 135
     },
     {
       "title": "全省农商银行2026年招聘项目-招标公告",
@@ -1480,7 +2341,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/595155633/b1?sk=317E265E6EB4948A9F685E6A0E23602C73F984A4&from=skill",
-      "seq": 114
+      "seq": 114,
+      "序号": 136
     },
     {
       "title": "吕梁云时代技术有限公司2026年人力资源服务采购项目采购公告",
@@ -1493,7 +2355,8 @@
       "deadline": "",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595156889/b1?sk=6722C3CA2356427AB5EEC3AA5593C1D692C18CBE&from=skill",
-      "seq": 115
+      "seq": 115,
+      "序号": 137
     },
     {
       "title": "2026年智科人才猎聘服务",
@@ -1506,7 +2369,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595131791/b1?sk=9F2BD6512F0E9F553D5B670275BC5E34081B6421&from=skill",
-      "seq": 116
+      "seq": 116,
+      "序号": 138
     },
     {
       "title": "关于2026年及2027年招聘系统SaaS项目的采购公告",
@@ -1519,7 +2383,8 @@
       "deadline": "",
       "keyword": "招聘、招聘系统",
       "url": "https://www.zhiliaobiaoxun.com/content/595141837/b1?sk=7DC69BA2702861F2A6A9E3824103584D77603B93&from=skill",
-      "seq": 117
+      "seq": 117,
+      "序号": 139
     },
     {
       "title": "干部领导力培训项目询比采购公告",
@@ -1532,7 +2397,8 @@
       "deadline": "",
       "keyword": "领导力培训",
       "url": "https://www.zhiliaobiaoxun.com/content/595113825/b1?sk=AB850FE6B385EC23E791ED33AA0A17AF488329F0&from=skill",
-      "seq": 118
+      "seq": 118,
+      "序号": 140
     },
     {
       "title": "2026-2027年度招聘网站使用及社会招聘猎头服务",
@@ -1545,7 +2411,8 @@
       "deadline": "",
       "keyword": "招聘、猎头、人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/595118885/b1?sk=DCAB5687EB014D76EC3F34EC7BE77373B81A4DFF&from=skill",
-      "seq": 119
+      "seq": 119,
+      "序号": 141
     },
     {
       "title": "26GG000894;猎头服务供应商补充采购项目公告（包件4:国际化领域头部猎头服务包）",
@@ -1558,7 +2425,8 @@
       "deadline": "",
       "keyword": "猎头",
       "url": "https://www.zhiliaobiaoxun.com/content/595157088/b1?sk=352E80E2677392FD8951DAD747E7778488F32719&from=skill",
-      "seq": 120
+      "seq": 120,
+      "序号": 142
     },
     {
       "title": "中国电信股份有限公司湖北分公司2026-2027年员工培训服务项目（标段一）招标公告",
@@ -1571,7 +2439,8 @@
       "deadline": "2026-06-06",
       "keyword": "招聘、校园招聘",
       "url": "点击查看",
-      "seq": 121
+      "seq": 121,
+      "序号": 143
     },
     {
       "title": "中交公路规划设计院有限公司桥隧监测养护分公司桥隧监测养护分公司选聘人力资源服务供应商项目",
@@ -1584,7 +2453,8 @@
       "deadline": "2026-06-05",
       "keyword": "人力资源服务",
       "url": "点击查看",
-      "seq": 122
+      "seq": 122,
+      "序号": 144
     },
     {
       "title": "河北省人力资源和社会保障厅2026年京津冀劳务协作专项活动项目公开招标公告",
@@ -1597,7 +2467,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 123
+      "seq": 123,
+      "序号": 145
     },
     {
       "title": "遵义市人员招聘笔试采购项目采购公告",
@@ -1610,7 +2481,8 @@
       "deadline": "2026-06-04",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 124
+      "seq": 124,
+      "序号": 146
     },
     {
       "title": "安徽省交通控股集团有限公司2026年招聘服务询比采购采购公告",
@@ -1623,7 +2495,8 @@
       "deadline": "未注明",
       "keyword": "招聘、校园招聘",
       "url": "点击查看",
-      "seq": 125
+      "seq": 125,
+      "序号": 147
     },
     {
       "title": "黑龙江农业经济职业学院2026年公开招聘笔试面试考核竞争性磋商公告",
@@ -1636,7 +2509,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 126
+      "seq": 126,
+      "序号": 148
     },
     {
       "title": "四川省人才交流中心四川招聘云平台运维服务项目采购比选公告",
@@ -1649,7 +2523,8 @@
       "deadline": "2026-06-03",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 127
+      "seq": 127,
+      "序号": 149
     },
     {
       "title": "2026年广西金秋招聘月活动项目采购公告",
@@ -1662,7 +2537,8 @@
       "deadline": "2026-06-03",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 128
+      "seq": 128,
+      "序号": 150
     },
     {
       "title": "济南泉永印务有限公司社会招聘服务项目-询比公告",
@@ -1675,7 +2551,8 @@
       "deadline": "2026-06-03",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 129
+      "seq": 129,
+      "序号": 151
     },
     {
       "title": "达州中医药职业学院2026届6月份校园招聘会服务项目询价公告",
@@ -1688,7 +2565,8 @@
       "deadline": "未注明",
       "keyword": "招聘、校园招聘",
       "url": "点击查看",
-      "seq": 130
+      "seq": 130,
+      "序号": 152
     },
     {
       "title": "天津市环湖医院政府采购意向公告",
@@ -1701,7 +2579,8 @@
       "deadline": "-",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594849905/b1?sk=AF027B06241F12896C9B41B341375ED0613A513B&from=skill",
-      "seq": 131
+      "seq": 131,
+      "序号": 153
     },
     {
       "title": "驿达集团2026-2028年招聘服务项目询比采购采购公告",
@@ -1714,7 +2593,8 @@
       "deadline": "2026-06-09 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594909924/b1?sk=B53EF87DF437984C62798440A961D9865C50FC08&from=skill",
-      "seq": 132
+      "seq": 132,
+      "序号": 154
     },
     {
       "title": "2026年华灿实业接装纸生产线扩能招聘服务采购项目招标公告",
@@ -1727,7 +2607,8 @@
       "deadline": "2026-06-05 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594912935/b1?sk=348EC5E9ACF5ABE03A5C9DA1B8AAB98D000D3B07&from=skill",
-      "seq": 133
+      "seq": 133,
+      "序号": 155
     },
     {
       "title": "乾安县严字乡美字村招聘农田灌溉井维护电工1名",
@@ -1740,7 +2621,8 @@
       "deadline": "2026-06-03 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594928705/b1?sk=F785A0D4927849B9CD7FD2897AFB0A770F2DD813&from=skill",
-      "seq": 134
+      "seq": 134,
+      "序号": 156
     },
     {
       "title": "润加物业服务(上海)有限公司物业华东江浙区域2026-2027年基础岗位人事外包集中采购公告-集中采购项目",
@@ -1753,7 +2635,8 @@
       "deadline": "-",
       "keyword": "人事外包",
       "url": "https://www.zhiliaobiaoxun.com/content/594878922/b1?sk=2967FFE8EA1BAEBB1397E7B22BC018743F926879&from=skill",
-      "seq": 135
+      "seq": 135,
+      "序号": 157
     },
     {
       "title": "某求职招聘一体化系统技术服务平台项目谈判采购公告",
@@ -1766,7 +2649,8 @@
       "deadline": "2026-05-28 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594863091/b1?sk=09045D52DEBA0BA586901066096B46A07901834C&from=skill",
-      "seq": 136
+      "seq": 136,
+      "序号": 158
     },
     {
       "title": "某单位技能岗位文职人员招聘理论考试服务采购竞争性谈判公告(2026-JLGCZG-F3001)",
@@ -1779,7 +2663,8 @@
       "deadline": "2026-06-01 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594910284/b1?sk=795B2540F9FD884C0515F2667D4CF79D2FF28D5D&from=skill",
-      "seq": 137
+      "seq": 137,
+      "序号": 159
     },
     {
       "title": "人力资源服务项目（北京）竞争性磋商公告",
@@ -1792,7 +2677,8 @@
       "deadline": "2026-06-01 00:00:00",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594865827/b1?sk=8B842850F5C7AC1481DF37945346B5B12B48CAB5&from=skill",
-      "seq": 138
+      "seq": 138,
+      "序号": 160
     },
     {
       "title": "贵州省第二人民医院公开（自主）招聘工作人员相关考务外包项目（二次）公开比选采购公告",
@@ -1805,7 +2691,8 @@
       "deadline": "2026-06-04 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594912709/b1?sk=DC8AAF3EFB57CEF5EB353D8A94F4D154035AC3DA&from=skill",
-      "seq": 139
+      "seq": 139,
+      "序号": 161
     },
     {
       "title": "光水水务（安阳）有限公司网络招聘平台会员服务采购询价公告",
@@ -1818,7 +2705,8 @@
       "deadline": "-",
       "keyword": "招聘、招聘平台",
       "url": "https://www.zhiliaobiaoxun.com/content/594845988/b1?sk=181E8105B148E29529B54D3798F19A1C6068E97F&from=skill",
-      "seq": 140
+      "seq": 140,
+      "序号": 162
     },
     {
       "title": "2026年华灿实业接装纸生产线扩能招聘服务采购项目招标公告",
@@ -1831,7 +2719,8 @@
       "deadline": "-",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594926237/b1?sk=7A3158850BE551C8D058A715278DB3E62BB775B2&from=skill",
-      "seq": 141
+      "seq": 141,
+      "序号": 163
     },
     {
       "title": "榆林煤化人力资源服务项目采购公告",
@@ -1844,7 +2733,8 @@
       "deadline": "2026-06-03 00:00:00",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594928124/b1?sk=AB999C37C7E8158952DDE04F3906C5A4C023528C&from=skill",
-      "seq": 142
+      "seq": 142,
+      "序号": 164
     },
     {
       "title": "天津未来城咨询服务公司人力资源服务供应商库项目公开招标公告",
@@ -1857,7 +2747,8 @@
       "deadline": "-",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594901783/b1?sk=FE680D9CC4C0AB75CA38C15E6557AC7D206ECD85&from=skill",
-      "seq": 143
+      "seq": 143,
+      "序号": 165
     },
     {
       "title": "国药集团人力资源与改革服务项目（第一包：招聘服务）谈判采购公告",
@@ -1870,7 +2761,8 @@
       "deadline": "-",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594931865/b1?sk=4AC77383708C5D9FFD70F21423859198B3A2B09A&from=skill",
-      "seq": 144
+      "seq": 144,
+      "序号": 166
     },
     {
       "title": "2026-2028年紫云英海外（亚太区域）蓝领招聘服务采购项目采购公告",
@@ -1883,7 +2775,8 @@
       "deadline": "2026-06-04 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594852912/b1?sk=14CE03EC4DD09FCABCD6FBDF8B77A8DB92285E3D&from=skill",
-      "seq": 145
+      "seq": 145,
+      "序号": 167
     },
     {
       "title": "中冶京诚2026-2027年度背景调查服务",
@@ -1896,7 +2789,8 @@
       "deadline": "-",
       "keyword": "背景调查、人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594874404/b1?sk=53F5B96183A37C4530DE21BB65E2DF099159417E&from=skill",
-      "seq": 146
+      "seq": 146,
+      "序号": 168
     },
     {
       "title": "智航（云南）信息产业有限公司2026年-2027年人才招聘服务项目公开竞价比选采购公告",
@@ -1909,7 +2803,8 @@
       "deadline": "-",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594876557/b1?sk=6533CC716710185B4399E30138497F0BA3D0055A&from=skill",
-      "seq": 147
+      "seq": 147,
+      "序号": 169
     },
     {
       "title": "20260529人力资源服务公司代招聘服务",
@@ -1922,7 +2817,8 @@
       "deadline": "-",
       "keyword": "招聘、人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594878745/b1?sk=8A7DCA1A79685AF40EE6B6813F363B98567534DD&from=skill",
-      "seq": 148
+      "seq": 148,
+      "序号": 170
     },
     {
       "title": "人力资源服务项目（黑龙江）竞争性磋商公告",
@@ -1935,7 +2831,8 @@
       "deadline": "2026-06-01 00:00:00",
       "keyword": "人力资源服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594865843/b1?sk=C5F976D61FB28DB71DAF0AB527E9ABA0BC341461&from=skill",
-      "seq": 149
+      "seq": 149,
+      "序号": 171
     },
     {
       "title": "招聘网站服务",
@@ -1948,7 +2845,8 @@
       "deadline": "-",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594903620/b1?sk=4FA68F0FCADFAA390FE5D4B716A0376EAE1F3C3A&from=skill",
-      "seq": 150
+      "seq": 150,
+      "序号": 172
     },
     {
       "title": "中核集团2026年招聘管理系统优化建设项目（总部采购）采购公告",
@@ -1961,7 +2859,8 @@
       "deadline": "2026-06-08 00:00:00",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594918574/b1?sk=24C97FD743F38460674B4F9ECF93A9234FCAB9AF&from=skill",
-      "seq": 151
+      "seq": 151,
+      "序号": 173
     },
     {
       "title": "2026年6月-2028年5月招聘会场地布展服务项目",
@@ -1974,7 +2873,8 @@
       "deadline": "2026-06-03",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 152
+      "seq": 152,
+      "序号": 174
     },
     {
       "title": "通辽市科尔沁区第一人民医院2026年05月至2027年05月政府采购意向-高质量发展项目委托招聘学科带头人，急需紧缺人才及实用型人才服务项目详细情况",
@@ -1987,7 +2887,8 @@
       "deadline": "未知",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 153
+      "seq": 153,
+      "序号": 175
     },
     {
       "title": "杭州中浙招标有限公司关于杭州市就业管理服务中心2026年度东西部劳务协作招聘服务项目的公开招标公告",
@@ -2000,7 +2901,8 @@
       "deadline": "2026-06-04",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 154
+      "seq": 154,
+      "序号": 176
     },
     {
       "title": "2026年潍坊高质量充分就业系列招聘活动竞争性磋商公告",
@@ -2013,7 +2915,8 @@
       "deadline": "2026-06-03",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 155
+      "seq": 155,
+      "序号": 177
     },
     {
       "title": "滑县人民医院2026年7至8月政府采购意向-滑县人民医院心理测评系统平台项目详细情况",
@@ -2026,7 +2929,8 @@
       "deadline": "未知",
       "keyword": "测评系统",
       "url": "点击查看",
-      "seq": 156
+      "seq": 156,
+      "序号": 178
     },
     {
       "title": "天翼支付科技有限公司2026年招聘平台询比公告",
@@ -2039,7 +2943,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘, 招聘平台",
       "url": "点击查看",
-      "seq": 157
+      "seq": 157,
+      "序号": 179
     },
     {
       "title": "2026-FW-XX001项目-人力招聘系统（北森）采购事前公示",
@@ -2052,7 +2957,8 @@
       "deadline": "未知",
       "keyword": "招聘, 招聘系统",
       "url": "点击查看",
-      "seq": 158
+      "seq": 158,
+      "序号": 180
     },
     {
       "title": "江西电力职业技术学院2026年“百企百董”校企共建主题活动暨2027届毕业生秋季校园招聘会服务项目竞价公告",
@@ -2065,7 +2971,8 @@
       "deadline": "未知",
       "keyword": "招聘, 校园招聘",
       "url": "点击查看",
-      "seq": 159
+      "seq": 159,
+      "序号": 181
     },
     {
       "title": "青海农牧科技职业学院2026届毕业生校园招聘会会务服务采购询价公告",
@@ -2078,7 +2985,8 @@
       "deadline": "未知",
       "keyword": "招聘, 校园招聘",
       "url": "点击查看",
-      "seq": 160
+      "seq": 160,
+      "序号": 182
     },
     {
       "title": "新塘边镇2026年度护林员招聘管理委托项目",
@@ -2091,7 +2999,8 @@
       "deadline": "2026-05-28",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 161
+      "seq": 161,
+      "序号": 183
     },
     {
       "title": "中国建设银行广东省分行新员工培训服务项目供应商公开征集公告（第二次）",
@@ -2104,7 +3013,8 @@
       "deadline": "2026-05-31",
       "keyword": "新员工培训",
       "url": "点击查看",
-      "seq": 162
+      "seq": 162,
+      "序号": 184
     },
     {
       "title": "集团2026-2031年度校园招聘认知能力测评工具项目谈判公告",
@@ -2117,7 +3027,8 @@
       "deadline": "未知",
       "keyword": "招聘, 人才测评, 校园招聘",
       "url": "点击查看",
-      "seq": 163
+      "seq": 163,
+      "序号": 185
     },
     {
       "title": "江苏长电科技股份有限公司2026年度委托代理招聘服务采购项目公告",
@@ -2130,7 +3041,8 @@
       "deadline": "未知",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 164
+      "seq": 164,
+      "序号": 186
     },
     {
       "title": "华能贵州清洁能源分公司公开招聘（选拔）咨询服务框架（HC）询比采购公告",
@@ -2143,7 +3055,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 165
+      "seq": 165,
+      "序号": 187
     },
     {
       "title": "“青春集结就在内蒙古”--内蒙古自治区2026届高校毕业生专场招聘会",
@@ -2156,7 +3069,8 @@
       "deadline": "未知",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 166
+      "seq": 166,
+      "序号": 188
     },
     {
       "title": "中冶京诚2026-2027年度背景调查服务",
@@ -2169,7 +3083,8 @@
       "deadline": "未知",
       "keyword": "背景调查, 人力资源服务",
       "url": "点击查看",
-      "seq": 167
+      "seq": 167,
+      "序号": 189
     },
     {
       "title": "塔里木油田共享服务中心2026-2027年人力资源服务合同公开招标公告",
@@ -2182,7 +3097,8 @@
       "deadline": "2026-06-03",
       "keyword": "人力资源服务",
       "url": "点击查看",
-      "seq": 168
+      "seq": 168,
+      "序号": 190
     },
     {
       "title": "山西医科大学口腔医院选聘招聘服务商三次谈判采购公告",
@@ -2195,7 +3111,8 @@
       "deadline": "未知",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 169
+      "seq": 169,
+      "序号": 191
     },
     {
       "title": "关于开展三亚市第二人民医院2026年公开（考核）招聘工作人员考试命题项目采购公告",
@@ -2208,7 +3125,8 @@
       "deadline": "未知",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 170
+      "seq": 170,
+      "序号": 192
     },
     {
       "title": "塔里木油田共享服务中心2026-2027年人力资源服务合同公开招标公告",
@@ -2221,7 +3139,8 @@
       "deadline": "2026-06-03",
       "keyword": "人力资源服务",
       "url": "点击查看",
-      "seq": 171
+      "seq": 171,
+      "序号": 193
     },
     {
       "title": "浙大一院干部考核和民主测评系统供应商征集",
@@ -2234,7 +3153,8 @@
       "deadline": "2026-06-03",
       "keyword": "测评系统",
       "url": "点击查看",
-      "seq": 172
+      "seq": 172,
+      "序号": 194
     },
     {
       "title": "人力资源代招服务（猎头及RPO）采购项目供应商报名邀请公告",
@@ -2247,7 +3167,8 @@
       "deadline": "未知",
       "keyword": "RPO, 猎头",
       "url": "点击查看",
-      "seq": 173
+      "seq": 173,
+      "序号": 195
     },
     {
       "title": "2026年昌都市招聘会服务项目",
@@ -2260,7 +3181,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 174
+      "seq": 174,
+      "序号": 196
     },
     {
       "title": "华新燃气集团有限公司人员招聘服务询比采购公告",
@@ -2273,7 +3195,8 @@
       "deadline": "2026-05-29",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 175
+      "seq": 175,
+      "序号": 197
     },
     {
       "title": "XHR公司招聘对接项目采购谈判采购公告",
@@ -2286,7 +3209,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "点击查看",
-      "seq": 176
+      "seq": 176,
+      "序号": 198
     },
     {
       "title": "中国移动通信集团四川有限公司2026-2029年招聘服务采购项目_询比公告",
@@ -2299,7 +3223,8 @@
       "deadline": "2026-05-29",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594631580/b1?sk=A4471F43A5F4A8E6821EB11AB90D289A1C627ACD&from=skill",
-      "seq": 177
+      "seq": 177,
+      "序号": 199
     },
     {
       "title": "临高县2026年事业单位公开招聘工作人员考务服务项目（二次招标）竞争性磋商公告",
@@ -2312,7 +3237,8 @@
       "deadline": "2026-06-02",
       "keyword": "招聘、笔试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594583707/b1?sk=2B07E21EA18C50A332B1AAE2B805A5901CDF04B6&from=skill",
-      "seq": 178
+      "seq": 178,
+      "序号": 200
     },
     {
       "title": "临高县2026年事业单位公开招聘工作人员命题服务项目（二次招标）竞争性磋商公告",
@@ -2325,7 +3251,8 @@
       "deadline": "2026-06-02",
       "keyword": "招聘、笔试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594584473/b1?sk=FDD59EADB6BE81CBDC0745322DF8836814A8F734&from=skill",
-      "seq": 179
+      "seq": 179,
+      "序号": 201
     },
     {
       "title": "中鑫正能工程管理有限公司关于定南县就业创业服务中心2026年招聘会服务竞争性磋商公告",
@@ -2338,7 +3265,8 @@
       "deadline": "2026-06-05",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594643188/b1?sk=A31C9BA713EFB38528C8C327378A13A642362DCD&from=skill",
-      "seq": 180
+      "seq": 180,
+      "序号": 202
     },
     {
       "title": "公司HCM系统招聘模块建设服务直接采购公告",
@@ -2351,7 +3279,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594622183/b1?sk=E1BD4B0C2FFB04A936A337576B5084DCD813D27A&from=skill",
-      "seq": 181
+      "seq": 181,
+      "序号": 203
     },
     {
       "title": "厦门政采-竞争性磋商-ZC2026-813-校园招聘赴外引才活动服务-采购公告",
@@ -2364,7 +3293,8 @@
       "deadline": "2026-06-02",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594642464/b1?sk=B84642034F7DED82CAF9A78AC0DF3847336B1DC8&from=skill",
-      "seq": 182
+      "seq": 182,
+      "序号": 204
     },
     {
       "title": "中山市黄圃人民医院人才招聘平台服务项目（二次）采购公告",
@@ -2377,7 +3307,8 @@
       "deadline": "2026-05-28",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594595628/b1?sk=76220FC04F8B03E652D212871E252FE9411146F2&from=skill",
-      "seq": 183
+      "seq": 183,
+      "序号": 205
     },
     {
       "title": "中国建设银行股份有限公司海南省分行2026年新员工培训场地及食宿项目供应商征集公告",
@@ -2390,7 +3321,8 @@
       "deadline": "2026-06-02",
       "keyword": "新员工培训",
       "url": "https://www.zhiliaobiaoxun.com/content/594591081/b1?sk=3E6B69DC76133BE708EE4F5EE2F3F375DC6E5BC9&from=skill",
-      "seq": 184
+      "seq": 184,
+      "序号": 206
     },
     {
       "title": "关于公开遴选越秀区2026年社区专职工作人员公开招聘项目承接机构的公告",
@@ -2403,7 +3335,8 @@
       "deadline": "2026-06-02",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594630039/b1?sk=ECD12F7126BB8244177AC0A156EE60796D199A57&from=skill",
-      "seq": 185
+      "seq": 185,
+      "序号": 207
     },
     {
       "title": "2026年中车成都公司领导力培训项目2026050799采购公告",
@@ -2416,7 +3349,8 @@
       "deadline": "2026-05-29",
       "keyword": "领导力培训",
       "url": "https://www.zhiliaobiaoxun.com/content/594614736/b1?sk=062F26EB3F4FC827C2BB3D31B5E2A669C0D14787&from=skill",
-      "seq": 186
+      "seq": 186,
+      "序号": 208
     },
     {
       "title": "北京京能酒店管理有限公司提升管理人员领导力培训采购公告",
@@ -2429,7 +3363,8 @@
       "deadline": "",
       "keyword": "领导力培训",
       "url": "https://www.zhiliaobiaoxun.com/content/594598215/b1?sk=AC78E671AC1DF5886ECCCC241A66DBE5ECDBDFAD&from=skill",
-      "seq": 187
+      "seq": 187,
+      "序号": 209
     },
     {
       "title": "山西医科大学口腔医院选聘招聘服务商二次谈判采购公告",
@@ -2442,7 +3377,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594636963/b1?sk=15967B53CA48E01C933F06158CF7DD0C2A6B3B81&from=skill",
-      "seq": 188
+      "seq": 188,
+      "序号": 210
     },
     {
       "title": "【人才招聘服务】采购公告",
@@ -2455,7 +3391,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594627544/b1?sk=A0EF43DEB6661067AAF86248B4DD415440E6C904&from=skill",
-      "seq": 189
+      "seq": 189,
+      "序号": 211
     },
     {
       "title": "江苏金服数字集团有限公司2026年度招聘服务项目的竞争性谈判公告",
@@ -2468,7 +3405,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594516315/b1?sk=4ECCE60DBF0BC26AEB46624D5F59A69EC7A4086E&from=skill",
-      "seq": 190
+      "seq": 190,
+      "序号": 212
     },
     {
       "title": "广州美术学院2026年05月至2026年06月政府采购意向（含招聘系统/人力资源服务平台建设）",
@@ -2481,7 +3419,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594549441/b1?sk=488CE08BACE10F78B2F46B76E8038464BAB90EA9&from=skill",
-      "seq": 191
+      "seq": 191,
+      "序号": 213
     },
     {
       "title": "中国银行湖南省分行外部招聘面试测评服务采购项目招标公告",
@@ -2494,7 +3433,8 @@
       "deadline": "",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594547251/b1?sk=0EB0F106A7DA94424BB93F0C80FCD0F9FA501DCA&from=skill",
-      "seq": 192
+      "seq": 192,
+      "序号": 214
     },
     {
       "title": "2026年广西重点领域急需紧缺高层次人才招聘活动服务项目竞争性磋商公告",
@@ -2507,7 +3447,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594479663/b1?sk=D0060B1636E63567B65658B22ADE4AD31A9EE191&from=skill",
-      "seq": 193
+      "seq": 193,
+      "序号": 215
     },
     {
       "title": "[政采云]2026年本级招聘大厅功能拓展项目竞争性磋商公告",
@@ -2520,7 +3461,8 @@
       "deadline": "2026-06-04",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594549654/b1?sk=B7C9B5C43E49CF4F3ED0685994085534A1694467&from=skill",
-      "seq": 194
+      "seq": 194,
+      "序号": 216
     },
     {
       "title": "东航2026年度\"东航招聘\"微信公众号运营外包服务项目",
@@ -2533,7 +3475,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "",
-      "seq": 195
+      "seq": 195,
+      "序号": 217
     },
     {
       "title": "东航2026年度\"东航招聘\"微信公众号运营外包服务项目",
@@ -2546,7 +3489,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594479090/b1?sk=D608457A957649EAD3246ED8C1B498DD354E8CD4&from=skill",
-      "seq": 196
+      "seq": 196,
+      "序号": 218
     },
     {
       "title": "江西智拓工程管理有限公司关于南昌农商银行聘请人力资源公司向社会招聘2名陪执员项目（项目编号：JXZTCG-2026220）竞争性磋商采购公告",
@@ -2559,7 +3503,8 @@
       "deadline": "未注明",
       "keyword": "招聘",
       "url": "",
-      "seq": 197
+      "seq": 197,
+      "序号": 219
     },
     {
       "title": "江西智拓工程管理有限公司关于南昌农商银行聘请人力资源公司向社会招聘2名陪执员项目竞争性磋商采购公告",
@@ -2572,7 +3517,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594494410/b1?sk=067899C359536C4C2B689EDCA8C245427557575E&from=skill",
-      "seq": 198
+      "seq": 198,
+      "序号": 220
     },
     {
       "title": "甘肃省水利厅2026年上半年所属事业单位公开招聘面试及体检工作项目招标公告",
@@ -2585,7 +3531,8 @@
       "deadline": "2026-05-26",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594476476/b1?sk=50753ACE407BEA627899E040C595C1FA8511BC93&from=skill",
-      "seq": 199
+      "seq": 199,
+      "序号": 221
     },
     {
       "title": "罗源县教育局教师招聘笔试干部遴选面试购买考务服务竞争性磋商公告",
@@ -2598,7 +3545,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘、笔试服务、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594536687/b1?sk=8318CA2971ECFC941C2ACFF8A8833E1212453912&from=skill",
-      "seq": 200
+      "seq": 200,
+      "序号": 222
     },
     {
       "title": "湖南怀化公路运输集团有限责任公司2026年度员工招聘全流程服务公开比选公告",
@@ -2611,7 +3559,8 @@
       "deadline": "2026-05-28",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594510054/b1?sk=0FEC51E134334C7EEC2EFC4012400301D34A47B5&from=skill",
-      "seq": 201
+      "seq": 201,
+      "序号": 223
     },
     {
       "title": "安徽中烟再造烟叶科技有限责任公司人员招聘服务招标公告",
@@ -2624,7 +3573,8 @@
       "deadline": "2026-06-01",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594501470/b1?sk=34D4E3E5645837F0CC83624D4CDA436C3627D9E8&from=skill",
-      "seq": 202
+      "seq": 202,
+      "序号": 224
     },
     {
       "title": "深圳中电投资有限公司招聘平台服务供应商遴选项目公告",
@@ -2637,7 +3587,8 @@
       "deadline": "2026-05-29",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594521722/b1?sk=3E7C133FB64B33AC73118A159277757AD16BE595&from=skill",
-      "seq": 203
+      "seq": 203,
+      "序号": 225
     },
     {
       "title": "[阳光采购服务平台]2026年海发控股招聘流程外包服务",
@@ -2650,7 +3601,8 @@
       "deadline": "2026-05-29",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594499503/b1?sk=749B4EEA3539818335C41DBBEB223DA88B4D381A&from=skill",
-      "seq": 204
+      "seq": 204,
+      "序号": 226
     },
     {
       "title": "昆明市2026年事业单位公开招聘工作人员宜良县面试考务工作服务竞争性谈判公告",
@@ -2663,7 +3615,8 @@
       "deadline": "",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594560108/b1?sk=A7B28E264A349447EC3F395ACAD7932ACDC21D21&from=skill",
-      "seq": 205
+      "seq": 205,
+      "序号": 227
     },
     {
       "title": "济南市中心医院2026年度人力资源第三方公开招聘服务项目",
@@ -2676,7 +3629,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594560392/b1?sk=DB41D54630E3AFAE9862C01EE5C3427CE7AA176B&from=skill",
-      "seq": 206
+      "seq": 206,
+      "序号": 228
     },
     {
       "title": "中国银行湖南省分行外部招聘面试测评采购项目招标公告",
@@ -2689,7 +3643,8 @@
       "deadline": "",
       "keyword": "招聘、面试服务",
       "url": "https://www.zhiliaobiaoxun.com/content/594564959/b1?sk=4836731E209ED8FE630C9F892896B72FC7ABF087&from=skill",
-      "seq": 207
+      "seq": 207,
+      "序号": 229
     },
     {
       "title": "新疆公司招聘信息发布服务询价通知",
@@ -2702,7 +3657,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594559310/b1?sk=6C9EB966780822A88947CC617D763E0EEE1E8D29&from=skill",
-      "seq": 208
+      "seq": 208,
+      "序号": 230
     },
     {
       "title": "赤峰市喀喇沁旗牛家营子镇家门口就业服务站招聘活动服务采购项目竞争性谈判公告",
@@ -2715,7 +3671,8 @@
       "deadline": "",
       "keyword": "招聘",
       "url": "https://www.zhiliaobiaoxun.com/content/594547094/b1?sk=2822DA7F7A07BDCAA2809884A0C10EADF87DC259&from=skill",
-      "seq": 209
+      "seq": 209,
+      "序号": 231
     },
     {
       "title": "海南省环境科学研究院2026年公开招聘事业编制专业技术人员命题和考务项目",
@@ -2728,7 +3685,8 @@
       "deadline": "未注明",
       "keyword": "笔面试",
       "url": "",
-      "seq": 210
+      "seq": 210,
+      "序号": 232
     },
     {
       "title": "2026年公开招聘面试工作服务项目",
@@ -2741,7 +3699,8 @@
       "deadline": "2026-05-27",
       "keyword": "面试服务",
       "url": "",
-      "seq": 211
+      "seq": 211,
+      "序号": 233
     },
     {
       "title": "线上笔试服务平台项目",
@@ -2754,7 +3713,8 @@
       "deadline": "未注明",
       "keyword": "笔试服务",
       "url": "",
-      "seq": 212
+      "seq": 212,
+      "序号": 234
     },
     {
       "title": "⚠️ 2026-05-30（周六）API共返回6条数据，全部为过程性公告（笔试成绩查询/中标结果/装卸服务/以工代赈等），已按筛选规则全部过滤，无符合条件的招聘服务采购公告。周末发布量较少，属正常现象。",
@@ -2767,152 +3727,71 @@
       "deadline": "",
       "keyword": "",
       "url": "",
-      "seq": 213
+      "seq": 213,
+      "序号": 235
     }
   ],
   "stats": {
-    "total": 213,
-    "total_budget": 13979.79,
-    "diamond": 18,
-    "fire": 15,
-    "trophy": 50,
-    "no_budget": 130
+    "total": 235,
+    "total_budget": 494.99,
+    "diamond": 1,
+    "fire": 3,
+    "trophy": 4,
+    "no_budget": 227
   },
   "type_dist": {
-    "综合招聘服务": 103,
-    "培训服务": 16,
-    "招聘平台/系统": 16,
-    "猎头/人才寻访": 14,
-    "人力资源服务": 13,
-    "校招服务": 13,
-    "考务服务": 11,
-    "人才测评/背调": 10,
-    "校招/招聘活动服务": 5,
-    "RPO/招聘流程外包": 4,
-    "招聘活动服务": 4,
-    "校招/培训服务": 1,
-    "人力资源综合服务": 1,
-    "人事外包": 1,
-    "招聘管理委托": 1
+    "人才测评/背调": 2,
+    "综合招聘服务": 224,
+    "培训服务": 1,
+    "猎头/人才寻访": 4,
+    "校招服务": 3,
+    "RPO/招聘流程外包": 1
   },
   "province_dist": {
-    "广东": 18,
-    "四川": 17,
-    "山东": 16,
-    "北京": 15,
-    "江苏": 9,
-    "湖南": 9,
-    "贵州": 9,
-    "江西": 9,
-    "黑龙江": 9,
-    "安徽": 8,
-    "浙江": 7,
-    "上海": 7,
-    "天津": 6,
-    "河南": 6,
+    "江苏": 11,
+    "云南": 5,
+    "广东": 21,
+    "天津": 7,
+    "上海": 8,
+    "山西": 5,
+    "北京": 17,
+    "辽宁": 3,
+    "湖南": 10,
+    "四川": 20,
+    "黑龙江": 10,
+    "河北": 4,
+    "福建": 7,
     "陕西": 5,
+    "浙江": 7,
     "新疆": 5,
     "湖北": 5,
-    "福建": 5,
+    "甘肃": 2,
+    "广西": 4,
+    "贵州": 9,
+    "江西": 9,
+    "重庆": 1,
+    "山东": 16,
+    "河南": 6,
+    "安徽": 8,
+    "青海": 2,
+    "吉林": 2,
     "内蒙古": 5,
-    "海南": 5
+    "海南": 5,
+    "未知": 2,
+    "西藏": 1
   },
   "date_dist": {
-    "": 1,
-    "2026-05-22": 3,
-    "2026-05-25": 20,
-    "2026-05-26": 13,
-    "2026-05-27": 25,
-    "2026-05-28": 21,
-    "2026-05-29": 10,
-    "2026-06-01": 28,
-    "2026-06-02": 29,
-    "2026-06-03": 17,
-    "2026-06-04": 35,
-    "2026-06-05": 11
+    "2026-06-05": 22
   },
   "date_type": {
-    "": {
-      "综合招聘服务": 1
-    },
-    "2026-05-22": {
-      "综合招聘服务": 3
-    },
-    "2026-05-25": {
-      "综合招聘服务": 20
-    },
-    "2026-05-26": {
-      "综合招聘服务": 13
-    },
-    "2026-05-27": {
-      "招聘活动服务": 3,
-      "猎头/人才寻访": 1,
-      "综合招聘服务": 6,
-      "招聘平台/系统": 4,
-      "校招服务": 4,
-      "招聘管理委托": 1,
-      "培训服务": 1,
-      "RPO/招聘流程外包": 3,
-      "人才测评/背调": 1,
-      "考务服务": 1
-    },
-    "2026-05-28": {
-      "综合招聘服务": 14,
-      "人事外包": 1,
-      "考务服务": 2,
-      "招聘平台/系统": 3,
-      "人才测评/背调": 1
-    },
-    "2026-05-29": {
-      "校招/招聘活动服务": 5,
-      "人力资源综合服务": 1,
-      "考务服务": 2,
-      "招聘平台/系统": 1,
-      "综合招聘服务": 1
-    },
-    "2026-06-01": {
-      "人力资源服务": 5,
-      "综合招聘服务": 8,
-      "人才测评/背调": 3,
-      "考务服务": 1,
-      "猎头/人才寻访": 4,
-      "招聘活动服务": 1,
-      "培训服务": 2,
-      "校招/培训服务": 1,
-      "招聘平台/系统": 3
-    },
-    "2026-06-02": {
-      "综合招聘服务": 15,
-      "招聘平台/系统": 1,
-      "RPO/招聘流程外包": 1,
-      "人才测评/背调": 3,
-      "校招服务": 5,
-      "考务服务": 2,
-      "培训服务": 1,
-      "猎头/人才寻访": 1
-    },
-    "2026-06-03": {
-      "校招服务": 2,
-      "猎头/人才寻访": 2,
-      "综合招聘服务": 5,
-      "招聘平台/系统": 3,
-      "人才测评/背调": 1,
-      "人力资源服务": 2,
-      "考务服务": 2
-    },
-    "2026-06-04": {
-      "人力资源服务": 6,
-      "综合招聘服务": 10,
-      "培训服务": 12,
-      "校招服务": 2,
-      "猎头/人才寻访": 3,
-      "考务服务": 1,
-      "招聘平台/系统": 1
-    },
     "2026-06-05": {
-      "综合招聘服务": 7,
-      "人才测评/背调": 1,
-      "猎头/人才寻访": 3
+      "人才测评/背调": 2,
+      "综合招聘服务": 11,
+      "培训服务": 1,
+      "猎头/人才寻访": 4,
+      "校招服务": 3,
+      "RPO/招聘流程外包": 1
     }
-  }
+  },
+  "last_updated": "2026-06-05 18:12:37"
 }
