@@ -128,9 +128,10 @@ a:hover{text-decoration:underline}
       <span style="margin-left:12px;font-size:12px;color:#888">日期：</span>
       <input type="date" class="date-input" id="dateFilter" onchange="applyAllFilters()">
       <button class="filter-btn" onclick="clearDateFilter()">✕ 清除日期</button>
+      <span style="margin-left:12px;font-size:12px;color:#888">类型：</span>
+      <select class="filter-select" id="svcFilter" onchange="applyAllFilters()"><option value="all">全部类型</option></select>
       <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
       <select class="filter-select" id="provFilter" onchange="applyAllFilters()"><option value="all">全部地区</option></select>
-      <span id="svcBtns"></span>
     </div>
     <div class="table-scroll">
       <table style="width:100%;border-collapse:collapse">
@@ -183,15 +184,14 @@ function render(){
   provSorted.forEach(function(p){var w=Math.round(p[1]/provMax*100,1);provHtml+='<div class="prov-bar"><div class="prov-name">'+p[0]+'</div><div class="prov-fill" style="width:'+w+'%">'+p[1]+'条</div></div>';});
   document.getElementById('provBars').innerHTML=provHtml;
 
-  // Province filter
+  // Filter dropdowns
   var provOpts='<option value="all">全部地区</option>';
   Object.keys(D.province_dist).sort().forEach(function(p){provOpts+='<option value="'+p+'">'+p+'</option>';});
   document.getElementById('provFilter').innerHTML=provOpts;
 
-  // Service type filter buttons
-  var svcBtns='<span style="font-size:12px;color:#888;margin-right:4px;margin-left:12px">类型：</span><button class="filter-btn svc-btn active" onclick="filterSvc(\'all\',this)">全部</button>';
-  Object.keys(D.type_dist).sort().forEach(function(t){svcBtns+='<button class="filter-btn svc-btn" onclick="filterSvc(\''+t.replace(/'/g,"\\'")+'\',this)">'+t+'</button>';});
-  document.getElementById('svcBtns').innerHTML=svcBtns;
+  var svcOpts='<option value="all">全部类型</option>';
+  Object.keys(D.type_dist).sort().forEach(function(t){svcOpts+='<option value="'+t.replace(/'/g,"\\'")+'">'+t+'</option>';});
+  document.getElementById('svcFilter').innerHTML=svcOpts;
 
   // Table
   renderTable(items);
@@ -249,18 +249,14 @@ function renderTable(items){
 }
 
 // Filter logic
-var currentTier='all', currentSvc='all';
+var currentTier='all';
 function filterTier(tier,btn){
   document.querySelectorAll('.tier-btn').forEach(function(b){b.classList.remove('active');});
   btn.classList.add('active'); currentTier=tier; applyAllFilters();
 }
-function filterSvc(svc,btn){
-  document.querySelectorAll('.svc-btn').forEach(function(b){b.classList.remove('active');});
-  btn.classList.add('active'); currentSvc=svc; applyAllFilters();
-}
 function clearDateFilter(){document.getElementById('dateFilter').value='';applyAllFilters();}
 function applyAllFilters(){
-  var tier=currentTier, svc=currentSvc, date=document.getElementById('dateFilter').value, prov=document.getElementById('provFilter').value;
+  var tier=currentTier, date=document.getElementById('dateFilter').value, prov=document.getElementById('provFilter').value, svc=document.getElementById('svcFilter').value;
   document.querySelectorAll('.table-scroll tbody tr').forEach(function(tr){
     var show=true;
     if(tier!=='all'&&tr.dataset.tier!==tier)show=false;
