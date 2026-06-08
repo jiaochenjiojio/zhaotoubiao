@@ -232,8 +232,8 @@ function renderTable(items){
 
     var budgetCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
     var linkCell=it.url&&it.url!=='点击查看'?'<a href="'+it.url+'" target="_blank" rel="noopener">查看</a>':'';
-    var escTitle=it.title.replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var escBuyer=it.buyer.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var escTitle=(it.title||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var escBuyer=(it.buyer||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
     html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+it.province+'" data-svc="'+it.type+'" data-date="'+it.date+'">';
     html+='<td class="title-col">'+tierTag+' '+escTitle+'</td>';
