@@ -231,7 +231,7 @@ function renderTable(items){
     else{tier='nobudget';tierTag='';rc='';}
 
     var budgetCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
-    var linkCell=it.url&&it.url!=='点击查看'?'<a href="'+it.url+'" target="_blank" rel="noopener">查看</a>':'';
+    var linkCell=(it.url||it.link||'')&&(it.url||it.link)!=='点击查看'?'<a href="'+(it.url||it.link)+'" target="_blank" rel="noopener">查看</a>':'';
     var escTitle=(it.title||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     var escBuyer=(it.buyer||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
