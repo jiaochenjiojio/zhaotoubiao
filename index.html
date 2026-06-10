@@ -42,7 +42,11 @@ body{font-family:-apple-system,"Microsoft YaHei","微软雅黑",sans-serif;backg
 .filter-select:focus{outline:none;border-color:#1a73e8}
 .date-input{padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-size:12px;background:white;color:#666;width:auto}
 .date-input:focus{outline:none;border-color:#1a73e8}
-th{background:#f5f7fa;color:#555;font-weight:600;padding:10px 12px;text-align:left;border-bottom:2px solid #e0e0e0;white-space:nowrap}
+th{background:#f5f7fa;color:#555;font-weight:600;padding:10px 12px;text-align:left;border-bottom:2px solid #e0e0e0;white-space:nowrap;position:relative}
+th.sortable{cursor:pointer;user-select:none;padding-right:22px}
+th.sortable:hover{background:#e8edf2}
+th .sort-arrow{position:absolute;right:6px;font-size:11px;opacity:.4;transition:opacity .2s}
+th .sort-arrow.active{opacity:1;color:#1a73e8}
 td{padding:10px 12px;border-bottom:1px solid #f0f0f0;vertical-align:top}
 tr:hover{background:#f8f9ff}
 .money-cell{font-weight:600;color:#1a73e8}
@@ -135,7 +139,7 @@ a:hover{text-decoration:underline}
     </div>
     <div class="table-scroll">
       <table style="width:100%;border-collapse:collapse">
-        <thead><tr><th>项目名称</th><th>招标方</th><th>预算</th><th>服务类型</th><th>省份</th><th>发布时间</th><th>链接</th></tr></thead>
+        <thead><tr><th class="sortable" onclick="toggleSort(0,this)">项目名称 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(1,this)">招标方 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(2,this)">预算 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(3,this)">服务类型 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(4,this)">省份 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(5,this)">发布时间 <span class="sort-arrow"></span></th><th>链接</th></tr></thead>
         <tbody id="tableBody"></tbody>
       </table>
     </div>
@@ -143,14 +147,52 @@ a:hover{text-decoration:underline}
 </div>
 
 <script>
-var D=null, charts={};
+var D=null, charts={}, sortState={col:-1,dir:0}, allItems=[];
 var COLORS=['#1a73e8','#f9a825','#43a047','#e53935','#7b1fa2','#00838f','#ff6f00','#5d4037','#00897b','#1565c0','#c62828','#4e342e','#00695c','#283593','#ad1457','#37474f'];
 
 fetch('dashboard_data.json').then(r=>r.json()).then(data=>{
-  D=data; render();
+  D=data; allItems=[].concat(data.items); render();
 }).catch(e=>{
   document.getElementById('tableBody').innerHTML='<tr><td colspan="7" style="text-align:center;padding:40px;color:#999">数据加载失败: '+e.message+'</td></tr>';
 });
+
+// Sort toggle: 0=none, 1=asc(▲), 2=desc(▼)
+function toggleSort(col,th){
+  if(sortState.col===col){sortState.dir=(sortState.dir+1)%3;}
+  else{sortState.col=col;sortState.dir=1;}
+  // Update arrows
+  document.querySelectorAll('.sort-arrow').forEach(function(a){a.textContent='';a.classList.remove('active');});
+  if(sortState.dir>0){
+    var arrow=th.querySelector('.sort-arrow');
+    arrow.textContent=sortState.dir===1?'▲':'▼';
+    arrow.classList.add('active');
+  }
+  renderSortedTable();
+}
+
+function reSortAndRender(){
+  var items=[].concat(allItems);
+  if(sortState.dir>0){
+    items.sort(function(a,b){
+      var cols=['title','buyer','budget','type','province','date'];
+      var col=cols[sortState.col];
+      var va=getSortVal(a,col), vb=getSortVal(b,col);
+      var cmp=va<vb?-1:(va>vb?1:0);
+      return sortState.dir===1?cmp:-cmp;
+    });
+  }
+  renderTable(items);
+}
+
+function getSortVal(it,col){
+  if(col==='budget'){
+    var b=it.budget||0;
+    if(b<=0)return (it.budget===0||it.budget==null)?-Infinity:0;
+    return b;
+  }
+  if(col==='date')return it.date||'0000-00-00';
+  return (it[col]||'').toString().toLowerCase();
+}
 
 function render(){
   var s=D.stats, items=D.items;
@@ -194,7 +236,7 @@ function render(){
   document.getElementById('svcFilter').innerHTML=svcOpts;
 
   // Table
-  renderTable(items);
+  renderSortedTable();
 
   // Charts
   var trendCounts=dates.map(function(d){return D.date_dist[d]||0;});
@@ -246,6 +288,18 @@ function renderTable(items){
     html+='</tr>';
   });
   document.getElementById('tableBody').innerHTML=html;
+}
+
+function renderSortedTable(){
+  var items=[].concat(allItems);
+  if(sortState.dir>0){
+    var cols=['title','buyer','budget','type','province','date'];
+    items.sort(function(a,b){
+      var va=getSortVal(a,cols[sortState.col]), vb=getSortVal(b,cols[sortState.col]);
+      return sortState.dir===1?(va<vb?-1:(va>vb?1:0)):(va>vb?-1:(va<vb?1:0));
+    });
+  }
+  renderTable(items);
 }
 
 // Filter logic
