@@ -2,18 +2,6 @@
   "items": [
     {
       "id": 1,
-      "title": "合肥创新创业园和人力资源服务产业园公寓宿舍维修改造项目招标公告",
-      "buyer": "合肥创新创业园和人力资源服务产业园",
-      "budget": 0.0,
-      "type": "综合招聘服务",
-      "province": "安徽",
-      "city": "合肥",
-      "date": "2026-07-25",
-      "url": "https://www.zhiliaobiaoxun.com/content/599755092/b1?sk=4DD7C22AC4086B37B65E43647D1379EF01EB7B28&from=skill",
-      "link": "https://www.zhiliaobiaoxun.com/content/599755092/b1?sk=4DD7C22AC4086B37B65E43647D1379EF01EB7B28&from=skill"
-    },
-    {
-      "id": 2,
       "title": "神龙汽车有限公司人员招聘服务项目",
       "buyer": "神龙汽车有限公司",
       "budget": 0.0,
@@ -25,7 +13,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/599755130/b1?sk=38FF4F1423E994C02595E3BF1B11388C622B5258&from=skill"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "塔里木油田开发事业部，勘探事业部2026-2028年度人力资源服务公开招标公告",
       "buyer": "中国石油天然气股份有限公司塔里木油田分公司",
       "budget": 560.0,
@@ -35,6 +23,18 @@
       "date": "2026-07-24",
       "url": "https://www.zhiliaobiaoxun.com/content/599706560/b1?sk=0C4CDA368819B7E61D45F3F609D17F5BAB65911B&from=skill",
       "link": "https://www.zhiliaobiaoxun.com/content/599706560/b1?sk=0C4CDA368819B7E61D45F3F609D17F5BAB65911B&from=skill"
+    },
+    {
+      "id": 3,
+      "title": "合肥创新创业园和人力资源服务产业园公寓宿舍维修改造项目",
+      "buyer": "合肥创新创业园和人力资源服务产业园",
+      "budget": 400.0,
+      "type": "综合招聘服务",
+      "province": "安徽",
+      "city": "合肥",
+      "date": "2026-07-24",
+      "url": "https://www.zhiliaobiaoxun.com/content/599656544/b1?sk=482F4B2C9334B2ECD8A032DF5F462CEFF1675504&from=skill",
+      "link": "https://www.zhiliaobiaoxun.com/content/599656544/b1?sk=482F4B2C9334B2ECD8A032DF5F462CEFF1675504&from=skill"
     },
     {
       "id": 4,
@@ -12879,11 +12879,11 @@
   ],
   "stats": {
     "total": 1073,
-    "total_budget": 55086.6,
-    "diamond": 75,
+    "total_budget": 55486.6,
+    "diamond": 76,
     "fire": 62,
     "trophy": 252,
-    "no_budget": 684
+    "no_budget": 683
   },
   "type_dist": {
     "综合招聘服务": 665,
@@ -12896,9 +12896,9 @@
     "RPO·招聘流程外包": 6
   },
   "province_dist": {
-    "安徽": 40,
     "湖北": 26,
     "新疆": 22,
+    "安徽": 40,
     "广东": 112,
     "江西": 26,
     "江苏": 49,
@@ -12935,8 +12935,8 @@
     "济南": 2
   },
   "date_dist": {
-    "2026-07-25": 2,
-    "2026-07-24": 36,
+    "2026-07-25": 1,
+    "2026-07-24": 37,
     "2026-07-22": 38,
     "2026-07-21": 25,
     "2026-07-20": 27,
@@ -12993,10 +12993,10 @@
   },
   "date_type": {
     "2026-07-25": {
-      "综合招聘服务": 2
+      "综合招聘服务": 1
     },
     "2026-07-24": {
-      "综合招聘服务": 20,
+      "综合招聘服务": 21,
       "猎头·人才寻访": 2,
       "考务服务": 3,
       "人才测评·背调": 3,
