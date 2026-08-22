@@ -2,6 +2,18 @@
   "items": [
     {
       "id": 1,
+      "title": "昆明市西山区西苑社区卫生服务中心采购委托第三方机构招聘人员服务项目（二次）竞争性磋商公告",
+      "buyer": "昆明市西山区西苑社区卫生服务中心",
+      "budget": 0.0,
+      "type": "综合招聘服务",
+      "province": "云南",
+      "city": "昆明",
+      "date": "2026-08-22",
+      "url": "https://www.zhiliaobiaoxun.com/content/601916777/b1/EA542B037A930D60B9EF3910C0C36B54984AF443?sk=EA542B037A930D60B9EF3910C0C36B54984AF443&from=skill",
+      "link": "https://www.zhiliaobiaoxun.com/content/601916777/b1/EA542B037A930D60B9EF3910C0C36B54984AF443?sk=EA542B037A930D60B9EF3910C0C36B54984AF443&from=skill"
+    },
+    {
+      "id": 2,
       "title": "佛山市“百万英才汇南粤”2026年N城联动秋季招聘活动采购项目竞争性磋商公告",
       "buyer": "佛山市人力资源公共服务中心",
       "budget": 326.77,
@@ -13,7 +25,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601867993/b1/B6F3BE8298A401C07789860C315044E74D3984F9?sk=B6F3BE8298A401C07789860C315044E74D3984F9&from=skill"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "国际（江苏）人力资源服务业发展大会会展服务采购公告",
       "buyer": "江苏省人力资源和社会保障厅",
       "budget": 280.0,
@@ -25,7 +37,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601864325/b1/B126A4ED5FC2C3CB72807DBE58797C78C214C085?sk=B126A4ED5FC2C3CB72807DBE58797C78C214C085&from=skill"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "天津市河西区卫生健康委员会系统政府采购意向公告",
       "buyer": "天津市河西区卫生健康委员会",
       "budget": 180.0,
@@ -37,7 +49,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601878056/b1/11F8F9D9AD5993E9A08102693B9CE4171B7CB063?sk=11F8F9D9AD5993E9A08102693B9CE4171B7CB063&from=skill"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "河北政法职业学院2026年度招聘人员体检项目（三次）竞争性磋商公告",
       "buyer": "河北政法职业学院",
       "budget": 22.21,
@@ -49,7 +61,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601846576/b1/253635AAB54775CB8F11CE78946364E6EE8CAB46?sk=253635AAB54775CB8F11CE78946364E6EE8CAB46&from=skill"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "儿童康复综合素质测评系统采购项目竞价公告",
       "buyer": "陕西中医药大学第二附属医院",
       "budget": 7.0,
@@ -61,7 +73,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601825774/b1/8F97F263B52A59ED34918FBF229C7A53A18A77FD?sk=8F97F263B52A59ED34918FBF229C7A53A18A77FD&from=skill"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "关于为【短视频制作服务商采购】公开选取【宣传设计服务，商务服务】机构的公告",
       "buyer": "重庆市江北区城市运营管理集团有限公司助业人力资源分公司",
       "budget": 3.0,
@@ -73,7 +85,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601836147/b1/B69AF43C4CFD8FC7E3C64F25AF1C3ACB4DE48845?sk=B69AF43C4CFD8FC7E3C64F25AF1C3ACB4DE48845&from=skill"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "四川九州电子科技股份有限公司关于招聘采购履行岗的公告",
       "buyer": "四川九州电子科技股份有限公司",
       "budget": 0.0,
@@ -85,7 +97,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601878329/b1/9A818A6E9C1404E43B7AF9C8A6E2F84B6BE4503B?sk=9A818A6E9C1404E43B7AF9C8A6E2F84B6BE4503B&from=skill"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "广州开发区建设工程质量安全监督站2026年公开招聘政府初级雇员公告",
       "buyer": "广州开发区建设工程质量安全监督站",
       "budget": 0.0,
@@ -97,7 +109,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601868529/b1/97A9276089D3822F18A7452B1A2B4A1BFA857C3B?sk=97A9276089D3822F18A7452B1A2B4A1BFA857C3B&from=skill"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "四川九洲电器集团有限责任公司关于招聘软件工程师（指控软件开发岗）的公告",
       "buyer": "四川九洲电器集团有限责任公司",
       "budget": 0.0,
@@ -109,7 +121,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601878385/b1/60F81F9D7C0984874378CC3C0853994CA5C780F2?sk=60F81F9D7C0984874378CC3C0853994CA5C780F2&from=skill"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "中铁合肥新型交通产业投资有限公司轨道交通人才猎头服务采购公开竞争性谈判谈判公告",
       "buyer": "中铁合肥新型交通产业投资有限公司",
       "budget": 0.0,
@@ -121,7 +133,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601819313/b1/588D4123637D4345A53D8D261268BA42B43384C3?sk=588D4123637D4345A53D8D261268BA42B43384C3&from=skill"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "福建省农业科学院质标所关于公开招聘检测技术人员的公告",
       "buyer": "福建农业科学院农业质量标准与检测技术研究所",
       "budget": 0.0,
@@ -133,7 +145,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601862259/b1/84EDBF2889B1CD7A9DA3D69118899CF6798A45E0?sk=84EDBF2889B1CD7A9DA3D69118899CF6798A45E0&from=skill"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "福建省农业科学院质标所关于招聘农药登记残留试验人员的公告",
       "buyer": "福建农业科学院农业质量标准与检测技术研究所",
       "budget": 0.0,
@@ -145,7 +157,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601862273/b1/0F21285E7CD0DBDF613FAA2707DB2E6966789070?sk=0F21285E7CD0DBDF613FAA2707DB2E6966789070&from=skill"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "锡林郭勒盟人力资源服务中心干部人事档案数字化服务项目竞争性磋商公告",
       "buyer": "锡林郭勒盟人力资源服务中心",
       "budget": 0.0,
@@ -157,7 +169,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601832557/b1/6D8C286CD0709CAD2465771C5B3AB7D49CBECAEC?sk=6D8C286CD0709CAD2465771C5B3AB7D49CBECAEC&from=skill"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "杭州市保俶塔实验学校招聘电教员",
       "buyer": "杭州市保俶塔实验学校",
       "budget": 0.0,
@@ -169,7 +181,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601837695/b1/E4DD08B77A0DCED36CEE9C1600F3652EE43199E4?sk=E4DD08B77A0DCED36CEE9C1600F3652EE43199E4&from=skill"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "贵州金州电力集团有限责任公司2026年度第三方招聘服务机构比选项目竞争性谈判采购公告",
       "buyer": "贵州金州电力集团有限责任公司",
       "budget": 0.0,
@@ -181,7 +193,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601849941/b1/9A0ADD4425AEAB4E1429DEABBFA56DA50907E326?sk=9A0ADD4425AEAB4E1429DEABBFA56DA50907E326&from=skill"
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "关于2026年招聘网站会员账号的采购申请",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -193,7 +205,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601830505/b1/EC6CF6EE8B67B3667D7BD5BAFE80F563B2CC0FFA?sk=EC6CF6EE8B67B3667D7BD5BAFE80F563B2CC0FFA&from=skill"
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "中粮贸易（深圳）有限公司2026年逐浪计划新员工培训(二次)谈判采购（分散）公告（0001标段：中粮贸易（深圳）有限公司2026年逐浪计划新员工培训(二次)）",
       "buyer": "中粮贸易（深圳）有限公司",
       "budget": 0.0,
@@ -205,7 +217,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601863427/b1/68523B69BE8447412B64ADF0F8EA404979F20856?sk=68523B69BE8447412B64ADF0F8EA404979F20856&from=skill"
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "山西铁道职业技术学院一餐厅洗消保洁班组招聘公告",
       "buyer": "山西铁道职业技术学院",
       "budget": 0.0,
@@ -217,7 +229,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601829815/b1/33B9CD0B1BC8CC2907506F84ABEDFC4B327CEA2C?sk=33B9CD0B1BC8CC2907506F84ABEDFC4B327CEA2C&from=skill"
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "2026年伍家岗区人社局招聘会服务项目竞争性磋商公告",
       "buyer": "伍家岗区人社局",
       "budget": 0.0,
@@ -229,7 +241,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601826596/b1/DC11B4A392670505130C7C8F1E56CEA5ACFF0226?sk=DC11B4A392670505130C7C8F1E56CEA5ACFF0226&from=skill"
     },
     {
-      "id": 20,
+      "id": 21,
       "title": "2026年扩大学前教育资源补助资金采购项目公开招聘竞争性谈判代理单位的公告",
       "buyer": "忻城县教育体育局",
       "budget": 0.0,
@@ -241,7 +253,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601831077/b1/03868E2E58DFDD3AA15BC7CC2D7B8F776D1FF5DA?sk=03868E2E58DFDD3AA15BC7CC2D7B8F776D1FF5DA&from=skill"
     },
     {
-      "id": 21,
+      "id": 22,
       "title": "苏州银行股份有限公司关于苏州银行2027校园招聘宣讲会及地推服务项目的竞争性磋商公告",
       "buyer": "苏州银行股份有限公司",
       "budget": 0.0,
@@ -253,7 +265,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601859952/b1/95CE6B58B0AAE1B75DCC5935E65D21D83F95568B?sk=95CE6B58B0AAE1B75DCC5935E65D21D83F95568B&from=skill"
     },
     {
-      "id": 22,
+      "id": 23,
       "title": "关于海头镇2026年以工代赈工程招聘的公告",
       "buyer": "儋州市海头镇红坎村委会",
       "budget": 0.0,
@@ -265,7 +277,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601862284/b1/EBEB5708D3D99C160714AA1EE2B15B54D4D4195E?sk=EBEB5708D3D99C160714AA1EE2B15B54D4D4195E&from=skill"
     },
     {
-      "id": 23,
+      "id": 24,
       "title": "26-27年全年线下招聘会活动物品采购",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -277,7 +289,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601861969/b1/3DD4577F41724C3AF33D28EA98E60DD421D92742?sk=3DD4577F41724C3AF33D28EA98E60DD421D92742&from=skill"
     },
     {
-      "id": 24,
+      "id": 25,
       "title": "三一集团26-28年校园招聘服务商询比价询比价公告",
       "buyer": "三一集团",
       "budget": 0.0,
@@ -289,7 +301,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601847732/b1/78F76C6A2A4248F194F4A2ECA9F25CCDDD2B3DA6?sk=78F76C6A2A4248F194F4A2ECA9F25CCDDD2B3DA6&from=skill"
     },
     {
-      "id": 25,
+      "id": 26,
       "title": "2026年景德镇市职工服务中心采购专项服务项目",
       "buyer": "景德镇市职工服务中心",
       "budget": 0.0,
@@ -301,7 +313,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601852243/b1/912CFD45620ED624529924C17E3A113621AF39C5?sk=912CFD45620ED624529924C17E3A113621AF39C5&from=skill"
     },
     {
-      "id": 26,
+      "id": 27,
       "title": "中山大学附属第六医院2026-241期博士人才专场招聘会服务项目院内采购公告",
       "buyer": "中山大学附属第六医院",
       "budget": 0.0,
@@ -313,7 +325,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601865647/b1/25F2E0950336FFD91935C135449D58717DD8850D?sk=25F2E0950336FFD91935C135449D58717DD8850D&from=skill"
     },
     {
-      "id": 27,
+      "id": 28,
       "title": "开平市水口镇红花村委会招聘保洁人员项目",
       "buyer": "开平市水口镇红花经济联合社",
       "budget": 0.0,
@@ -325,7 +337,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601866069/b1/5679F7A6B6CD8B585D6D2CB6C07A7409910ED077?sk=5679F7A6B6CD8B585D6D2CB6C07A7409910ED077&from=skill"
     },
     {
-      "id": 28,
+      "id": 29,
       "title": "2026年信息管理总部项目实施类询比采购-人力资源数字化招聘绩效项目开标日程",
       "buyer": "青岛啤酒股份有限公司",
       "budget": 0.0,
@@ -337,7 +349,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601822713/b1/B6825BB587297D1A2BD59606F86F6C6671A7FBEA?sk=B6825BB587297D1A2BD59606F86F6C6671A7FBEA&from=skill"
     },
     {
-      "id": 29,
+      "id": 30,
       "title": "首都医科大学附属北京儿童医院黑龙江医院2026年上半年事业单位公开招聘工作人员面试服务(第2次)",
       "buyer": "首都医科大学附属北京儿童医院黑龙江医院",
       "budget": 0.0,
@@ -349,7 +361,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601833961/b1/AB6D1BC0AA0FD8B4BE082EC0E23E719BC8218133?sk=AB6D1BC0AA0FD8B4BE082EC0E23E719BC8218133&from=skill"
     },
     {
-      "id": 30,
+      "id": 31,
       "title": "南宁君通桃源饭店有限责任公司第三方人力资源服务(二次)询比采购公告",
       "buyer": "南宁君通桃源饭店有限责任公司",
       "budget": 0.0,
@@ -361,7 +373,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601850849/b1/224BA2460DC5FEDAEF54082FBCF5701886BAF9F9?sk=224BA2460DC5FEDAEF54082FBCF5701886BAF9F9&from=skill"
     },
     {
-      "id": 31,
+      "id": 32,
       "title": "【集采】-【京能集团公开招聘辅助服务框架协议采购项目】单一来源公示-集中采购项目",
       "buyer": "京能集团",
       "budget": 0.0,
@@ -373,7 +385,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601845591/b1/C38FEB4A97A1F9352FCA5001D9F73715100A362B?sk=C38FEB4A97A1F9352FCA5001D9F73715100A362B&from=skill"
     },
     {
-      "id": 32,
+      "id": 33,
       "title": "上海市闵行区妇幼保健院儿童综合素质测评系统网络版比选公告",
       "buyer": "上海市闵行区妇幼保健院",
       "budget": 0.0,
@@ -385,7 +397,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601832365/b1/60306382509FD66AB1B12CC5925980E005D8E784?sk=60306382509FD66AB1B12CC5925980E005D8E784&from=skill"
     },
     {
-      "id": 33,
+      "id": 34,
       "title": "2026福建海峡人力资源股份有限公司泉州分公司招聘农业普查辅调员6人公告",
       "buyer": "福建海峡人力资源股份有限公司泉州分公司",
       "budget": 0.0,
@@ -397,7 +409,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601839808/b1/6D563B7A8AE471CBCC99077AD7F9941F10DA80FA?sk=6D563B7A8AE471CBCC99077AD7F9941F10DA80FA&from=skill"
     },
     {
-      "id": 34,
+      "id": 35,
       "title": "2026年度新员工入职及招聘服务询价采购公告",
       "buyer": "中国船舶集团有限公司第七一九研究所",
       "budget": 0.0,
@@ -409,7 +421,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601846283/b1/D9ADB91C82AD50D9B3DCE38C9E05FB886DDAA088?sk=D9ADB91C82AD50D9B3DCE38C9E05FB886DDAA088&from=skill"
     },
     {
-      "id": 35,
+      "id": 36,
       "title": "大家保险集团2027-2029年度校园招聘笔面试实施服务采购项目公开征集",
       "buyer": "大家保险集团有限责任公司",
       "budget": 0.0,
@@ -421,7 +433,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601862362/b1/6D0E189AAF2145A4CF634FB60D9D7DE7E0A62F5E?sk=6D0E189AAF2145A4CF634FB60D9D7DE7E0A62F5E&from=skill"
     },
     {
-      "id": 36,
+      "id": 37,
       "title": "江西首信招标咨询有限公司关于九江学院第二附属医院人力资源服务采购项目【项目编号：JXSX2026-JJ-G4648】公开招标公告",
       "buyer": "九江学院第二附属医院",
       "budget": 207.0,
@@ -433,7 +445,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601775925/b1/9E4FD4E195256F50631450D3F4DAEA1C7BAA55BA?sk=9E4FD4E195256F50631450D3F4DAEA1C7BAA55BA&from=skill"
     },
     {
-      "id": 37,
+      "id": 38,
       "title": "中国电信四川公司2027年校园招聘服务项目询比公告",
       "buyer": "中国电信股份有限公司四川分公司",
       "budget": 112.0,
@@ -445,7 +457,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601783868/b1/CE6403CB0FB20B9F5EA113B3893B45630D75529B?sk=CE6403CB0FB20B9F5EA113B3893B45630D75529B&from=skill"
     },
     {
-      "id": 38,
+      "id": 39,
       "title": "2026年秋季—2027年春季“才聚诗城高校行”活动采购",
       "buyer": "马鞍山市人力资源和社会保障局",
       "budget": 48.5,
@@ -457,7 +469,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601728993/b1/4079C54EC2A07E1289AEE0D15AFF92E126A05D42?sk=4079C54EC2A07E1289AEE0D15AFF92E126A05D42&from=skill"
     },
     {
-      "id": 39,
+      "id": 40,
       "title": "成都建工第一建筑工程有限公司2026年人才咨询服务机构采购项目比选任务",
       "buyer": "成都建工第一建筑工程有限公司",
       "budget": 31.2,
@@ -469,7 +481,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601743248/b1/BDCEF08E0DDDBCFC282B743EB33DAD78C57DAA30?sk=BDCEF08E0DDDBCFC282B743EB33DAD78C57DAA30&from=skill"
     },
     {
-      "id": 40,
+      "id": 41,
       "title": "2026年成都市总工会就业服务活动专场招聘会项目竞争性磋商采购公告",
       "buyer": "成都市总工会",
       "budget": 28.0,
@@ -481,7 +493,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601778075/b1/290C158D2D947C337BAB15576C4451C9BA9EC998?sk=290C158D2D947C337BAB15576C4451C9BA9EC998&from=skill"
     },
     {
-      "id": 41,
+      "id": 42,
       "title": "关于江山市2026年秋季省内校园招聘活动采购项目非政府采购竞争性磋商公告",
       "buyer": "江山市人才和就业管理中心",
       "budget": 11.93,
@@ -493,7 +505,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601779646/b1/88D4C175024D5E71F9535B50EAD9F6E071F7828E?sk=88D4C175024D5E71F9535B50EAD9F6E071F7828E&from=skill"
     },
     {
-      "id": 42,
+      "id": 43,
       "title": "2026年南通市人力资源服务中心直播带岗服务外包项目比选公告",
       "buyer": "南通市人力资源服务中心",
       "budget": 7.0,
@@ -505,7 +517,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601770010/b1/034E904967A7057893FEBA53870E1D37CA86254E?sk=034E904967A7057893FEBA53870E1D37CA86254E&from=skill"
     },
     {
-      "id": 43,
+      "id": 44,
       "title": "铜仁市第三人民医院2026年公开招聘编制外工作人员（第一批）考务服务项目",
       "buyer": "铜仁市第三人民医院",
       "budget": 6.0,
@@ -517,7 +529,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601731277/b1/C1BB5D927CBB840672C30C2A34E489A0CB84CEBB?sk=C1BB5D927CBB840672C30C2A34E489A0CB84CEBB&from=skill"
     },
     {
-      "id": 44,
+      "id": 45,
       "title": "关于为【项目人力资源采购】公开选取【商务服务】机构的公告",
       "buyer": "城口县诚路建筑工程有限公司",
       "budget": 5.5,
@@ -529,7 +541,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601744796/b1/497A7D4E3507D4A6EEAB4DEF77E4B2FF68D3A648?sk=497A7D4E3507D4A6EEAB4DEF77E4B2FF68D3A648&from=skill"
     },
     {
-      "id": 45,
+      "id": 46,
       "title": "英德市聚才人力资源服务有限公司等两家单位2025年1月至2026年6月财务收支审计",
       "buyer": "英德市聚才人力资源服务有限公司",
       "budget": 2.2,
@@ -541,7 +553,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601774368/b1/E8F6CA66A61935944DBA7FEF59BD30DAEA901EFA?sk=E8F6CA66A61935944DBA7FEF59BD30DAEA901EFA&from=skill"
     },
     {
-      "id": 46,
+      "id": 47,
       "title": "台州市路桥区竿蓬天国经纪事务所人力资源服务许可终止",
       "buyer": "台州市路桥区竿蓬天国经纪事务所",
       "budget": 0.0,
@@ -553,7 +565,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601740175/b1/9592AEB38839E15FC5FDEA7B7BC87E990E354F0A?sk=9592AEB38839E15FC5FDEA7B7BC87E990E354F0A&from=skill"
     },
     {
-      "id": 47,
+      "id": 48,
       "title": "广西北部湾国际集装箱码头有限公司2026年管理干部能力提升培训班项目单一来源采购公告",
       "buyer": "广西北部湾国际集装箱码头有限公司",
       "budget": 0.0,
@@ -565,7 +577,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601750271/b1/C0F26D68802C579D41621CBA7528B0F35879F9FA?sk=C0F26D68802C579D41621CBA7528B0F35879F9FA&from=skill"
     },
     {
-      "id": 48,
+      "id": 49,
       "title": "驾驶员招聘项目事招标公告（2026-VGBYBG-F4024）",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -577,7 +589,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601771927/b1/25BE19E99B3BEFFED33D8D9C36997E7C824B9B68?sk=25BE19E99B3BEFFED33D8D9C36997E7C824B9B68&from=skill"
     },
     {
-      "id": 49,
+      "id": 50,
       "title": "宁波市自然资源和规划综合保障中心2026年8月公开招聘",
       "buyer": "宁波市自然资源和规划综合保障中心",
       "budget": 0.0,
@@ -589,7 +601,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601758875/b1/2F93A5C1F1FD200DBBF4417A49131D069E3E4AB4?sk=2F93A5C1F1FD200DBBF4417A49131D069E3E4AB4&from=skill"
     },
     {
-      "id": 50,
+      "id": 51,
       "title": "人力资源服务公司采购",
       "buyer": "人力资源服务公司",
       "budget": 0.0,
@@ -601,7 +613,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601767073/b1/FBE69306B057DD3DA1CB76FC8CB669F902F9BA53?sk=FBE69306B057DD3DA1CB76FC8CB669F902F9BA53&from=skill"
     },
     {
-      "id": 51,
+      "id": 52,
       "title": "（询比采购）【猎聘线上招聘平台采购/5500-PS202608200106】采购公告",
       "buyer": "中化蓝天集团有限公司",
       "budget": 0.0,
@@ -613,7 +625,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601731080/b1/B8EDA14A15F5C285955CC00E5AD2D1A5E7E4B014?sk=B8EDA14A15F5C285955CC00E5AD2D1A5E7E4B014&from=skill"
     },
     {
-      "id": 52,
+      "id": 53,
       "title": "2026年四川天府国际会展有限公司招聘服务采购项目（二次）比选公告",
       "buyer": "四川天府国际会展有限公司",
       "budget": 0.0,
@@ -625,7 +637,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601770575/b1/061DA337E2CEBA6BC2B3B4CF0CE852D4714BD17B?sk=061DA337E2CEBA6BC2B3B4CF0CE852D4714BD17B&from=skill"
     },
     {
-      "id": 53,
+      "id": 54,
       "title": "26-08-34-003谈采购公告",
       "buyer": "中国石油化工股份有限公司河南油田分公司",
       "budget": 0.0,
@@ -637,7 +649,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601738766/b1/02A593FE1061AF46C39E3143B8DF200A4E2C2BC6?sk=02A593FE1061AF46C39E3143B8DF200A4E2C2BC6&from=skill"
     },
     {
-      "id": 54,
+      "id": 55,
       "title": "铜陵雷鸣双狮化工有限责任公司线上询比选择第三方招聘平台的公告(二次)采购公告",
       "buyer": "铜陵雷鸣双狮化工有限责任公司",
       "budget": 0.0,
@@ -649,7 +661,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601738868/b1/CEE23E9D345E928AAAD6279F9DCC97908A84A266?sk=CEE23E9D345E928AAAD6279F9DCC97908A84A266&from=skill"
     },
     {
-      "id": 55,
+      "id": 56,
       "title": "集团人才招聘管理系统开发实施项目采购项目询比公告",
       "buyer": "中广核智能科技（深圳）有限责任公司",
       "budget": 0.0,
@@ -661,7 +673,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601748546/b1/EF5953E3810384D7903B027A0FCB9DC953E6E593?sk=EF5953E3810384D7903B027A0FCB9DC953E6E593&from=skill"
     },
     {
-      "id": 56,
+      "id": 57,
       "title": "综合管理部2026年招聘平台服务采购项目采购需求公告",
       "buyer": "综合管理部",
       "budget": 0.0,
@@ -673,7 +685,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601781920/b1/7F2E8C979166B0CBB82879CB265B64F1E5922822?sk=7F2E8C979166B0CBB82879CB265B64F1E5922822&from=skill"
     },
     {
-      "id": 57,
+      "id": 58,
       "title": "中国建设银行股份有限公司全行招聘笔试服务项目招标公告",
       "buyer": "中国建设银行股份有限公司",
       "budget": 0.0,
@@ -685,7 +697,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601785316/b1/3AF2580A592E491F8108AE10619A34518BAD0F7A?sk=3AF2580A592E491F8108AE10619A34518BAD0F7A&from=skill"
     },
     {
-      "id": 58,
+      "id": 59,
       "title": "2026财年城燃第4批次劳务自然人入围招聘招标招标公告",
       "buyer": "河北代中人力资源服务有限公司",
       "budget": 0.0,
@@ -697,7 +709,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601738768/b1/15BDDB1BE83474C3706491A8B4304CFBE79182A8?sk=15BDDB1BE83474C3706491A8B4304CFBE79182A8&from=skill"
     },
     {
-      "id": 59,
+      "id": 60,
       "title": "新安县人力资源和社会保障局2026年下半年公共就业招聘专项活动采购公告",
       "buyer": "新安县人力资源和社会保障局",
       "budget": 0.0,
@@ -709,7 +721,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601745844/b1/5CC6E82172FF5CC62A96320F871719F9781307E0?sk=5CC6E82172FF5CC62A96320F871719F9781307E0&from=skill"
     },
     {
-      "id": 60,
+      "id": 61,
       "title": "关于北京大学深圳医院医疗招聘平台招标采购项目的其他公告",
       "buyer": "北京大学深圳医院",
       "budget": 0.0,
@@ -721,7 +733,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601774053/b1/FC21C0B5776ECA2BA7B4270DE16355BC2BE51C7D?sk=FC21C0B5776ECA2BA7B4270DE16355BC2BE51C7D&from=skill"
     },
     {
-      "id": 61,
+      "id": 62,
       "title": "麦斯克电子材料股份有限公司2026-2028年度社会招聘猎聘服务供应商库招标公告",
       "buyer": "麦斯克电子材料股份有限公司",
       "budget": 0.0,
@@ -733,7 +745,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601783594/b1/DE1C7403976B1C1F1102E34B407B626B9F670A2A?sk=DE1C7403976B1C1F1102E34B407B626B9F670A2A&from=skill"
     },
     {
-      "id": 62,
+      "id": 63,
       "title": "塔里木油田共享服务中心2026-2027年度综合业务人力资源服务",
       "buyer": "塔里木油田共享服务中心",
       "budget": 0.0,
@@ -745,7 +757,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601752061/b1/4D16278FAD0AC540D3CEE72709E434789422D87E?sk=4D16278FAD0AC540D3CEE72709E434789422D87E&from=skill"
     },
     {
-      "id": 63,
+      "id": 64,
       "title": "汕头大学医学院遴选2026-2029年度高层次人才猎头服务项目（第三次）竞争性磋商公告",
       "buyer": "汕头大学医学院",
       "budget": 0.0,
@@ -757,7 +769,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601769062/b1/9BA771D755AEE3E8FEAC43539046C4117E7EF28F?sk=9BA771D755AEE3E8FEAC43539046C4117E7EF28F&from=skill"
     },
     {
-      "id": 64,
+      "id": 65,
       "title": "【招聘网站服务采购项目】采购公告",
       "buyer": "中光学集团股份有限公司",
       "budget": 0.0,
@@ -769,7 +781,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601783589/b1/E27B2D655C119E3096922D66E37648742351BD5C?sk=E27B2D655C119E3096922D66E37648742351BD5C&from=skill"
     },
     {
-      "id": 65,
+      "id": 66,
       "title": "塔里木油田油气运销2026年-2028年人力资源服务招标公告",
       "buyer": "中国石油天然气股份有限公司塔里木油田分公司",
       "budget": 0.0,
@@ -781,7 +793,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601785919/b1/72170432095E7ADE6705FF34EF8EA18770856CAF?sk=72170432095E7ADE6705FF34EF8EA18770856CAF&from=skill"
     },
     {
-      "id": 66,
+      "id": 67,
       "title": "“百万英才汇南粤”2026年N城联动秋季招聘暨秋季引才高校行活动招标公告",
       "buyer": "珠海市人才资源与就业服务中心",
       "budget": 720.0,
@@ -793,7 +805,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601672433/b1/9DC250BC30BCAC1A5C5DF66E5B3C959431C58EAF?sk=9DC250BC30BCAC1A5C5DF66E5B3C959431C58EAF&from=skill"
     },
     {
-      "id": 67,
+      "id": 68,
       "title": "浙江省交通投资集团有限公司招标采购管理中心网络及校园招聘渠道服务（科教集团）公开招标项目意向公示",
       "buyer": "浙江省交通投资集团有限公司招标采购管理中心",
       "budget": 280.0,
@@ -805,7 +817,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601691057/b1/A07E274B5D17E557BFA35E7FF970C7AF1DB6DA1A?sk=A07E274B5D17E557BFA35E7FF970C7AF1DB6DA1A&from=skill"
     },
     {
-      "id": 68,
+      "id": 69,
       "title": "大名县人力资源和社会保障局本级2026年01至12月政府采购意向-大名县人力资源服务业咨询运营服务项目",
       "buyer": "大名县人力资源和社会保障局",
       "budget": 216.34,
@@ -817,7 +829,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601640677/b1/7A669945B82FB91EBB4DB61647281E2CC80370B6?sk=7A669945B82FB91EBB4DB61647281E2CC80370B6&from=skill"
     },
     {
-      "id": 69,
+      "id": 70,
       "title": "东航2027年度招聘执行项目",
       "buyer": "中国东方航空股份有限公司",
       "budget": 130.0,
@@ -829,7 +841,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601689629/b1/3611EABB2DFDB002D87091BDA4332CE29C055016?sk=3611EABB2DFDB002D87091BDA4332CE29C055016&from=skill"
     },
     {
-      "id": 70,
+      "id": 71,
       "title": "陕西省文化和旅游厅机关2026年08月至2026年09月政府采购意向-陕西省文化和旅游厅2026年全国导游资格考现场考试（面试）服务项目",
       "buyer": "陕西省文化和旅游厅",
       "budget": 100.0,
@@ -841,7 +853,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601656173/b1/EBCDE124B175B94046B444990C1D7964C7C41C54?sk=EBCDE124B175B94046B444990C1D7964C7C41C54&from=skill"
     },
     {
-      "id": 71,
+      "id": 72,
       "title": "越秀区关于委托第三方机构举办“百万英才汇南粤”2026年N城联动秋季招聘活动（上海站）的比选公告",
       "buyer": "广州市越秀区劳动就业服务管理中心",
       "budget": 50.0,
@@ -853,7 +865,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601648339/b1/9EEAED249CF63CF4953DCC22EC40D7BAF411D276?sk=9EEAED249CF63CF4953DCC22EC40D7BAF411D276&from=skill"
     },
     {
-      "id": 72,
+      "id": 73,
       "title": "兰州大学第二医院生物安全柜，六分钟步态实验多维测评系统，电子显微镜，便携式肌电图诱发电位仪，利器盒采购公告（LDEYSBCG2026-39）",
       "buyer": "兰州大学第二医院",
       "budget": 38.9,
@@ -865,7 +877,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601637561/b1/C9CD4248E850CD042B61707FB0C32EA2F0BB7975?sk=C9CD4248E850CD042B61707FB0C32EA2F0BB7975&from=skill"
     },
     {
-      "id": 73,
+      "id": 74,
       "title": "吉林烟草工业有限责任公司2027年-2029年委托招聘代理服务项目-询比公告",
       "buyer": "吉林烟草工业有限责任公司",
       "budget": 33.0,
@@ -877,7 +889,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601642140/b1/563591EA8D282F69BBF668CB104EDD71E67F1DD2?sk=563591EA8D282F69BBF668CB104EDD71E67F1DD2&from=skill"
     },
     {
-      "id": 74,
+      "id": 75,
       "title": "屏山县中医医院老年能力评估与心理测评系统采购项目竞争性谈判采购公告",
       "buyer": "屏山县中医医院",
       "budget": 24.0,
@@ -889,7 +901,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601637551/b1/DC6708EE4B108F7CFABF045A375BFFC79AAEEDE7?sk=DC6708EE4B108F7CFABF045A375BFFC79AAEEDE7&from=skill"
     },
     {
-      "id": 75,
+      "id": 76,
       "title": "背景调查服务采购项目项目公告",
       "buyer": "青岛国信城市信息科技有限公司",
       "budget": 2.0,
@@ -901,7 +913,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601650345/b1/E65705F7741F932091CB8D1FBD8053963666EF0D?sk=E65705F7741F932091CB8D1FBD8053963666EF0D&from=skill"
     },
     {
-      "id": 76,
+      "id": 77,
       "title": "关于贵阳贵安2026年卫生健康系统公开招聘事业单位工作人员考核工作租车服务采购竞价公告",
       "buyer": "安顺市平坝区马场镇卫生院",
       "budget": 0.34,
@@ -913,7 +925,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601634752/b1/19B2632DEEDE1F552F76E30FF0003FD02364D115?sk=19B2632DEEDE1F552F76E30FF0003FD02364D115&from=skill"
     },
     {
-      "id": 77,
+      "id": 78,
       "title": "寻求猎头服务合作机构项目2(第2次采购)事前公示",
       "buyer": "南京长江电子信息产业集团有限公司",
       "budget": 0.0,
@@ -925,7 +937,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601672129/b1/92CCE9CDA00C8957AD72439E385E234A084E3FA1?sk=92CCE9CDA00C8957AD72439E385E234A084E3FA1&from=skill"
     },
     {
-      "id": 78,
+      "id": 79,
       "title": "宜宾家园长庚养老服务有限责任公司招聘信息",
       "buyer": "宜宾家园长庚养老服务有限责任公司",
       "budget": 0.0,
@@ -937,7 +949,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601686753/b1/E9ADA44B69155DC2F7377921DF194B55BB1AE372?sk=E9ADA44B69155DC2F7377921DF194B55BB1AE372&from=skill"
     },
     {
-      "id": 79,
+      "id": 80,
       "title": "分谈分签+中国船舶集团有限公司第七〇七研究所+招聘系统，测评系统服务（QG2026081100421）的询价书",
       "buyer": "中国船舶集团有限公司第七〇七研究所",
       "budget": 0.0,
@@ -949,7 +961,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601656010/b1/655B26302FE32C8A688D8C4DDCA5440B9C3E7569?sk=655B26302FE32C8A688D8C4DDCA5440B9C3E7569&from=skill"
     },
     {
-      "id": 80,
+      "id": 81,
       "title": "安徽省工业互联网发展研究中心人力资源服务采购项目",
       "buyer": "安徽省工业互联网发展研究中心",
       "budget": 0.0,
@@ -961,7 +973,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601667381/b1/73728739D6D73A7AC41F241EEF0BF0FBC628D8B5?sk=73728739D6D73A7AC41F241EEF0BF0FBC628D8B5&from=skill"
     },
     {
-      "id": 81,
+      "id": 82,
       "title": "2026-2028年校园招聘服务比选公告",
       "buyer": "泸州老窖股份有限公司",
       "budget": 0.0,
@@ -973,7 +985,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601654015/b1/7CB931D9BCD7F1228553E98D20BF8AB74009937F?sk=7CB931D9BCD7F1228553E98D20BF8AB74009937F&from=skill"
     },
     {
-      "id": 82,
+      "id": 83,
       "title": "十七冶建设分公司雄安某公建工程01项目人力资源服务采购",
       "buyer": "中国十七冶集团有限公司建设分公司",
       "budget": 0.0,
@@ -985,7 +997,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601656346/b1/53CE1CCF78E12B449427FA07E83AB256C1491FEF?sk=53CE1CCF78E12B449427FA07E83AB256C1491FEF&from=skill"
     },
     {
-      "id": 83,
+      "id": 84,
       "title": "北京朝阳职业学校学生宿管服务商招聘项目比选公告",
       "buyer": "北京朝阳职业学校",
       "budget": 0.0,
@@ -997,7 +1009,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601691313/b1/6A9E161362BE72ADA7B639FCC344C546846ED122?sk=6A9E161362BE72ADA7B639FCC344C546846ED122&from=skill"
     },
     {
-      "id": 84,
+      "id": 85,
       "title": "寻求猎头服务合作机构项目事前公示",
       "buyer": "南京长江电子信息产业集团有限公司",
       "budget": 0.0,
@@ -1009,7 +1021,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601668471/b1/318522684F38BED09FA4A62663DA7F2094570269?sk=318522684F38BED09FA4A62663DA7F2094570269&from=skill"
     },
     {
-      "id": 85,
+      "id": 86,
       "title": "四川九天具身智能科技有限公司（合并）关于招聘机器人系统工程师等岗位的公告",
       "buyer": "四川九天具身智能科技有限公司",
       "budget": 0.0,
@@ -1021,7 +1033,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601682470/b1/A372F09A6B2199924BC982D48846FECB6D536E7A?sk=A372F09A6B2199924BC982D48846FECB6D536E7A&from=skill"
     },
     {
-      "id": 86,
+      "id": 87,
       "title": "吉林大学第一医院26-340赴海外人才政策宣讲及招聘团会务服务项目医院磋商公告",
       "buyer": "吉林大学第一医院",
       "budget": 0.0,
@@ -1033,7 +1045,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601687449/b1/91807887ED1D0301206A20381927760F650E0995?sk=91807887ED1D0301206A20381927760F650E0995&from=skill"
     },
     {
-      "id": 87,
+      "id": 88,
       "title": "分谈分签+中国船舶集团有限公司第七一七研究所+RFX2026081800017+招聘系统管理服务平台的询价书",
       "buyer": "中国船舶集团有限公司第七一七研究所",
       "budget": 0.0,
@@ -1045,7 +1057,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601641620/b1/0C49A4EB60F97C90F8215C4E493FC5BEF50D2558?sk=0C49A4EB60F97C90F8215C4E493FC5BEF50D2558&from=skill"
     },
     {
-      "id": 88,
+      "id": 89,
       "title": "【猎头招聘服务采购】采购公告",
       "buyer": "湖南江滨机器（集团）有限责任公司",
       "budget": 0.0,
@@ -1057,7 +1069,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601654287/b1/E4A1567C23E811AFBDE6DCACB7C2C087658FDF18?sk=E4A1567C23E811AFBDE6DCACB7C2C087658FDF18&from=skill"
     },
     {
-      "id": 89,
+      "id": 90,
       "title": "山西转型综合改革示范区晋中开发区人力资源服务有限公司聘用制人员体检服务项目采购公告",
       "buyer": "山西转型综合改革示范区晋中开发区人力资源服务有限公司",
       "budget": 0.0,
@@ -1069,7 +1081,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601645190/b1/7CF7F96F07DA9515AC32B7CE3BC6FFBA017A45C7?sk=7CF7F96F07DA9515AC32B7CE3BC6FFBA017A45C7&from=skill"
     },
     {
-      "id": 90,
+      "id": 91,
       "title": "贵阳市第二人民医院（金阳医院）2026年第一批编制外合同制职工招聘技能考试成绩及进入下一环节有关事宜的公告",
       "buyer": "贵阳市第二人民医院",
       "budget": 0.0,
@@ -1081,7 +1093,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601679734/b1/4513BBE2BE74F7087263F833C2B97CD2DD512E9A?sk=4513BBE2BE74F7087263F833C2B97CD2DD512E9A&from=skill"
     },
     {
-      "id": 91,
+      "id": 92,
       "title": "行政事业单位招考笔试命题，面试命题，笔试阅卷，考官聘请，人才测评等服务(二次)竞争性采购公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1093,7 +1105,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601655132/b1/0F12502897DDD73A977EB4B8991AD5629AEED14D?sk=0F12502897DDD73A977EB4B8991AD5629AEED14D&from=skill"
     },
     {
-      "id": 92,
+      "id": 93,
       "title": "芜湖车务段2026年管理人员公开招聘笔试考试组织采购方式公示",
       "buyer": "上局-芜湖车务段",
       "budget": 0.0,
@@ -1105,7 +1117,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601632328/b1/378EB352F920D15432B07247162B5BF109474078?sk=378EB352F920D15432B07247162B5BF109474078&from=skill"
     },
     {
-      "id": 93,
+      "id": 94,
       "title": "招商银行太原分行中层干部领导力培训采购项目供应商征集公告",
       "buyer": "招商银行太原分行人力资源部",
       "budget": 0.0,
@@ -1117,7 +1129,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601646371/b1/BD9C58A69551D827C3C60A38D1985E962FE25A1F?sk=BD9C58A69551D827C3C60A38D1985E962FE25A1F&from=skill"
     },
     {
-      "id": 94,
+      "id": 95,
       "title": "工程招聘信息2026年8月19日发布",
       "buyer": "河北强德丝网制品有限公司",
       "budget": 0.0,
@@ -1129,7 +1141,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601653125/b1/8C4EECE1BE800E3AD77FE8E107C5D04E4B08863D?sk=8C4EECE1BE800E3AD77FE8E107C5D04E4B08863D&from=skill"
     },
     {
-      "id": 95,
+      "id": 96,
       "title": "2026年人才引进结构化面试服务竞价公告",
       "buyer": "呼伦贝尔市融媒体中心",
       "budget": 0.0,
@@ -1141,7 +1153,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601650814/b1/47B8482EDA08185418A3E375CD694026DAE94E7F?sk=47B8482EDA08185418A3E375CD694026DAE94E7F&from=skill"
     },
     {
-      "id": 96,
+      "id": 97,
       "title": "寻求猎头服务合作机构项目4事前公示",
       "buyer": "南京长江电子信息产业集团有限公司",
       "budget": 0.0,
@@ -1153,7 +1165,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601672133/b1/A1A3CFC106057496AEE18675B0D7A24829A588ED?sk=A1A3CFC106057496AEE18675B0D7A24829A588ED&from=skill"
     },
     {
-      "id": 97,
+      "id": 98,
       "title": "江西诚信伟业招标咨询有限公司关于江西瑞曦实业有限公司购买人力资源服务项目（项目编号：1493-266007301126）竞争性磋商采购公告",
       "buyer": "江西瑞曦实业有限公司",
       "budget": 0.0,
@@ -1165,7 +1177,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601660536/b1/A2F662899AAEDD0B7839199541744E27EC034C73?sk=A2F662899AAEDD0B7839199541744E27EC034C73&from=skill"
     },
     {
-      "id": 98,
+      "id": 99,
       "title": "2026年度猎头服务采购项目竞价公告",
       "buyer": "上海科学院",
       "budget": 0.0,
@@ -1177,7 +1189,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601683442/b1/A0994D9BF4746990050CC1E839BD8EA006DDCADF?sk=A0994D9BF4746990050CC1E839BD8EA006DDCADF&from=skill"
     },
     {
-      "id": 99,
+      "id": 100,
       "title": "中南大学湘雅医院国家老年疾病临床医学研究中心衰老与健康创新转化两重建设项目信息化科研管理赋能平台硬件部分采购项目招标公告",
       "buyer": "中南大学湘雅医院",
       "budget": 447.0,
@@ -1189,7 +1201,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601589960/b1/FA4F88F2837E172ACC9DBE2028E64A66EABD4FF5?sk=FA4F88F2837E172ACC9DBE2028E64A66EABD4FF5&from=skill"
     },
     {
-      "id": 100,
+      "id": 101,
       "title": "2026年海外人才招聘服务采购项目的采购公告",
       "buyer": "深圳理工大学",
       "budget": 79.5,
@@ -1201,7 +1213,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601563762/b1/271725A69B464BB95DE1DF5E3CABF2F57F0C8A5A?sk=271725A69B464BB95DE1DF5E3CABF2F57F0C8A5A&from=skill"
     },
     {
-      "id": 101,
+      "id": 102,
       "title": "西安国家民用航天产业基地管理委员会航天基地公办中小学2026年教职工招聘项目(二次)竞争性磋商公告",
       "buyer": "西安国家民用航天产业基地管理委员会",
       "budget": 64.62,
@@ -1213,7 +1225,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601593098/b1/3E619AC3822F3A7B46F52586CDBA9C6F21DCCA17?sk=3E619AC3822F3A7B46F52586CDBA9C6F21DCCA17&from=skill"
     },
     {
-      "id": 102,
+      "id": 103,
       "title": "项目采购需求公告",
       "buyer": "铜仁市人力资源和社会保障局",
       "budget": 49.8,
@@ -1225,7 +1237,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601593413/b1/CE65A8208625EC4EF3401BEF3E68A4F45690E725?sk=CE65A8208625EC4EF3401BEF3E68A4F45690E725&from=skill"
     },
     {
-      "id": 103,
+      "id": 104,
       "title": "酒泉市第三届创业带动就业成果交流活动暨重点企业用工招聘会设备租赁及相关服务采购项目",
       "buyer": "酒泉市就业服务中心",
       "budget": 30.0,
@@ -1237,7 +1249,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601553624/b1/22189F987B54E776832A444CF132DF14DD54B8B8?sk=22189F987B54E776832A444CF132DF14DD54B8B8&from=skill"
     },
     {
-      "id": 104,
+      "id": 105,
       "title": "哈尔滨市委市政府机关服务中心2026年度政府采购意向公告(第15批)-外围办公区人力资源服务采购（2026年招标）",
       "buyer": "哈尔滨市委市政府机关服务中心",
       "budget": 25.0,
@@ -1249,7 +1261,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601537670/b1/6A1699D76D9217829D5AFDC5DAA32B30CC1D3F1A?sk=6A1699D76D9217829D5AFDC5DAA32B30CC1D3F1A&from=skill"
     },
     {
-      "id": 105,
+      "id": 106,
       "title": "武汉科技大学附属天佑医院人才招聘信息服务项目采购公告",
       "buyer": "武汉科技大学附属天佑医院",
       "budget": 4.9,
@@ -1261,7 +1273,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601546171/b1/38D51FF1D3E75A6BAD1885A9C17DECD7F57CA4A1?sk=38D51FF1D3E75A6BAD1885A9C17DECD7F57CA4A1&from=skill"
     },
     {
-      "id": 106,
+      "id": 107,
       "title": "贵州水投毕节市水务集团有限公司招聘服务机构询比采购公告",
       "buyer": "贵州水投毕节市水务集团有限公司",
       "budget": 4.83,
@@ -1273,7 +1285,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601550818/b1/85DE784F04F0B110F055B8AABC8F1DDAC5A859DD?sk=85DE784F04F0B110F055B8AABC8F1DDAC5A859DD&from=skill"
     },
     {
-      "id": 107,
+      "id": 108,
       "title": "蛟河市黄松甸镇黄松甸村招聘保洁员",
       "buyer": "吉林省吉林市黄松甸镇黄松甸村股份经济合作联合社",
       "budget": 1.5,
@@ -1285,7 +1297,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601546160/b1/7093849BBC45CB54356950718DF1A5F5A3360421?sk=7093849BBC45CB54356950718DF1A5F5A3360421&from=skill"
     },
     {
-      "id": 108,
+      "id": 109,
       "title": "招聘2026-2027锡林浩特“奥启杯”青少年体育联赛赛事运营服务项目跟踪审计公司",
       "buyer": "锡林浩特市文体旅游广电局",
       "budget": 1.0,
@@ -1297,7 +1309,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601590826/b1/930050ADC0246F9FDA5540D0737FA6E1BD5A5F2B?sk=930050ADC0246F9FDA5540D0737FA6E1BD5A5F2B&from=skill"
     },
     {
-      "id": 109,
+      "id": 110,
       "title": "（询比采购）【前程无忧线上招聘平台采购/5500-PS202608180630】采购公告",
       "buyer": "中化蓝天集团有限公司",
       "budget": 0.0,
@@ -1309,7 +1321,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601568485/b1/8E470C939FA8856A99139D758E766E630C7AFA97?sk=8E470C939FA8856A99139D758E766E630C7AFA97&from=skill"
     },
     {
-      "id": 110,
+      "id": 111,
       "title": "2026年九江市国信项目管理咨询有限责任公司公开招聘公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1321,7 +1333,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601561100/b1/D24E3A1C607395A3EDC9B53549B172FE1DB442D4?sk=D24E3A1C607395A3EDC9B53549B172FE1DB442D4&from=skill"
     },
     {
-      "id": 111,
+      "id": 112,
       "title": "广州市荔湾区西关培正小学购买第三方人力资源服务项目询比公告",
       "buyer": "广州市荔湾区西关培正小学",
       "budget": 0.0,
@@ -1333,7 +1345,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601575926/b1/8788BA35F803F80EF72D47F80285320673FE4045?sk=8788BA35F803F80EF72D47F80285320673FE4045&from=skill"
     },
     {
-      "id": 112,
+      "id": 113,
       "title": "中信信托及中信聚信2026年人才招聘代理服务商采购项目-公开招标公告",
       "buyer": "中信聚信",
       "budget": 0.0,
@@ -1345,7 +1357,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601592370/b1/DFB146F98EE3513133C6A95971068D2F7E82B808?sk=DFB146F98EE3513133C6A95971068D2F7E82B808&from=skill"
     },
     {
-      "id": 113,
+      "id": 114,
       "title": "分谈分签+上海旷鹰赛光学科技有限公司+猎头服务的询价书",
       "buyer": "上海旷鹰赛光学科技有限公司",
       "budget": 0.0,
@@ -1357,7 +1369,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601561434/b1/94D99F4662C9F7E6DBC9D494FCDC2714FF73AD8B?sk=94D99F4662C9F7E6DBC9D494FCDC2714FF73AD8B&from=skill"
     },
     {
-      "id": 114,
+      "id": 115,
       "title": "中国银行四川省分行“四川省分行2027年校园招聘服务需求（第1包：校招推广服务）”邀请公告",
       "buyer": "中国银行四川省分行",
       "budget": 0.0,
@@ -1369,7 +1381,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601574917/b1/D09FAF2937C4C65A6BEFAA90B229E408BE30B84D?sk=D09FAF2937C4C65A6BEFAA90B229E408BE30B84D&from=skill"
     },
     {
-      "id": 115,
+      "id": 116,
       "title": "“百万英才汇南粤”2026年N城联动秋季招聘活动（中国科学院大学专场）项目招标公告",
       "buyer": "深圳市龙岗区人力资源服务中心",
       "budget": 0.0,
@@ -1381,7 +1393,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601580840/b1/4E375243B69BAF0251A4B07B98D901AD31E1EAC0?sk=4E375243B69BAF0251A4B07B98D901AD31E1EAC0&from=skill"
     },
     {
-      "id": 116,
+      "id": 117,
       "title": "四川省人民医院校园招聘服务采购项目-招标公告",
       "buyer": "四川省人民医院",
       "budget": 0.0,
@@ -1393,7 +1405,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601547486/b1/A21B3D3A5884BCF90FC31D1406C43345B05E8C15?sk=A21B3D3A5884BCF90FC31D1406C43345B05E8C15&from=skill"
     },
     {
-      "id": 117,
+      "id": 118,
       "title": "中粮贸易（深圳）有限公司2026年逐浪计划新员工培训谈判采购（分散）公告（0001标段：中粮贸易（深圳）有限公司2026年逐浪计划新员工培训）",
       "buyer": "中粮贸易（深圳）有限公司",
       "budget": 0.0,
@@ -1405,7 +1417,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601551170/b1/879397E3EC6716CDE97993D03E14BA98BD356DE1?sk=879397E3EC6716CDE97993D03E14BA98BD356DE1&from=skill"
     },
     {
-      "id": 118,
+      "id": 119,
       "title": "某院-综合楼改建工程项目全过程造价咨询-人力资源服务比选公告",
       "buyer": "某院",
       "budget": 0.0,
@@ -1417,7 +1429,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601541729/b1/D3F58E153B8E2D54C61E6D2F4DFBD0E53A689D54?sk=D3F58E153B8E2D54C61E6D2F4DFBD0E53A689D54&from=skill"
     },
     {
-      "id": 119,
+      "id": 120,
       "title": "2026年公开招聘临城县第一医共体编外工作人员核减（销）及调整部分招聘岗位的公告-集中采购项目",
       "buyer": "临城县人民政府",
       "budget": 0.0,
@@ -1429,7 +1441,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601548683/b1/35E9F2ED44E977C23DC63CD4FED7B6F2BAF6B17A?sk=35E9F2ED44E977C23DC63CD4FED7B6F2BAF6B17A&from=skill"
     },
     {
-      "id": 120,
+      "id": 121,
       "title": "运达股份采购招聘网站及背调服务公开询比价公告",
       "buyer": "运达能源科技集团股份有限公司",
       "budget": 0.0,
@@ -1441,7 +1453,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601560732/b1/B0BA557EFB6ACE887DC805CAF6CF61EC11D4D1FA?sk=B0BA557EFB6ACE887DC805CAF6CF61EC11D4D1FA&from=skill"
     },
     {
-      "id": 121,
+      "id": 122,
       "title": "中国银行四川省分行”四川省分行2027年校园招聘服务需求（第1包：校招推广服务）”邀请公告",
       "buyer": "中国银行股份有限公司",
       "budget": 0.0,
@@ -1453,7 +1465,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601572473/b1/D472312FA6ABF4CDF162D9837040AFDF5E586303?sk=D472312FA6ABF4CDF162D9837040AFDF5E586303&from=skill"
     },
     {
-      "id": 122,
+      "id": 123,
       "title": "国际（江苏）人力资源服务业发展大会氛围营造项目采购公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1465,7 +1477,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601560667/b1/4C7E5E64A5C1987B7EA19C7D17BABF9BC99FAAE6?sk=4C7E5E64A5C1987B7EA19C7D17BABF9BC99FAAE6&from=skill"
     },
     {
-      "id": 123,
+      "id": 124,
       "title": "（询比采购）【猎聘线上招聘平台采购/5500-PS202608180702】采购公告",
       "buyer": "中化蓝天集团有限公司",
       "budget": 0.0,
@@ -1477,7 +1489,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601568507/b1/926AC879113FDFE8270E8A73F351EF9D6E78CA2C?sk=926AC879113FDFE8270E8A73F351EF9D6E78CA2C&from=skill"
     },
     {
-      "id": 124,
+      "id": 125,
       "title": "澄迈县中医院（澄迈县中医院医共体总院）2026年公开招聘卫生专业技术人员公告（第1号）-集中采购项目",
       "buyer": "澄迈县人民政府",
       "budget": 0.0,
@@ -1489,7 +1501,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601587555/b1/42CAD9DF839331B23DDE99886596F7CF2CAA3676?sk=42CAD9DF839331B23DDE99886596F7CF2CAA3676&from=skill"
     },
     {
-      "id": 125,
+      "id": 126,
       "title": "中信信托2027校园招聘供应商招标采购项目-公开招标公告",
       "buyer": "中信信托",
       "budget": 0.0,
@@ -1501,7 +1513,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601574959/b1/982861349D258F3CB6CD34196B485BAEC3D9411D?sk=982861349D258F3CB6CD34196B485BAEC3D9411D&from=skill"
     },
     {
-      "id": 126,
+      "id": 127,
       "title": "【国家电投集团湖北电力有限公司社会招聘线上平台服务（二次挂网）】采购公告",
       "buyer": "国家电投集团湖北电力有限公司",
       "budget": 0.0,
@@ -1513,7 +1525,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601577817/b1/45920D224146610E3D8550FF656A485760EC53CD?sk=45920D224146610E3D8550FF656A485760EC53CD&from=skill"
     },
     {
-      "id": 127,
+      "id": 128,
       "title": "中信信托2026年人才招聘代理服务商采购项目-公开招标公告",
       "buyer": "中信信托",
       "budget": 0.0,
@@ -1525,7 +1537,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601592611/b1/442368BD2C8AFE27EC88B919B3ADC8E31CFA6DBE?sk=442368BD2C8AFE27EC88B919B3ADC8E31CFA6DBE&from=skill"
     },
     {
-      "id": 128,
+      "id": 129,
       "title": "广东红海湾发电有限公司红海湾发电公司2026年社会招聘服务项目询价公告",
       "buyer": "广东红海湾发电有限公司",
       "budget": 0.0,
@@ -1537,7 +1549,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601527762/b1/989B6E1C8BB63F2BA06EA437DDF58080D976B646?sk=989B6E1C8BB63F2BA06EA437DDF58080D976B646&from=skill"
     },
     {
-      "id": 129,
+      "id": 130,
       "title": "天翼云2026-2029年人才招聘背调服务采购项目询比公告",
       "buyer": "中国电信集团有限公司",
       "budget": 0.0,
@@ -1549,7 +1561,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601578454/b1/24E344826C6882AC7911214C4B16C0DEBBEF71CB?sk=24E344826C6882AC7911214C4B16C0DEBBEF71CB&from=skill"
     },
     {
-      "id": 130,
+      "id": 131,
       "title": "拓奇公司2026年新员工培训以及焊接工艺气体计划采购（0004）",
       "buyer": "中国能源建设集团有限公司",
       "budget": 0.0,
@@ -1561,7 +1573,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601565882/b1/1F4C54EE5E13A5BFBE9245155E5601E2F0C2549A?sk=1F4C54EE5E13A5BFBE9245155E5601E2F0C2549A&from=skill"
     },
     {
-      "id": 131,
+      "id": 132,
       "title": "昆明经济技术开发区社会事务局2026年教师招聘服务（二次）竞争性磋商公告",
       "buyer": "昆明经济技术开发区社会事务局",
       "budget": 120.0,
@@ -1573,7 +1585,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601487588/b1/3B9573BF03C3E7C316B75249F440DC98592951A0?sk=3B9573BF03C3E7C316B75249F440DC98592951A0&from=skill"
     },
     {
-      "id": 132,
+      "id": 133,
       "title": "合肥幼儿师范高等专科学校2026年8月政府采购意向",
       "buyer": "合肥幼儿师范高等专科学校",
       "budget": 107.8,
@@ -1585,7 +1597,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601479420/b1/92EC4C29153C2D569EEB27AEA7EF1EAA25C89BD2?sk=92EC4C29153C2D569EEB27AEA7EF1EAA25C89BD2&from=skill"
     },
     {
-      "id": 133,
+      "id": 134,
       "title": "中电信数智山东分公司2026年某学校智慧体育建设项目询比公告",
       "buyer": "中电信数智科技有限公司山东分公司",
       "budget": 64.0,
@@ -1597,7 +1609,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601457605/b1/3C821FA6E8876D6C5EC8B59F12217D85CA2F7563?sk=3C821FA6E8876D6C5EC8B59F12217D85CA2F7563&from=skill"
     },
     {
-      "id": 134,
+      "id": 135,
       "title": "应急管理领域新闻宣传服务-新闻宣传干部能力提升服务项目竞争性磋商公告",
       "buyer": "北京市应急管理局",
       "budget": 46.6,
@@ -1609,7 +1621,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601475708/b1/0409112792D7149B917AD7B92E618571C1609E39?sk=0409112792D7149B917AD7B92E618571C1609E39&from=skill"
     },
     {
-      "id": 135,
+      "id": 136,
       "title": "成方金融信息技术服务有限公司2026年人员背景调查服务（三年）采购项目竞争性磋商公告",
       "buyer": "成方金融信息技术服务有限公司",
       "budget": 9.0,
@@ -1621,7 +1633,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601482329/b1/2100FD51A18CB1C9F114AD82A1B9C83A147D95C5?sk=2100FD51A18CB1C9F114AD82A1B9C83A147D95C5&from=skill"
     },
     {
-      "id": 136,
+      "id": 137,
       "title": "南京市人力资源和社会保障信息管理中心2026年8月(第1批)政府采购意向公告-2026年度招聘PAD维保服务",
       "buyer": "南京市人力资源和社会保障信息管理中心",
       "budget": 6.6,
@@ -1633,7 +1645,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601437513/b1/AB112950E0618058054013BBBEE7E4765B207DFF?sk=AB112950E0618058054013BBBEE7E4765B207DFF&from=skill"
     },
     {
-      "id": 137,
+      "id": 138,
       "title": "海口市龙华区残疾人联合会遴选第三方机构承办2026年残疾人专场招聘会活动的公告",
       "buyer": "海口市龙华区残疾人联合会",
       "budget": 4.5,
@@ -1645,7 +1657,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601439140/b1/ABFAF6C9E3652527C3E9CC222705F0F95A8DE8D0?sk=ABFAF6C9E3652527C3E9CC222705F0F95A8DE8D0&from=skill"
     },
     {
-      "id": 138,
+      "id": 139,
       "title": "关于六甲街道2026年六甲街道招聘会活动公开比选询价公告",
       "buyer": "昆明市官渡区人民政府六甲街道办事处",
       "budget": 2.0,
@@ -1657,7 +1669,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601439284/b1/7ECBA5B8929FB49B9CB4D59AA8120CB8E61B8AF8?sk=7ECBA5B8929FB49B9CB4D59AA8120CB8E61B8AF8&from=skill"
     },
     {
-      "id": 139,
+      "id": 140,
       "title": "广州市人力资源市场服务中心“百万英才汇南粤”2026年N城联动秋季招聘岗位归集及跟踪服务项目竞争性磋商公告",
       "buyer": "广州市人力资源市场服务中心",
       "budget": 0.0,
@@ -1669,7 +1681,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601449592/b1/529EC3FF48339769505FD9FA37695F54087E8B1A?sk=529EC3FF48339769505FD9FA37695F54087E8B1A&from=skill"
     },
     {
-      "id": 140,
+      "id": 141,
       "title": "云南省交通科学研究院有限公司2026—2027年度招聘服务机构选聘",
       "buyer": "云南省交通科学研究院有限公司",
       "budget": 0.0,
@@ -1681,7 +1693,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601432437/b1/898EE93591C88383289D322798ACE07842AB9294?sk=898EE93591C88383289D322798ACE07842AB9294&from=skill"
     },
     {
-      "id": 141,
+      "id": 142,
       "title": "（询比采购）【前程无忧招聘平台采购/5500-PS202608170177】采购公告",
       "buyer": "中化蓝天集团有限公司",
       "budget": 0.0,
@@ -1693,7 +1705,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601438355/b1/12B79FBE84901FBDB3E39784A7A3C6B6A64F48F9?sk=12B79FBE84901FBDB3E39784A7A3C6B6A64F48F9&from=skill"
     },
     {
-      "id": 142,
+      "id": 143,
       "title": "长春市市政工程设计研究院（集团）有限公司人力资源服务招标公告",
       "buyer": "长春市市政工程设计研究院（集团）有限公司",
       "budget": 0.0,
@@ -1705,7 +1717,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601449651/b1/186566CF5FC3497C8CEEE5597EA40DEF429ED799?sk=186566CF5FC3497C8CEEE5597EA40DEF429ED799&from=skill"
     },
     {
-      "id": 143,
+      "id": 144,
       "title": "汽车领域数字化智能化平台项目人力资源服务比选公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1717,7 +1729,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601462020/b1/DD14D37F77F81E6AAE45FE84DF341C5B920C3925?sk=DD14D37F77F81E6AAE45FE84DF341C5B920C3925&from=skill"
     },
     {
-      "id": 144,
+      "id": 145,
       "title": "天津市轻工业设计院有限公司工程造价岗位校园招聘简章",
       "buyer": "天津市轻工业设计院有限公司",
       "budget": 0.0,
@@ -1729,7 +1741,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601470432/b1/26FF8433B1E89C24C63CE1F136B37A31CAB9BFA0?sk=26FF8433B1E89C24C63CE1F136B37A31CAB9BFA0&from=skill"
     },
     {
-      "id": 145,
+      "id": 146,
       "title": "南明区就业中心2026年开展各乡，街道办事处小型专场招聘会-品目一：永乐乡，后巢乡，花果街道办事处，五里冲街道办事处等专场招聘会服务采购交易证明书",
       "buyer": "贵阳市南明区就业与职业技能开发中心",
       "budget": 0.0,
@@ -1741,7 +1753,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601481045/b1/F67910544789EF9CC6122D8A9CC779587B6EB43C?sk=F67910544789EF9CC6122D8A9CC779587B6EB43C&from=skill"
     },
     {
-      "id": 146,
+      "id": 147,
       "title": "建行上海市分行关于2027-2030年度招聘面试服务项目",
       "buyer": "中国建设银行股份有限公司上海市分行",
       "budget": 0.0,
@@ -1753,7 +1765,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601432861/b1/8558F845E2F00B7ABE741D76E06E8724F1B50F77?sk=8558F845E2F00B7ABE741D76E06E8724F1B50F77&from=skill"
     },
     {
-      "id": 147,
+      "id": 148,
       "title": "2026飞驶特公司大足分公司外包项目实习生招聘服务询价采购公告",
       "buyer": "重庆飞驶特人力资源管理有限公司大足分公司",
       "budget": 0.0,
@@ -1765,7 +1777,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601460916/b1/C185DBC4872CE8494A37A323FEA89E318C1A7313?sk=C185DBC4872CE8494A37A323FEA89E318C1A7313&from=skill"
     },
     {
-      "id": 148,
+      "id": 149,
       "title": "长电科技(江阴)有限公司2026年长电科技实习生人才培养及招聘流程服务公告",
       "buyer": "长电科技（江阴）有限公司",
       "budget": 0.0,
@@ -1777,7 +1789,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601428889/b1/8DB242BD6221A92A0D194915199E4F12A24108A9?sk=8DB242BD6221A92A0D194915199E4F12A24108A9&from=skill"
     },
     {
-      "id": 149,
+      "id": 150,
       "title": "关于委托协助开展京津冀粮食和物资储备行业年轻干部能力提升研修班项目询价公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1789,7 +1801,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601425158/b1/1E56C11DC4990929CAF1CCDAF9BEE9F446F2A2CC?sk=1E56C11DC4990929CAF1CCDAF9BEE9F446F2A2CC&from=skill"
     },
     {
-      "id": 150,
+      "id": 151,
       "title": "建行上海市分行关于2027-2030年度招聘辅助服务项目",
       "buyer": "中国建设银行股份有限公司上海市分行",
       "budget": 0.0,
@@ -1801,7 +1813,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601434521/b1/8C7C294B0A9DA08127A16CB1814B014EB5CE4B17?sk=8C7C294B0A9DA08127A16CB1814B014EB5CE4B17&from=skill"
     },
     {
-      "id": 151,
+      "id": 152,
       "title": "宁波益民人力资源服务有限公司港口牵引车和滑移装载机采购项目询价公告",
       "buyer": "宁波益民人力资源服务有限公司",
       "budget": 0.0,
@@ -1813,7 +1825,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601473552/b1/5A93990563FECAB49D6EC50B32678DB23597A6C7?sk=5A93990563FECAB49D6EC50B32678DB23597A6C7&from=skill"
     },
     {
-      "id": 152,
+      "id": 153,
       "title": "[阳光采购服务平台]海欣控股2026年面向社会公开招聘服务外包项目",
       "buyer": "宁波市海欣控股集团有限公司",
       "budget": 0.0,
@@ -1825,7 +1837,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601474620/b1/A7E7F32A1AF3DEEE3AFEA99CA78F861712B8AD2A?sk=A7E7F32A1AF3DEEE3AFEA99CA78F861712B8AD2A&from=skill"
     },
     {
-      "id": 153,
+      "id": 154,
       "title": "关于贵阳贵安2026年卫生健康系统公开招聘事业单位工作人员考核工作租车服务采购",
       "buyer": "贵州能源集团有限公司",
       "budget": 0.0,
@@ -1837,7 +1849,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601480366/b1/224AA824339525A591BC661F35245F440B11A710?sk=224AA824339525A591BC661F35245F440B11A710&from=skill"
     },
     {
-      "id": 154,
+      "id": 155,
       "title": "国产化心理测评系统采购招标公告(2026-JLSJBK-W1001)",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1849,7 +1861,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601441657/b1/66DE27FBB4DC9EFBADC91AD661B46AEA86CBA4D5?sk=66DE27FBB4DC9EFBADC91AD661B46AEA86CBA4D5&from=skill"
     },
     {
-      "id": 155,
+      "id": 156,
       "title": "[广东火电]拓奇公司2026年新员工培训以及焊接工艺气体计划采购（0004）",
       "buyer": "广东拓奇电力技术发展有限公司经营部",
       "budget": 0.0,
@@ -1861,7 +1873,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601474720/b1/1389C02B0842B2A9385489B94A149AA8A26EB91C?sk=1389C02B0842B2A9385489B94A149AA8A26EB91C&from=skill"
     },
     {
-      "id": 156,
+      "id": 157,
       "title": "敖汉旗公共就业服务能力提升示范项目‑“护航企业”招聘活动竞争性磋商公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -1873,7 +1885,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601449665/b1/68EC7571CB2B4FE22E12E45393B2F8629E406E8D?sk=68EC7571CB2B4FE22E12E45393B2F8629E406E8D&from=skill"
     },
     {
-      "id": 157,
+      "id": 158,
       "title": "广州开发区黄埔区2026年高校校园招聘采购服务公开询价公告",
       "buyer": "广州市黄埔区人力资源和社会保障局",
       "budget": 0.0,
@@ -1885,7 +1897,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601434079/b1/433D41C2389AA6B0BE7FB2CCA682F2C8089E4E51?sk=433D41C2389AA6B0BE7FB2CCA682F2C8089E4E51&from=skill"
     },
     {
-      "id": 158,
+      "id": 159,
       "title": "中国五矿集团有限公司2026年度新员工培训班拓展训练项目",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -1897,7 +1909,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601475291/b1/A63776EC6CD0C408C4C66561D900732082AFB6A9?sk=A63776EC6CD0C408C4C66561D900732082AFB6A9&from=skill"
     },
     {
-      "id": 159,
+      "id": 160,
       "title": "四川九华光子通信技术有限公司关于招聘采购岗（专员）的公告",
       "buyer": "四川九华光子通信技术有限公司",
       "budget": 0.0,
@@ -1909,7 +1921,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601477510/b1/FE5A3DC169E03670CA1FDE8A43CFA5B8E69E1F07?sk=FE5A3DC169E03670CA1FDE8A43CFA5B8E69E1F07&from=skill"
     },
     {
-      "id": 160,
+      "id": 161,
       "title": "四川九州电子科技股份有限公司关于招聘战略采购岗的公告",
       "buyer": "四川九州电子科技股份有限公司",
       "budget": 0.0,
@@ -1921,7 +1933,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601477856/b1/7196D7A81F69046008E0756A57D1EEC200992714?sk=7196D7A81F69046008E0756A57D1EEC200992714&from=skill"
     },
     {
-      "id": 161,
+      "id": 162,
       "title": "西安市新城区人力资源和社会保障局“乐业新城•职筑民生”2026-2027年新城区高质量就业招聘活动项目竞争性磋商公告",
       "buyer": "西安市新城区人力资源和社会保障局",
       "budget": 199.0,
@@ -1933,7 +1945,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601413542/b1/BD5FE878280C9758DE90F67AFF722B32D9BACB48?sk=BD5FE878280C9758DE90F67AFF722B32D9BACB48&from=skill"
     },
     {
-      "id": 162,
+      "id": 163,
       "title": "南京新港中等专业学校合同制教师招聘简章",
       "buyer": "南京新港中等专业学校",
       "budget": 0.0,
@@ -1945,7 +1957,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601400739/b1/FE879DC7F167826A125E6F89D06613C9B0689535?sk=FE879DC7F167826A125E6F89D06613C9B0689535&from=skill"
     },
     {
-      "id": 163,
+      "id": 164,
       "title": "招聘AI面试采购公告",
       "buyer": "规划工程建设部",
       "budget": 0.0,
@@ -1957,7 +1969,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601403392/b1/8FD31FE8C8C54E8A1BAEF687BF73047EB4EF29F2?sk=8FD31FE8C8C54E8A1BAEF687BF73047EB4EF29F2&from=skill"
     },
     {
-      "id": 164,
+      "id": 165,
       "title": "宜春市就业创业服务中心2026年度政府采购意向公告(第2批)",
       "buyer": "宜春市就业创业服务中心",
       "budget": 120.3,
@@ -1969,7 +1981,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601348370/b1/FE892B194BD39EA713BE7CEA72E3286D42C76C4C?sk=FE892B194BD39EA713BE7CEA72E3286D42C76C4C&from=skill"
     },
     {
-      "id": 165,
+      "id": 166,
       "title": "天美公司及下属子公司人力资源服务项目招标公告",
       "buyer": "徐州市天美后勤服务有限公司",
       "budget": 80.0,
@@ -1981,7 +1993,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601343274/b1/23419ECE5AB3EEBB550E851BB96716E50FBAEB39?sk=23419ECE5AB3EEBB550E851BB96716E50FBAEB39&from=skill"
     },
     {
-      "id": 166,
+      "id": 167,
       "title": "中国银行陕西省分行人力资源部2027年校园招聘宣传与破冰迎新项目竞争性磋商公告",
       "buyer": "中国银行股份有限公司陕西省分行",
       "budget": 76.6,
@@ -1993,7 +2005,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601357016/b1/2A3895F61CC50AD4AC8F9C34A54DA1277DE49B75?sk=2A3895F61CC50AD4AC8F9C34A54DA1277DE49B75&from=skill"
     },
     {
-      "id": 167,
+      "id": 168,
       "title": "广东南方人力资源服务有限公司装修施工总承包工程采购公告",
       "buyer": "广东南方人力资源服务有限公司",
       "budget": 48.0,
@@ -2005,7 +2017,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601331809/b1/D9E0AE13A0470CFAE72CC0742BCA05293CAC2CA2?sk=D9E0AE13A0470CFAE72CC0742BCA05293CAC2CA2&from=skill"
     },
     {
-      "id": 168,
+      "id": 169,
       "title": "2026-2028年度中国联通宁夏分公司新员工培训场地外包服务采购项目公告",
       "buyer": "中国联合网络通信有限公司宁夏回族自治区分公司",
       "budget": 41.5,
@@ -2017,7 +2029,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601304960/b1/A887BB4369DC13278979B930BE39FE57A2349253?sk=A887BB4369DC13278979B930BE39FE57A2349253&from=skill"
     },
     {
-      "id": 169,
+      "id": 170,
       "title": "2026年第9492号大检质量技术服务（大连）集团股份有限公司猎头服务采购项目招标公告",
       "buyer": "大检质量技术服务（大连）集团股份有限公司",
       "budget": 31.5,
@@ -2029,7 +2041,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601345416/b1/1BC8FB1B29F34E2129D87F105CBCBB44679D8AE3?sk=1BC8FB1B29F34E2129D87F105CBCBB44679D8AE3&from=skill"
     },
     {
-      "id": 170,
+      "id": 171,
       "title": "青海省驻外（广东）人力资源服务站建设服务项目",
       "buyer": "青海省就业服务局",
       "budget": 30.0,
@@ -2041,7 +2053,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601342722/b1/497320110CA4FF20670688520A245A3920DF38C5?sk=497320110CA4FF20670688520A245A3920DF38C5&from=skill"
     },
     {
-      "id": 171,
+      "id": 172,
       "title": "天翼支付科技有限公司2027届，2028届应届生校园招聘服务项目询比公告",
       "buyer": "天翼支付科技有限公司",
       "budget": 28.3,
@@ -2053,7 +2065,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601347697/b1/7C21B3D4B490C6008BEF6C0345320C9147CD2687?sk=7C21B3D4B490C6008BEF6C0345320C9147CD2687&from=skill"
     },
     {
-      "id": 172,
+      "id": 173,
       "title": "陕西中医药大学附属医院人力资源服务项目竞争性磋商公告",
       "buyer": "陕西中医药大学附属医院",
       "budget": 27.65,
@@ -2065,7 +2077,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601342537/b1/376196980F1A644676CF43139C50D4D444FEBC5C?sk=376196980F1A644676CF43139C50D4D444FEBC5C&from=skill"
     },
     {
-      "id": 173,
+      "id": 174,
       "title": "文安公司2026年第13批竞价采购项目招标公告（包1）",
       "buyer": "绿发（文安）企业培训有限公司",
       "budget": 0.0,
@@ -2077,7 +2089,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601312016/b1/8A62EB2FF9FA12C822637DE66731B5D8D1DCF4BF?sk=8A62EB2FF9FA12C822637DE66731B5D8D1DCF4BF&from=skill"
     },
     {
-      "id": 174,
+      "id": 175,
       "title": "昆仑银行招聘服务供应商采购-1询比采购公告",
       "buyer": "昆仑银行股份有限公司",
       "budget": 0.0,
@@ -2089,7 +2101,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601316459/b1/6615F0F69E099551A0CB102A08F1DB94A190BA48?sk=6615F0F69E099551A0CB102A08F1DB94A190BA48&from=skill"
     },
     {
-      "id": 175,
+      "id": 176,
       "title": "济宁市公共卫生医疗中心呼吸慢病康复管理系统采购项目恢复公告",
       "buyer": "济宁市公共卫生医疗中心",
       "budget": 0.0,
@@ -2101,7 +2113,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601340052/b1/4082CCC5EF516511D6BCFCD1F679BA49EBF32016?sk=4082CCC5EF516511D6BCFCD1F679BA49EBF32016&from=skill"
     },
     {
-      "id": 176,
+      "id": 177,
       "title": "2026年吉林联通校园招聘服务询比采购集中采购-询比采购公告-集中采购项目",
       "buyer": "吉林联通",
       "budget": 0.0,
@@ -2113,7 +2125,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601346169/b1/0FE52E1349DEEBF2E33BAD65D33B41B79547488D?sk=0FE52E1349DEEBF2E33BAD65D33B41B79547488D&from=skill"
     },
     {
-      "id": 177,
+      "id": 178,
       "title": "汕头市潮阳区人力资源和社会保障局关于“百万英才汇南粤”暨百日千万招聘专项行动——汕头国际纺织城・潮阳区2026年高校毕业生专场招聘会服务项目询价公告",
       "buyer": "汕头市潮阳区人力资源和社会保障局",
       "budget": 0.0,
@@ -2125,7 +2137,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601348009/b1/3AA0FFC084EB00C999D00959052C49DD4029C74E?sk=3AA0FFC084EB00C999D00959052C49DD4029C74E&from=skill"
     },
     {
-      "id": 178,
+      "id": 179,
       "title": "莆田中山中学玉湖校区招聘食堂餐饮经营服务团队项目",
       "buyer": "莆田中山中学",
       "budget": 0.0,
@@ -2137,7 +2149,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601358215/b1/09CFC26784C0D9045D9907CD034558A32EFAD26A?sk=09CFC26784C0D9045D9907CD034558A32EFAD26A&from=skill"
     },
     {
-      "id": 179,
+      "id": 180,
       "title": "中国太平洋保险(集团)股份有限公司薪酬报告服务供应商补充采购项目",
       "buyer": "中国太平洋保险（集团）股份有限公司",
       "budget": 0.0,
@@ -2149,7 +2161,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601345973/b1/45FE0A0EF5C1135063307527940BC4B42F2C7484?sk=45FE0A0EF5C1135063307527940BC4B42F2C7484&from=skill"
     },
     {
-      "id": 180,
+      "id": 181,
       "title": "泰康人寿保险有限责任公司HWP招募大会招聘平台直播宣传项目供应商征集",
       "buyer": "泰康人寿保险有限责任公司",
       "budget": 0.0,
@@ -2161,7 +2173,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601333812/b1/6E7F90D951E9BC54FD0243CD539339E08CC26FC6?sk=6E7F90D951E9BC54FD0243CD539339E08CC26FC6&from=skill"
     },
     {
-      "id": 181,
+      "id": 182,
       "title": "鄂尔多斯市国有资产投资控股集团有限公司2026年度用工招聘计划服务采购项目询比采购公告",
       "buyer": "鄂尔多斯市国有资产投资控股集团有限公司",
       "budget": 0.0,
@@ -2173,7 +2185,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601348443/b1/6F47DD7EEF7D2550161BA215990F72BE82196236?sk=6F47DD7EEF7D2550161BA215990F72BE82196236&from=skill"
     },
     {
-      "id": 182,
+      "id": 183,
       "title": "天津交易集团有限公司背景调查服务项目采购公告",
       "buyer": "天津交易集团有限公司",
       "budget": 0.0,
@@ -2185,7 +2197,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601303626/b1/4AFBF593C2A4A278304C0B1863F9616A41D3538C?sk=4AFBF593C2A4A278304C0B1863F9616A41D3538C&from=skill"
     },
     {
-      "id": 183,
+      "id": 184,
       "title": "64*64阵列成像读取系统RPO版（AHU-XNJJ20260214）采购公告",
       "buyer": "安徽大学",
       "budget": 0.0,
@@ -2197,7 +2209,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601311330/b1/B6DDC5FA182E29E4825E6175E500B6CD1B950D94?sk=B6DDC5FA182E29E4825E6175E500B6CD1B950D94&from=skill"
     },
     {
-      "id": 184,
+      "id": 185,
       "title": "（询比采购）【中化资本2026年“橙才训练营”暨校招新员工培训服务/2573-PS202608140126】采购公告",
       "buyer": "中化资本有限公司",
       "budget": 0.0,
@@ -2209,7 +2221,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601318388/b1/099DDC7FC7DDFA6AEEF34F64FD672F71E14AAE86?sk=099DDC7FC7DDFA6AEEF34F64FD672F71E14AAE86&from=skill"
     },
     {
-      "id": 185,
+      "id": 186,
       "title": "成都市新都区人力资源和社会保障局引入第三方人力资源服务机构协助开展公共就业服务采购项目竞争性磋商公告",
       "buyer": "成都市新都区人力资源和社会保障局",
       "budget": 0.0,
@@ -2221,7 +2233,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601346102/b1/9AC1A91D5BFAFD5263767CA2E1E67041DE57F96E?sk=9AC1A91D5BFAFD5263767CA2E1E67041DE57F96E&from=skill"
     },
     {
-      "id": 186,
+      "id": 187,
       "title": "26GG001527;人才测评服务供应商采购项目项目公告",
       "buyer": "中国太平洋保险（集团）股份有限公司",
       "budget": 0.0,
@@ -2233,7 +2245,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601337167/b1/3AC9AC179682EFCBD81AB98AAA4F4F908F349774?sk=3AC9AC179682EFCBD81AB98AAA4F4F908F349774&from=skill"
     },
     {
-      "id": 187,
+      "id": 188,
       "title": "高端商用车全产业链数字赋能平台咨询项目人力资源服务比选公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -2245,7 +2257,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601314975/b1/2D53CF7A42EFB066052B12991FC612951FE421D8?sk=2D53CF7A42EFB066052B12991FC612951FE421D8&from=skill"
     },
     {
-      "id": 188,
+      "id": 189,
       "title": "定州市职业技术教育中心人力资源服务项目询比采购公告",
       "buyer": "定州市职业技术教育中心",
       "budget": 0.0,
@@ -2257,7 +2269,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601331159/b1/915A3499E9030DED928C98CDDA70EFCD354AAC90?sk=915A3499E9030DED928C98CDDA70EFCD354AAC90&from=skill"
     },
     {
-      "id": 189,
+      "id": 190,
       "title": "铜仁市第三人民医院2026年公开招聘编制外工作人员（第一批）考务服务项目",
       "buyer": "贵州能源集团有限公司",
       "budget": 0.0,
@@ -2269,7 +2281,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601341618/b1/2CE5F697D8A0E4E1C4907A62C69DDB9306916EF1?sk=2CE5F697D8A0E4E1C4907A62C69DDB9306916EF1&from=skill"
     },
     {
-      "id": 190,
+      "id": 191,
       "title": "五矿有色2026年度新员工培训服务",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -2281,7 +2293,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601347155/b1/67BB040601D422446A1BEEB9E92516873CBDD522?sk=67BB040601D422446A1BEEB9E92516873CBDD522&from=skill"
     },
     {
-      "id": 191,
+      "id": 192,
       "title": "2026年长三角联合师资招聘会搭建服务的竞争性磋商公告",
       "buyer": "上海市教师教育学院",
       "budget": 150.0,
@@ -2293,7 +2305,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601266496/b1?sk=9210C2647623A08DA6DF9282EF44EF8CB030661A&from=skill"
     },
     {
-      "id": 192,
+      "id": 193,
       "title": "杭州市余杭区人力资源和社会保障局2026年8月至9月政府采购意向-2026年余杭区国际人力资源服务产业园人才服务外包项目详细情况",
       "buyer": "杭州市余杭区人力资源和社会保障局",
       "budget": 128.0,
@@ -2305,7 +2317,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601240116/b1?sk=A5935AEE51C2C7143DA3295E23457102F94A30D0&from=skill"
     },
     {
-      "id": 193,
+      "id": 194,
       "title": "中国移动通信集团内蒙古有限公司2027-2028年度招聘委托服务采购项目_询比公告",
       "buyer": "中国移动通信集团内蒙古有限公司",
       "budget": 128.0,
@@ -2317,7 +2329,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601236857/b1?sk=336EFE318444CC76D9A72ABBB6068163D4BFE6E8&from=skill"
     },
     {
-      "id": 194,
+      "id": 195,
       "title": "石首市政务服务和大数据管理局本级2026年08(至)09月政府采购意向",
       "buyer": "石首市政务服务和大数据管理局",
       "budget": 98.9,
@@ -2329,7 +2341,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601265586/b1?sk=72CE11650029CE4E1C0EA5310D3140E8E6960B35&from=skill"
     },
     {
-      "id": 195,
+      "id": 196,
       "title": "临海市人力资源和社会保障局2026年8月政府采购意向-2026秋季智汇台州高校巡回招聘会",
       "buyer": "临海市人力资源和社会保障局",
       "budget": 36.0,
@@ -2341,7 +2353,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601271994/b1?sk=829FD8E78A9932E87ED5BA0376307F674377CC99&from=skill"
     },
     {
-      "id": 196,
+      "id": 197,
       "title": "贵阳市人才服务中心2026年8月政府采购意向",
       "buyer": "贵阳市人才服务中心",
       "budget": 0.2,
@@ -2353,7 +2365,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601226299/b1?sk=42C3E47C3F6AF6E0D655850231F55FB65E176468&from=skill"
     },
     {
-      "id": 197,
+      "id": 198,
       "title": "招商银行石家庄分行2026年中层领导力培训项目供应商征集公告",
       "buyer": "招商银行石家庄分行",
       "budget": 0.0,
@@ -2365,7 +2377,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601263701/b1?sk=685CCD75320FE38C3A1B438E9447A243CAB348B0&from=skill"
     },
     {
-      "id": 198,
+      "id": 199,
       "title": "广汽集团2027-2028届校园招聘项目招募",
       "buyer": "广汽集团",
       "budget": 0.0,
@@ -2377,7 +2389,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601247106/b1?sk=33835FE3435E0C0A9F65B95C4BCEA5FBEA49A7B9&from=skill"
     },
     {
-      "id": 199,
+      "id": 200,
       "title": "临时工等竞买-华新环境（阳新）再生资源利用有限公司",
       "buyer": "华新环境（阳新）再生资源利用有限公司",
       "budget": 0.0,
@@ -2389,7 +2401,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601221063/b1?sk=6EEC7352E82305B9535123D06919ADD9A3F2C489&from=skill"
     },
     {
-      "id": 200,
+      "id": 201,
       "title": "人力资源服务单位选聘",
       "buyer": "安徽省中安金融资产管理股份有限公司",
       "budget": 0.0,
@@ -2401,7 +2413,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601227896/b1?sk=9314B1686A434EC90C38B3DF38784404553E80BC&from=skill"
     },
     {
-      "id": 201,
+      "id": 202,
       "title": "青海公司招聘服务询价采购",
       "buyer": "国家能源集团物资有限公司西北分公司",
       "budget": 0.0,
@@ -2413,7 +2425,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601228859/b1?sk=BF2C12CFEED16AD7896889FDA0DAF7DDBDA2015C&from=skill"
     },
     {
-      "id": 202,
+      "id": 203,
       "title": "人力资源招聘服务202608",
       "buyer": "中材大装膜技术工程（大连）有限公司",
       "budget": 0.0,
@@ -2425,7 +2437,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601256796/b1?sk=6582B751F77680F52D20632E6298823AB4A64DF2&from=skill"
     },
     {
-      "id": 203,
+      "id": 204,
       "title": "北京融通西直门宾馆2026年度三店一体化实习生招聘代理机构遴选项目询比采购公告",
       "buyer": "北京融通西直门宾馆",
       "budget": 0.0,
@@ -2437,7 +2449,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601257920/b1?sk=8EB0A9F252174E0A60FF80B5D5027D17AFA53BE5&from=skill"
     },
     {
-      "id": 204,
+      "id": 205,
       "title": "广州市荔湾区芳村小学关于购买第三方人力资源服务项目比选邀请公告",
       "buyer": "广州市荔湾区芳村小学",
       "budget": 0.0,
@@ -2449,7 +2461,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601262268/b1?sk=A70A6D6277238EB5E48EA22DEA340D777611D448&from=skill"
     },
     {
-      "id": 205,
+      "id": 206,
       "title": "石家庄市公路桥梁建设集团有限公司第四分公司物资采购（第十一批）采购项目",
       "buyer": "石家庄市公路桥梁建设集团有限公司",
       "budget": 0.0,
@@ -2461,7 +2473,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601218226/b1?sk=63B373CC099B8D457214A199CC8303DBD20365C5&from=skill"
     },
     {
-      "id": 206,
+      "id": 207,
       "title": "[萍乡市本级]面向社会公开招聘外包服务采购项目招标公告",
       "buyer": "萍乡技师学院",
       "budget": 0.0,
@@ -2473,7 +2485,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601248023/b1?sk=C948D02333B2E974C7DD0714B08D572801C2104C&from=skill"
     },
     {
-      "id": 207,
+      "id": 208,
       "title": "中国石油吉林销售公司2026，2027年高校毕业生招聘服务项目询比公告",
       "buyer": "吉林销售非油品经营部",
       "budget": 0.0,
@@ -2485,7 +2497,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601235160/b1?sk=602DF2BBDC7567E05ABA33A58911265EB7699E70&from=skill"
     },
     {
-      "id": 208,
+      "id": 209,
       "title": "包头稀土高新技术产业开发区社会事务局（教育局）2026年08月至2026年09月政府采购意向-稀土高新区公办幼教人员招录外包服务采购项目",
       "buyer": "包头稀土高新技术产业开发区社会事务局",
       "budget": 600.0,
@@ -2497,7 +2509,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601156493/b1?sk=D3D107417593D5E6B8277AE11E0BD81AD4CEBA8A&from=skill"
     },
     {
-      "id": 209,
+      "id": 210,
       "title": "黑龙江省人力资源和社会保障厅2026年度政府采购意向公告(第4批)-金秋招聘月系列招聘会",
       "buyer": "黑龙江省人力资源和社会保障厅",
       "budget": 50.0,
@@ -2509,7 +2521,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601132442/b1?sk=E4E3BB156554673A202C130B216EDCBC77A48950&from=skill"
     },
     {
-      "id": 210,
+      "id": 211,
       "title": "临海市人力资源和社会保障局2026年8月政府采购意向",
       "buyer": "临海市人力资源和社会保障局",
       "budget": 36.0,
@@ -2521,7 +2533,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601181371/b1?sk=F8662816ED91D55DBE369B407DA828B5FA27B61C&from=skill"
     },
     {
-      "id": 211,
+      "id": 212,
       "title": "中国邮政集团有限公司石家庄市分公司2026年干部能力提升培训服务项目询比采购公告",
       "buyer": "中国邮政集团有限公司石家庄市分公司",
       "budget": 12.0,
@@ -2533,7 +2545,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601146549/b1?sk=93CA0F700D42E5636D6ECC4A483A0A9C4BF1D160&from=skill"
     },
     {
-      "id": 212,
+      "id": 213,
       "title": "池州市供水有限公司2026年人员招聘第三方承办服务采购项目采购公告",
       "buyer": "池州市供水有限公司",
       "budget": 4.96,
@@ -2545,7 +2557,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601129821/b1?sk=13279AB62AFC640619EA7DA66962A1D5CC53A812&from=skill"
     },
     {
-      "id": 213,
+      "id": 214,
       "title": "遂宁市大英县隆盛镇百盛村村集体招聘农用拖拉机机手",
       "buyer": "大英县隆盛镇百盛村股份经济合作联合社",
       "budget": 4.8,
@@ -2557,7 +2569,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601150404/b1?sk=BEAB5B0E500FAF5E78510D7E2E81CDCAFEC9C802&from=skill"
     },
     {
-      "id": 214,
+      "id": 215,
       "title": "杭州银行股份有限公司深圳分行2026年-2028年人力招聘猎头服务项目（第二次）招标公告",
       "buyer": "杭州银行股份有限公司深圳分行",
       "budget": 0.0,
@@ -2569,7 +2581,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601169306/b1?sk=B0719A287D60F7636C83D234F612833B218B2650&from=skill"
     },
     {
-      "id": 215,
+      "id": 216,
       "title": "永安期货股份有限公司2026年网络招聘平台服务及校园招聘服务供应商项目招标公告",
       "buyer": "永安期货股份有限公司",
       "budget": 0.0,
@@ -2581,7 +2593,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601176841/b1?sk=FD2BAE1C1BFA1B3CAA02BEF9919CCD790A12626F&from=skill"
     },
     {
-      "id": 216,
+      "id": 217,
       "title": "四川省农业科学院农业质量标准与检测技术研究所科研辅助人员招聘公告",
       "buyer": "四川省农业科学院农业质量标准与检测技术研究所",
       "budget": 0.0,
@@ -2593,7 +2605,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601167298/b1?sk=846D1047BDC85AF4EAE3A68D1F09047C45E05D59&from=skill"
     },
     {
-      "id": 217,
+      "id": 218,
       "title": "测评系统（第二次）招标公告(2026-JQ12-F1502)",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -2605,7 +2617,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601143490/b1?sk=FF38DC24B357B9BE94DD26235ACA69AEF622A0C8&from=skill"
     },
     {
-      "id": 218,
+      "id": 219,
       "title": "福建省老年医院高层次人才猎头服务采购意向公告",
       "buyer": "建省老年医院人事科",
       "budget": 0.0,
@@ -2617,7 +2629,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601129979/b1?sk=3B0F09CB55FBF64BFD5BD7D09B369BCDDC3CC28D&from=skill"
     },
     {
-      "id": 219,
+      "id": 220,
       "title": "汕头大学医学院附属肿瘤医院遴选3家高层次人才猎头服务商项目（第三次）招标公告（招标编号：CLF0126ST00QY92B）",
       "buyer": "汕头大学医学院附属肿瘤医院",
       "budget": 0.0,
@@ -2629,7 +2641,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601148145/b1?sk=EA9FF0C27BF6C48F14AEF5EA2FD2B5316E756A85&from=skill"
     },
     {
-      "id": 220,
+      "id": 221,
       "title": "2026年招聘服务平台采购项目",
       "buyer": "新疆哈密三塘湖能源开发建设有限责任公司",
       "budget": 0.0,
@@ -2641,7 +2653,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601155728/b1?sk=0C61EEECAD37F0602EB675FE1FD74D2D8B48B3E6&from=skill"
     },
     {
-      "id": 221,
+      "id": 222,
       "title": "人力资源服务",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -2653,7 +2665,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601163398/b1?sk=BAA13B53D7485B65A5D4D30CB00C7139EA2331BD&from=skill"
     },
     {
-      "id": 222,
+      "id": 223,
       "title": "河北雄安城市发展生活服务有限公司2026年度人力资源服务第二批标段二",
       "buyer": "河北雄安城市发展生活服务有限公司",
       "budget": 0.0,
@@ -2665,7 +2677,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601172880/b1?sk=26746DAE48113FDE1592F9625D554E0948E0DCD2&from=skill"
     },
     {
-      "id": 223,
+      "id": 224,
       "title": "华电燃气轮机技术（上海）有限公司2026-2027年公开招聘辅助服务项目询比采购公告",
       "buyer": "华电燃气轮机技术（上海）有限公司",
       "budget": 0.0,
@@ -2677,7 +2689,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601145927/b1?sk=CF56C16ABE18C4CFC91B0D7F2437D7B2417F9BA4&from=skill"
     },
     {
-      "id": 224,
+      "id": 225,
       "title": "“桂林医科大学第一附属医院人才引进猎头服务”院内议价比选会议时间公告",
       "buyer": "桂林医科大学第一附属医院",
       "budget": 0.0,
@@ -2689,7 +2701,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601153495/b1?sk=5EFF4F0592723B668848CFF5F4BC458C41264573&from=skill"
     },
     {
-      "id": 225,
+      "id": 226,
       "title": "心理测评系统项目意向公开(2020-JQ49-F9005)(第1包)",
       "buyer": "某医院",
       "budget": 0.0,
@@ -2701,7 +2713,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601172203/b1?sk=C70EDC227E2EC61D1314FA5C3CBB6D5339BF3E99&from=skill"
     },
     {
-      "id": 226,
+      "id": 227,
       "title": "（询比采购）【外贸信托2026年社会招聘人才引进计划雇前背景调查服务采购/1601-PS202608110899】采购公告",
       "buyer": "外贸信托",
       "budget": 0.0,
@@ -2713,7 +2725,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601127973/b1?sk=5EE04437497B9FF2A53796A155A90142F0576A74&from=skill"
     },
     {
-      "id": 227,
+      "id": 228,
       "title": "中咨（南京）工程咨询有限公司2026年社会招聘公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -2725,7 +2737,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601148259/b1?sk=4725A94EDB8B0CFE421FC6B6F55150ED4EAE5748&from=skill"
     },
     {
-      "id": 228,
+      "id": 229,
       "title": "网站招聘信息发布及人员推荐相关服务",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -2737,7 +2749,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601164827/b1?sk=1342622C1DE9439C84A4F5B48A51B83AF68E2397&from=skill"
     },
     {
-      "id": 229,
+      "id": 230,
       "title": "“桂林医科大学第一附属医院人才招聘宣传及推广服务项目”院内议价比选会议时间公告",
       "buyer": "桂林医科大学第一附属医院",
       "budget": 0.0,
@@ -2749,7 +2761,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601140708/b1?sk=023806D8F091DC5422610FE5EE46EEE2F7618CE4&from=skill"
     },
     {
-      "id": 230,
+      "id": 231,
       "title": "东航食品（上海）人才测评服务2026年采购项目",
       "buyer": "上海东方航空食品有限公司",
       "budget": 0.0,
@@ -2761,7 +2773,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601159716/b1?sk=A2E900C8151623F3754671BF5F059CA83E3E22E7&from=skill"
     },
     {
-      "id": 231,
+      "id": 232,
       "title": "分谈分签+重庆前卫宏华科技有限责任公司+人力资源服务的询价书",
       "buyer": "重庆前卫宏华科技有限责任公司",
       "budget": 0.0,
@@ -2773,7 +2785,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601182396/b1?sk=23F63712A5D1F72FA5C91D583A99506B8E92B857&from=skill"
     },
     {
-      "id": 232,
+      "id": 233,
       "title": "河北医科大学第一医院2026年第二次公开招聘工作人员笔试命题考试服务项目询比公告",
       "buyer": "河北医科大学第一医院",
       "budget": 0.0,
@@ -2785,7 +2797,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601183289/b1?sk=47A5C9378B6DA1D858D77ED30ECABAA074B87F0F&from=skill"
     },
     {
-      "id": 233,
+      "id": 234,
       "title": "景德镇市珠山区就业创业服务中心2026年度政府采购意向公告(第1批)-珠山区“5+2”就业之家运营及人力资源服务采购项目详细情况",
       "buyer": "景德镇市珠山区就业创业服务中心",
       "budget": 120.0,
@@ -2797,7 +2809,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601066071/b1?sk=8F4729B187044093A2E6E1A372891DC5F52537C5&from=skill"
     },
     {
-      "id": 234,
+      "id": 235,
       "title": "深圳燃气2027届校园招聘项目",
       "buyer": "深圳市燃气集团股份有限公司",
       "budget": 45.0,
@@ -2809,7 +2821,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601035407/b1?sk=D9BF977EDFDEC0841479AFB165C0D01D1F276D4A&from=skill"
     },
     {
-      "id": 235,
+      "id": 236,
       "title": "常州大学怀德学院2026年公开招聘委托第三方服务项目采购公告",
       "buyer": "常州大学怀德学院",
       "budget": 28.0,
@@ -2821,7 +2833,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601083850/b1?sk=D069A8407A9083464D06BB572FAC35A84FE607B7&from=skill"
     },
     {
-      "id": 236,
+      "id": 237,
       "title": "关于广东仲恺人力资源服务产业园场地VI改造项目采购的询价公告",
       "buyer": "惠州仲恺高新技术产业开发区管理委员会社会事务管理局",
       "budget": 20.0,
@@ -2833,7 +2845,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601087864/b1?sk=8AEAE69B010A1B2DB8C2E9E33FD21D35699C1EE3&from=skill"
     },
     {
-      "id": 237,
+      "id": 238,
       "title": "锡林浩特市2026年公开招聘基层医疗卫生机构合同制专业技术人员考务服务",
       "buyer": "锡林浩特市卫生健康委员会",
       "budget": 14.07,
@@ -2845,7 +2857,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601069999/b1?sk=95C717F3FD5ADBA194242F042F8F52741E8B3BDC&from=skill"
     },
     {
-      "id": 238,
+      "id": 239,
       "title": "宿迁学院2026-2027学年度校园招聘会会展服务项目竞争性磋商公告",
       "buyer": "宿迁学院",
       "budget": 9.82,
@@ -2857,7 +2869,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601059593/b1?sk=68E35D3A66688B430165D1C87990AE7613653AFD&from=skill"
     },
     {
-      "id": 239,
+      "id": 240,
       "title": "集团公司2026年-2028年网络招聘平台服务",
       "buyer": "深圳市赛格集团有限公司",
       "budget": 9.5,
@@ -2869,7 +2881,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601036343/b1?sk=30C4546700BABA8C3EE8C3D958668B5CF44ED152&from=skill"
     },
     {
-      "id": 240,
+      "id": 241,
       "title": "【市北区】青岛市市北区行政审批服务局人力资源服务许可证印刷采购需求公示",
       "buyer": "青岛市市北区行政审批服务局",
       "budget": 0.24,
@@ -2881,7 +2893,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601043574/b1?sk=2450B1656AA575067FE5F3490F14FC8EBC8F8E89&from=skill"
     },
     {
-      "id": 241,
+      "id": 242,
       "title": "宁夏渝丰化工股份有限公司招聘一家现场防爆电气设备检测单位-公告",
       "buyer": "重庆市万利来化工股份有限公司",
       "budget": 0.0,
@@ -2893,7 +2905,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601033154/b1?sk=628F549AA682ADD7506F9010D31483DE9D909900&from=skill"
     },
     {
-      "id": 242,
+      "id": 243,
       "title": "济南工程职业技术学院关于2026年公开招聘高层次人才（第一批）考察体检资格弃权，递补弃权和递补人员的公告（第四批次）",
       "buyer": "济南工程职业技术学院",
       "budget": 0.0,
@@ -2905,7 +2917,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601054609/b1?sk=59EC744A8B0EC2E7C7A56E0D4F029951EAADE32A&from=skill"
     },
     {
-      "id": 243,
+      "id": 244,
       "title": "第三方平台招聘服务院内竞争性磋商公告",
       "buyer": "广东省第二中医院",
       "budget": 0.0,
@@ -2917,7 +2929,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601040471/b1?sk=AA84C8E7B8CBB81A82D267C5EE73726C94E20D73&from=skill"
     },
     {
-      "id": 244,
+      "id": 245,
       "title": "晋能控股集团阳泉公司阳泉富恒人力资源服务有限公司金地文化传媒广告分公司材料2026年8月碳粉，硒鼓，优盘等物资采购采购公告",
       "buyer": "阳泉阳煤中小企业投资管理（集团）有限责任公司",
       "budget": 0.0,
@@ -2929,7 +2941,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601062847/b1?sk=152902901DE551742CB2D3CB9F1A41BD88B8B183&from=skill"
     },
     {
-      "id": 245,
+      "id": 246,
       "title": "湖南长银五八2026-2028年社会招聘服务供应商入围项目公开招标公告",
       "buyer": "湖南长银五八消费金融股份有限公司",
       "budget": 0.0,
@@ -2941,7 +2953,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601043517/b1?sk=13A0445983D35D0A7AA0E9611A2A6E3949331528&from=skill"
     },
     {
-      "id": 246,
+      "id": 247,
       "title": "网站招聘信息发布及人员推荐相关服务",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -2953,7 +2965,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601082861/b1?sk=633199109085648687BF7E4D2025F0171171EB82&from=skill"
     },
     {
-      "id": 247,
+      "id": 248,
       "title": "北京大学环境科学与工程学院范汗青课题组招聘博士后研究人员启事",
       "buyer": "北京大学环境科学与工程学院",
       "budget": 0.0,
@@ -2965,7 +2977,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601037185/b1?sk=343FA53CBFF23D1B46423AEB767D44387980C611&from=skill"
     },
     {
-      "id": 248,
+      "id": 249,
       "title": "2026年宁夏工研院有限公司招聘服务采购项目（第二次）-询比公告",
       "buyer": "中国电信集团有限公司",
       "budget": 0.0,
@@ -2977,7 +2989,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601081164/b1?sk=0B9DB4DB05E9482F081412CF97A09936050708BB&from=skill"
     },
     {
-      "id": 249,
+      "id": 250,
       "title": "安徽中药科技学校2026年合同制教师公开招聘公告",
       "buyer": "安徽中药科技学校",
       "budget": 0.0,
@@ -2989,7 +3001,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601081075/b1?sk=DF0E15948E25C7381FAC0B1446130051927A60C3&from=skill"
     },
     {
-      "id": 250,
+      "id": 251,
       "title": "中冶京诚2026-2027年度招聘网站使用及社会招聘猎头服务",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -3001,7 +3013,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601072332/b1?sk=642E1EE26964F8D37641CF4CC63055FFB68CBCE3&from=skill"
     },
     {
-      "id": 251,
+      "id": 252,
       "title": "中冶赛迪统建系统二期开发项目人力资源招聘及绩效等开发与系统实施询价通知书",
       "buyer": "中国五矿集团有限公司",
       "budget": 0.0,
@@ -3013,7 +3025,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/601076274/b1?sk=698E7BE819208F46FD783C6EB7FB467993A74646&from=skill"
     },
     {
-      "id": 252,
+      "id": 253,
       "title": "2026年河源联通心理测评系统系统建设项目询比采购公告",
       "buyer": "中国联合网络通信有限公司河源市分公司",
       "budget": 258.14,
@@ -3025,7 +3037,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600980908/b1?sk=E260DC7AB1BA952932DC7D74CC3493D29CA4668E&from=skill"
     },
     {
-      "id": 253,
+      "id": 254,
       "title": "石家庄市新华区卫生队2026年01至12月政府采购意向-灵活用工招聘咨询软件系统服务",
       "buyer": "石家庄市新华区卫生队",
       "budget": 99.0,
@@ -3037,7 +3049,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600940285/b1?sk=8FD306B1766992274E8D4BCEA046427BD5405EC6&from=skill"
     },
     {
-      "id": 254,
+      "id": 255,
       "title": "2026年公共就业服务“五进区”及专场招聘会活动外包采购项目采购结果补发采购文件",
       "buyer": "浙江省浦江县就业管理服务处",
       "budget": 54.0,
@@ -3049,7 +3061,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600946857/b1?sk=01A4DB946EECE3DE1973B06EA7950340FB47814A&from=skill"
     },
     {
-      "id": 255,
+      "id": 256,
       "title": "2026年度金融科技类人才网络招聘平台采购公告",
       "buyer": "国信证券股份有限公司",
       "budget": 13.0,
@@ -3061,7 +3073,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600973170/b1?sk=AA15F90F658A82C871D0E35AAB5417EBD96A207B&from=skill"
     },
     {
-      "id": 256,
+      "id": 257,
       "title": "航空总医院招聘网站竞争性磋商采购公告(二次）",
       "buyer": "航空总医院",
       "budget": 0.0,
@@ -3073,7 +3085,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600929492/b1?sk=85CF6F38D782A2F1BABDAED0ACD5BEF236CFA10A&from=skill"
     },
     {
-      "id": 257,
+      "id": 258,
       "title": "毕节七星关乌江水电新能源有限公司水箐风电2026年至2027年业务外包服务询比采购公告",
       "buyer": "毕节七星关乌江水电新能源有限公司",
       "budget": 0.0,
@@ -3085,7 +3097,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600986782/b1?sk=0D23B1146D7FE721C41CF174390F3958DCFC1577&from=skill"
     },
     {
-      "id": 258,
+      "id": 259,
       "title": "中冶赛迪统建系统二期开发项目人力资源招聘及绩效等开发与系统实施询价通知书",
       "buyer": "中冶赛迪信息技术（重庆）有限公司",
       "budget": 0.0,
@@ -3097,7 +3109,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600972661/b1?sk=81E312B59C87DA6D2CBC949DC75CDD116EEE4D38&from=skill"
     },
     {
-      "id": 259,
+      "id": 260,
       "title": "2026年宁夏工研院有限公司招聘服务采购项目（第二次）-询比公告",
       "buyer": "宁夏工业和信息化研究院有限公司",
       "budget": 0.0,
@@ -3109,7 +3121,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600978169/b1?sk=5719DA0DDE946FFE585BCF6532BE3015CE85E4E0&from=skill"
     },
     {
-      "id": 260,
+      "id": 261,
       "title": "人才测评及人才盘点-询比采购公告",
       "buyer": "招商局金陵船舶（江苏）有限公司",
       "budget": 0.0,
@@ -3121,7 +3133,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600934826/b1?sk=A014F78A35738AA60A69EF2CF5274BCB61A7058B&from=skill"
     },
     {
-      "id": 261,
+      "id": 262,
       "title": "2026年“护航企业发展”招聘活动项目招标公告",
       "buyer": "（未公开）",
       "budget": 0.0,
@@ -3133,7 +3145,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600940317/b1?sk=15403EA4CE8F4C623E0A0F30FC4104BED90103E4&from=skill"
     },
     {
-      "id": 262,
+      "id": 263,
       "title": "重庆医科大学附属第一医院青杠老年护养中心人力资源服务（CG26FW0077）公开比选公告",
       "buyer": "重庆医科大学附属第一医院",
       "budget": 0.0,
@@ -3145,7 +3157,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600937021/b1?sk=CBFB555A0B8D71AC090A0F61687714571CB7EFB4&from=skill"
     },
     {
-      "id": 263,
+      "id": 264,
       "title": "华夏银行杭州分行2026年信息科技应用开发人力资源池扩充入围供应商征集公告",
       "buyer": "华夏银行股份有限公司杭州分行",
       "budget": 0.0,
@@ -3157,7 +3169,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600966857/b1?sk=1738400ABA2F5BA5CC00A4022492696A8A2C3700&from=skill"
     },
     {
-      "id": 264,
+      "id": 265,
       "title": "深圳机场中高端人才及境外高层次人才招聘服务招选项目公告",
       "buyer": "深圳市机场（集团）有限公司",
       "budget": 0.0,
@@ -3169,7 +3181,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600928868/b1?sk=FEC21DB0DB21C27E85951BD41BA070638617D638&from=skill"
     },
     {
-      "id": 265,
+      "id": 266,
       "title": "人才引进猎头服务项目(三次)",
       "buyer": "中汽研汽车检验中心（天津）有限公司",
       "budget": 0.0,
@@ -3181,7 +3193,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600963604/b1?sk=23995170846AA708608BB344D5BAFB7FDBDD51DE&from=skill"
     },
     {
-      "id": 266,
+      "id": 267,
       "title": "分谈分签+中国船舶集团物资有限公司+招聘机构选聘0810的询价书",
       "buyer": "中国船舶集团物资有限公司",
       "budget": 0.0,
@@ -3193,7 +3205,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600923250/b1?sk=84E21333CECD2853A92EC0ED6BD77DE0E1CB5C31&from=skill"
     },
     {
-      "id": 267,
+      "id": 268,
       "title": "研发总院2027校园招聘服务采购",
       "buyer": "中国第一汽车股份有限公司",
       "budget": 0.0,
@@ -3205,7 +3217,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600955988/b1?sk=2C7830C3D37E829F760C12B7D147B38D385C77A3&from=skill"
     },
     {
-      "id": 268,
+      "id": 269,
       "title": "“百万英才汇南粤”2026年N城联动秋季招聘活动承办服务项目询比公告",
       "buyer": "广州市荔湾区人力资源和社会保障局",
       "budget": 0.0,
@@ -3217,7 +3229,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600932761/b1?sk=27DE5E24E2B78841227B1F88E230A5D645ABAE7C&from=skill"
     },
     {
-      "id": 269,
+      "id": 270,
       "title": "中冶京诚2026-2027年度招聘网站使用及社会招聘猎头服务",
       "buyer": "中冶京诚工程技术有限公司",
       "budget": 0.0,
@@ -3229,7 +3241,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600946289/b1?sk=D2D5C5CDF98AF753D474F874389C850CEB5FF225&from=skill"
     },
     {
-      "id": 270,
+      "id": 271,
       "title": "国家人工智能应用中试基地（人力资源领域人力资源服务方向）全过程工程咨询服务",
       "buyer": "国家人工智能应用中试基地",
       "budget": 0.0,
@@ -3241,7 +3253,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600982354/b1?sk=B3D9738B30E4456E4EBF0F61172578F123B029C3&from=skill"
     },
     {
-      "id": 271,
+      "id": 272,
       "title": "忻城县人力资源和社会保障局2026年忻城县高校毕业生等青年专场招聘会政府购买服务询价函",
       "buyer": "忻城县人力资源和社会保障局",
       "budget": 0.0,
@@ -3253,7 +3265,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600970853/b1?sk=9AB1F0A70BCABC43A4780603C787E0B18F1F94C9&from=skill"
     },
     {
-      "id": 272,
+      "id": 273,
       "title": "赛瑞斯公司2026年-2029年度招聘管理系统服务采购",
       "buyer": "中冶京诚工程技术有限公司",
       "budget": 0.0,
@@ -3265,7 +3277,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600942679/b1?sk=7A18B558B241F94526A1AF7A135D296AEB61D1BA&from=skill"
     },
     {
-      "id": 273,
+      "id": 274,
       "title": "东莞市政务服务和数据管理局2026年08月至2026年09月政府采购意向-东莞市政务服务和数据管理局2027年度人力资源服务",
       "buyer": "东莞市政务服务和数据管理局",
       "budget": 1781.15,
@@ -3277,7 +3289,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600792104/b1?sk=F2F893F9ED2EE07B9F24CB612A3B999D32536DA2&from=skill"
     },
     {
-      "id": 274,
+      "id": 275,
       "title": "赣州市就业创业服务中心2026年度政府采购意向公告(第2批)",
       "buyer": "赣州市就业创业服务中心",
       "budget": 194.0,
@@ -3289,7 +3301,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600804058/b1?sk=256F80DD3893CF8B582280D7A8CC1C77B277B584&from=skill"
     },
     {
-      "id": 275,
+      "id": 276,
       "title": "南昌市青云谱区人力资源和社会保障局2026年度政府采购意向公告(第4批)",
       "buyer": "南昌市青云谱区人力资源和社会保障局",
       "budget": 111.0,
@@ -3301,7 +3313,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600807482/b1?sk=122CC75FBA2439F81FAADA0C18D8ECFFA44FE3DA&from=skill"
     },
     {
-      "id": 276,
+      "id": 277,
       "title": "满洲里市中等职业技术学校人力资源服务竞争性磋商公告",
       "buyer": "满洲里市中等职业技术学校",
       "budget": 63.93,
@@ -3313,7 +3325,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600811216/b1?sk=777F2B2871C5BE661C1C06C2A587D962BC443A2D&from=skill"
     },
     {
-      "id": 277,
+      "id": 278,
       "title": "皖新文旅庐阳分公司2026-2027年人力资源服务项目招标公告",
       "buyer": "皖新文化旅游开发（集团）有限公司庐阳分公司",
       "budget": 60.6,
@@ -3325,7 +3337,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600848603/b1?sk=2609D71E188439634ADCB401C931FC5567E198C6&from=skill"
     },
     {
-      "id": 278,
+      "id": 279,
       "title": "2026年青年服务“百千万工程”秋季专题招聘活动项目比选公告",
       "buyer": "中国共产主义青年团广东省委员会",
       "budget": 56.0,
@@ -3337,7 +3349,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600856442/b1?sk=CF45E911B79CB6282E2A5427BAF4A1279209D3AF&from=skill"
     },
     {
-      "id": 279,
+      "id": 280,
       "title": "吉林市昌邑区政府采购中心关于中国共产党吉林市昌邑区纪律检查委员会采购人力资源服务项目的竞争性磋商公告",
       "buyer": "中国共产党吉林市昌邑区纪律检查委员会",
       "budget": 55.0,
@@ -3349,7 +3361,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600795598/b1?sk=47DE671051F7A091771176543F43A46479122157&from=skill"
     },
     {
-      "id": 280,
+      "id": 281,
       "title": "蜀道资本控股集团有限公司人才盘点服务采购项目",
       "buyer": "蜀道资本控股集团有限公司",
       "budget": 45.0,
@@ -3361,7 +3373,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600853331/b1?sk=1745E1811C46F22F272CBEB5B32E833567799676&from=skill"
     },
     {
-      "id": 281,
+      "id": 282,
       "title": "“邹鲁有约·邹城-高校人才直通车”校园招聘活动服务采购项目竞争性磋商公告",
       "buyer": "邹城市人力资源和社会保障局",
       "budget": 40.0,
@@ -3373,7 +3385,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600808728/b1?sk=D9403B0EEF43EA17D792528F9645F16D7C18B6AE&from=skill"
     },
     {
-      "id": 282,
+      "id": 283,
       "title": "香港城市大学（东莞）2026-2027年行政及教辅人员猎头服务采购采购公告",
       "buyer": "人力资源处",
       "budget": 33.52,
@@ -3385,7 +3397,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600842967/b1?sk=4A16CE620E5C5A23573079D6F1CD39E9E8C29F29&from=skill"
     },
     {
-      "id": 283,
+      "id": 284,
       "title": "九龙坡区第七届“百日千万招聘专项行动”采购项目（JLPXE26C02699）网上询比公告",
       "buyer": "重庆市九龙坡区就业和人才中心",
       "budget": 26.66,
@@ -3397,7 +3409,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/600803941/b1?sk=44DE5DEE3F9BB2CE49917562B515205B0C4AA61E&from=skill"
     },
     {
-      "id": 284,
+      "id": 285,
       "title": "深圳市环境集团有限公司2026年招聘服务项目采购公告",
       "buyer": "深圳市环境集团有限公司",
       "budget": 9.84,
@@ -3407,18 +3419,6 @@
       "date": "2026-08-07",
       "url": "https://www.zhiliaobiaoxun.com/content/600853371/b1?sk=8053A3863A4481CCA4EDFF311A98E496CB58A1B8&from=skill",
       "link": "https://www.zhiliaobiaoxun.com/content/600853371/b1?sk=8053A3863A4481CCA4EDFF311A98E496CB58A1B8&from=skill"
-    },
-    {
-      "id": 285,
-      "title": "昆明市西山区西苑社区卫生服务中心采购委托第三方机构招聘人员服务项目竞争性磋商公告",
-      "buyer": "昆明市西山区西苑社区卫生服务中心",
-      "budget": 0.0,
-      "type": "综合招聘服务",
-      "province": "云南",
-      "city": "昆明",
-      "date": "2026-08-07",
-      "url": "https://www.zhiliaobiaoxun.com/content/600839643/b1?sk=8C53AE6184B878255CD7078AEF3CDB80CAB18C81&from=skill",
-      "link": "https://www.zhiliaobiaoxun.com/content/600839643/b1?sk=8C53AE6184B878255CD7078AEF3CDB80CAB18C81&from=skill"
     },
     {
       "id": 286,
@@ -20492,6 +20492,7 @@
     "RPO·招聘流程外包": 16
   },
   "province_dist": {
+    "云南": 41,
     "广东": 192,
     "江苏": 76,
     "天津": 26,
@@ -20519,7 +20520,6 @@
     "新疆": 36,
     "甘肃": 13,
     "黑龙江": 40,
-    "云南": 41,
     "宁夏": 16,
     "辽宁": 20,
     "青海": 10,
@@ -20531,6 +20531,7 @@
     "济南": 2
   },
   "date_dist": {
+    "2026-08-22": 1,
     "2026-08-21": 35,
     "2026-08-20": 30,
     "2026-08-19": 33,
@@ -20543,7 +20544,7 @@
     "2026-08-12": 25,
     "2026-08-11": 19,
     "2026-08-10": 21,
-    "2026-08-07": 25,
+    "2026-08-07": 24,
     "2026-08-06": 31,
     "2026-08-05": 36,
     "2026-08-04": 35,
@@ -20612,6 +20613,9 @@
     "2026-05-22": 3
   },
   "date_type": {
+    "2026-08-22": {
+      "综合招聘服务": 1
+    },
     "2026-08-21": {
       "综合招聘服务": 27,
       "猎头·人才寻访": 1,
@@ -20697,7 +20701,7 @@
       "校招服务（含大学生招聘会）": 1
     },
     "2026-08-07": {
-      "综合招聘服务": 17,
+      "综合招聘服务": 16,
       "人才测评·背调": 2,
       "校招服务（含大学生招聘会）": 4,
       "猎头·人才寻访": 2
