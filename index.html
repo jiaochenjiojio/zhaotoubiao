@@ -8,10 +8,16 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"Microsoft YaHei","微软雅黑",sans-serif;background:#f0f2f5;color:#333}
-.header{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:white;padding:20px 32px;display:flex;justify-content:space-between;align-items:center}
+.header{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:white;padding:20px 32px 0;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
 .header h1{font-size:22px;font-weight:600}
 .header .sub{font-size:13px;opacity:.85;margin-top:4px}
-.header .time{font-size:13px;opacity:.9}
+.header .time{font-size:13px;opacity:.9;padding-top:4px}
+.tabs{display:flex;gap:6px;margin-top:16px;width:100%}
+.tab{padding:10px 22px;background:rgba(255,255,255,.16);border-radius:10px 10px 0 0;cursor:pointer;font-size:14px;font-weight:600;color:rgba(255,255,255,.85);border:none;transition:all .2s;font-family:inherit}
+.tab:hover{background:rgba(255,255,255,.28)}
+.tab.active{background:#f0f2f5;color:#1a73e8}
+.pane{display:none}
+.pane.active{display:block}
 .kpi-row{display:flex;gap:16px;padding:20px 32px}
 .kpi-card{flex:1;background:white;border-radius:12px;padding:20px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08);position:relative;overflow:hidden}
 .kpi-card::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%}
@@ -36,7 +42,7 @@ body{font-family:-apple-system,"Microsoft YaHei","微软雅黑",sans-serif;backg
 .table-box{background:white;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .table-title{font-size:15px;font-weight:600;color:#333;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #eee}
 .filter-bar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
-.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:white;cursor:pointer;font-size:12px;color:#666;transition:all .2s}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:white;cursor:pointer;font-size:12px;color:#666;transition:all .2s;font-family:inherit}
 .filter-btn:hover,.filter-btn.active{background:#1a73e8;color:white;border-color:#1a73e8}
 .filter-select{padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-size:12px;background:white;color:#666;cursor:pointer}
 .filter-select:focus{outline:none;border-color:#1a73e8}
@@ -56,18 +62,25 @@ a:hover{text-decoration:underline}
 .prov-scroll::-webkit-scrollbar{width:6px}
 .prov-scroll::-webkit-scrollbar-thumb{background:#c5cae9;border-radius:3px}
 .prov-bar{display:flex;align-items:center;margin-bottom:8px;font-size:13px}
-.prov-name{width:100px;text-align:right;padding-right:12px;color:#555;flex-shrink:0}
+.prov-name{width:190px;text-align:right;padding-right:12px;color:#555;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .prov-fill{height:24px;border-radius:4px;background:linear-gradient(90deg,#1a73e8,#4fc3f7);color:white;display:flex;align-items:center;padding-left:8px;font-size:12px;font-weight:600;min-width:30px;transition:width .6s}
+.prov-fill.win{background:linear-gradient(90deg,#e65100,#ffa726)}
+.prov-fill.buy{background:linear-gradient(90deg,#2e7d32,#66bb6a)}
 .row-diamond{background:#fffde7!important}
 .row-hot{background:#fff3e0!important}
 .table-scroll{max-height:70vh;overflow-y:auto}
 .title-col{max-width:400px;overflow:hidden;text-overflow:ellipsis}
 .date-col{white-space:nowrap}
+.winner-col{max-width:230px;color:#c62828;font-weight:600}
 .loading{text-align:center;padding:60px;color:#999;font-size:16px}
+.badge{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11px;background:#eef4ff;color:#1a73e8;margin-right:4px}
+.badge.stage{background:#f1f8e9;color:#33691e}
+.badge.lead{background:#fff3e0;color:#e65100}
 @media(max-width:768px){
   .kpi-row{flex-direction:column}
   .charts-row{flex-direction:column}
   .header{flex-direction:column;align-items:flex-start}
+  .tab{padding:8px 14px;font-size:13px}
 }
 </style>
 </head>
@@ -76,139 +89,209 @@ a:hover{text-decoration:underline}
 <div class="header">
   <div>
     <h1>📊 全国招聘标讯数据看板</h1>
-    <div class="sub" id="headerSub">数据来源：全网招投标数据 | 排除：社保代缴/体检服务商/HR外包/劳务派遣</div>
+    <div class="sub" id="headerSub">数据来源：全网招投标数据</div>
   </div>
   <div class="time" id="headerTime">加载中...</div>
-</div>
-
-<div class="kpi-row">
-  <div class="kpi-card">
-    <div class="kpi-label">累计有效标讯</div>
-    <div class="kpi-val" id="kpiTotal">-</div>
-    <div class="kpi-sub" id="kpiTotalSub">-</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-label">💎 高价值标讯（≥50万）</div>
-    <div class="kpi-val" id="kpiHigh">-</div>
-    <div class="kpi-sub" id="kpiHighSub">-</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-label">累计预算总额</div>
-    <div class="kpi-val" id="kpiBudget">-</div>
-    <div class="kpi-sub" id="kpiBudgetSub">-</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-label">🏷 服务类型</div>
-    <div class="kpi-val" id="kpiSvcType">-</div>
-    <div class="kpi-sub" id="kpiSvcTypeSub">-</div>
+  <div class="tabs">
+    <button class="tab active" data-pane="bid" onclick="switchTab('bid',this)">📢 招标商机</button>
+    <button class="tab" data-pane="win" onclick="switchTab('win',this)">🏆 中标结果</button>
   </div>
 </div>
 
-<div class="charts-row">
-  <div class="chart-box wide"><div class="chart-title">📈 每日有效标讯趋势</div><div style="height:280px"><canvas id="trendChart"></canvas></div></div>
-  <div class="chart-box"><div class="chart-title">💰 全量价格分布</div><div style="height:280px"><canvas id="pricePie"></canvas></div></div>
-</div>
-
-<div class="charts-row">
-  <div class="chart-box"><div class="chart-title">🔧 全量服务类型分布</div><div style="height:280px"><canvas id="svcPie"></canvas></div></div>
-  <div class="chart-box wide"><div class="chart-title">🗺 省份累计分布（Top 15）</div><div class="prov-scroll" id="provBars"></div></div>
-</div>
-
-<div class="charts-row">
-  <div class="chart-box wide"><div class="chart-title">📊 每日服务类型分布（堆叠）</div><div style="height:300px"><canvas id="stackChart"></canvas></div></div>
-  <div class="chart-box"><div class="chart-title">📈 每日预算金额趋势</div><div style="height:280px"><canvas id="budgetChart"></canvas></div></div>
-</div>
-
-<div class="table-section">
-  <div class="table-box">
-    <div class="table-title" id="tableTitle">📋 全量标讯明细</div>
-    <div class="filter-bar" id="filterBar">
-      <span style="font-size:12px;color:#888;margin-right:4px">档位：</span>
-      <button class="filter-btn tier-btn active" onclick="filterTier('all',this)">全部</button>
-      <button class="filter-btn tier-btn" onclick="filterTier('diamond',this)">💎 钻石级</button>
-      <button class="filter-btn tier-btn" onclick="filterTier('hot',this)">🔥 火热级</button>
-      <button class="filter-btn tier-btn" onclick="filterTier('normal',this)">🏆 有预算</button>
-      <button class="filter-btn tier-btn" onclick="filterTier('nobudget',this)">无预算</button>
-      <span style="margin-left:12px;font-size:12px;color:#888">日期：</span>
-      <input type="date" class="date-input" id="dateFilter" onchange="applyAllFilters()">
-      <button class="filter-btn" onclick="clearDateFilter()">✕ 清除日期</button>
-      <span style="margin-left:12px;font-size:12px;color:#888">类型：</span>
-      <select class="filter-select" id="svcFilter" onchange="applyAllFilters()"><option value="all">全部类型</option></select>
-      <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
-      <select class="filter-select" id="provFilter" onchange="applyAllFilters()"><option value="all">全部地区</option></select>
+<!-- ==================== 招标商机 ==================== -->
+<div class="pane active" id="pane-bid">
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">累计有效标讯</div>
+      <div class="kpi-val" id="kpiTotal">-</div>
+      <div class="kpi-sub" id="kpiTotalSub">-</div>
     </div>
-    <div class="table-scroll">
-      <table style="width:100%;border-collapse:collapse">
-        <thead><tr><th class="sortable" onclick="toggleSort(0,this)">项目名称 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(1,this)">招标方 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(2,this)">预算 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(3,this)">服务类型 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(4,this)">省份 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(5,this)">发布时间 <span class="sort-arrow"></span></th><th>链接</th></tr></thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+    <div class="kpi-card">
+      <div class="kpi-label">💎 高价值标讯（≥50万）</div>
+      <div class="kpi-val" id="kpiHigh">-</div>
+      <div class="kpi-sub" id="kpiHighSub">-</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">累计预算总额</div>
+      <div class="kpi-val" id="kpiBudget">-</div>
+      <div class="kpi-sub" id="kpiBudgetSub">-</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🏷 服务类型</div>
+      <div class="kpi-val" id="kpiSvcType">-</div>
+      <div class="kpi-sub" id="kpiSvcTypeSub">-</div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box wide"><div class="chart-title">📈 每日有效标讯趋势</div><div style="height:280px"><canvas id="trendChart"></canvas></div></div>
+    <div class="chart-box"><div class="chart-title">💰 全量价格分布</div><div style="height:280px"><canvas id="pricePie"></canvas></div></div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box"><div class="chart-title">🔧 全量服务类型分布</div><div style="height:280px"><canvas id="svcPie"></canvas></div></div>
+    <div class="chart-box wide"><div class="chart-title">🗺 省份累计分布（Top 15）</div><div class="prov-scroll" id="provBars"></div></div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box wide"><div class="chart-title">📊 每日服务类型分布（堆叠）</div><div style="height:300px"><canvas id="stackChart"></canvas></div></div>
+    <div class="chart-box"><div class="chart-title">📈 每日预算金额趋势</div><div style="height:280px"><canvas id="budgetChart"></canvas></div></div>
+  </div>
+
+  <div class="table-section">
+    <div class="table-box">
+      <div class="table-title" id="tableTitle">📋 全量标讯明细</div>
+      <div class="filter-bar" id="filterBar">
+        <span style="font-size:12px;color:#888;margin-right:4px">档位：</span>
+        <button class="filter-btn tier-btn active" onclick="filterTier('all',this)">全部</button>
+        <button class="filter-btn tier-btn" onclick="filterTier('diamond',this)">💎 钻石级</button>
+        <button class="filter-btn tier-btn" onclick="filterTier('hot',this)">🔥 火热级</button>
+        <button class="filter-btn tier-btn" onclick="filterTier('normal',this)">🏆 有预算</button>
+        <button class="filter-btn tier-btn" onclick="filterTier('nobudget',this)">无预算</button>
+        <span style="margin-left:12px;font-size:12px;color:#888">日期：</span>
+        <input type="date" class="date-input" id="dateFilter" onchange="applyAllFilters()">
+        <button class="filter-btn" onclick="clearDateFilter()">✕ 清除日期</button>
+        <span style="margin-left:12px;font-size:12px;color:#888">类型：</span>
+        <select class="filter-select" id="svcFilter" onchange="applyAllFilters()"><option value="all">全部类型</option></select>
+        <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
+        <select class="filter-select" id="provFilter" onchange="applyAllFilters()"><option value="all">全部地区</option></select>
+      </div>
+      <div class="table-scroll">
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr><th class="sortable" onclick="toggleSort(0,this)">项目名称 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(1,this)">招标方 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(2,this)">预算 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(3,this)">服务类型 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(4,this)">省份 <span class="sort-arrow"></span></th><th class="sortable" onclick="toggleSort(5,this)">发布时间 <span class="sort-arrow"></span></th><th>链接</th></tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 中标结果 ==================== -->
+<div class="pane" id="pane-win">
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-label">累计中标结果</div>
+      <div class="kpi-val" id="wkTotal">-</div>
+      <div class="kpi-sub" id="wkTotalSub">-</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">💎 大额中标（≥100万）</div>
+      <div class="kpi-val" id="wkHigh">-</div>
+      <div class="kpi-sub" id="wkHighSub">-</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">可统计中标金额</div>
+      <div class="kpi-val" id="wkAmount">-</div>
+      <div class="kpi-sub" id="wkAmountSub">-</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🏢 中标方数量</div>
+      <div class="kpi-val" id="wkWinnerCnt">-</div>
+      <div class="kpi-sub" id="wkWinnerCntSub">-</div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box wide"><div class="chart-title">📈 每日中标结果趋势</div><div style="height:280px"><canvas id="wkTrend"></canvas></div></div>
+    <div class="chart-box"><div class="chart-title">💰 中标金额分布</div><div style="height:280px"><canvas id="wkPricePie"></canvas></div></div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box"><div class="chart-title">🔧 中标服务类型分布</div><div style="height:280px"><canvas id="wkSvcPie"></canvas></div></div>
+    <div class="chart-box wide"><div class="chart-title">🏆 中标方排行 Top 15（谁在赢单）</div><div class="prov-scroll" id="winnerBars"></div></div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box wide"><div class="chart-title">📊 每日中标服务类型分布（堆叠）</div><div style="height:300px"><canvas id="wkStack"></canvas></div></div>
+    <div class="chart-box"><div class="chart-title">🏢 采购方排行 Top 12（谁在买）</div><div class="prov-scroll" id="buyerBars"></div></div>
+  </div>
+
+  <div class="table-section">
+    <div class="table-box">
+      <div class="table-title" id="wkTableTitle">📋 中标结果明细</div>
+      <div class="filter-bar">
+        <span style="font-size:12px;color:#888;margin-right:4px">档位：</span>
+        <button class="filter-btn wk-tier-btn active" onclick="filterWkTier('all',this)">全部</button>
+        <button class="filter-btn wk-tier-btn" onclick="filterWkTier('diamond',this)">💎 ≥100万</button>
+        <button class="filter-btn wk-tier-btn" onclick="filterWkTier('hot',this)">🔥 50-100万</button>
+        <button class="filter-btn wk-tier-btn" onclick="filterWkTier('normal',this)">🏆 有金额</button>
+        <button class="filter-btn wk-tier-btn" onclick="filterWkTier('noamount',this)">未披露</button>
+        <span style="margin-left:12px;font-size:12px;color:#888">日期：</span>
+        <input type="date" class="date-input" id="wkDateFilter" onchange="applyWkFilters()">
+        <button class="filter-btn" onclick="document.getElementById('wkDateFilter').value='';applyWkFilters()">✕ 清除日期</button>
+        <span style="margin-left:12px;font-size:12px;color:#888">类型：</span>
+        <select class="filter-select" id="wkSvcFilter" onchange="applyWkFilters()"><option value="all">全部类型</option></select>
+        <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
+        <select class="filter-select" id="wkProvFilter" onchange="applyWkFilters()"><option value="all">全部地区</option></select>
+        <span style="margin-left:12px;font-size:12px;color:#888">中标方：</span>
+        <input type="text" class="date-input" id="wkWinnerSearch" placeholder="搜索中标方/项目" oninput="applyWkFilters()" style="width:170px">
+      </div>
+      <div class="table-scroll">
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr>
+            <th class="sortable" onclick="toggleWkSort(0,this)">项目名称 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(1,this)">招标方 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(2,this)">中标方 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(3,this)">中标金额 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(4,this)">服务类型 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(5,this)">省份 <span class="sort-arrow"></span></th>
+            <th class="sortable" onclick="toggleWkSort(6,this)">公布日期 <span class="sort-arrow"></span></th>
+            <th>环节</th><th>链接</th>
+          </tr></thead>
+          <tbody id="wkTableBody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
-var D=null, charts={}, sortState={col:-1,dir:0}, allItems=[];
+var D=null, W=null, charts={}, sortState={col:-1,dir:0}, wkSortState={col:-1,dir:0};
+var allItems=[], wkItems=[], rendered={bid:false, win:false};
 var COLORS=['#1a73e8','#f9a825','#43a047','#e53935','#7b1fa2','#00838f','#ff6f00','#5d4037','#00897b','#1565c0','#c62828','#4e342e','#00695c','#283593','#ad1457','#37474f'];
+var fmtAmount=function(v){return v>=10000?'¥'+(v/10000).toFixed(2)+'亿':'¥'+v.toFixed(0)+'万';};
 
-fetch('dashboard_data.json').then(r=>r.json()).then(data=>{
-  D=data; allItems=[].concat(data.items); render();
-}).catch(e=>{
+Promise.all([
+  fetch('dashboard_data.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;}),
+  fetch('dashboard_wins.json?t='+Date.now()).then(function(r){return r.json();}).catch(function(){return null;})
+]).then(function(res){
+  D=res[0]; W=res[1];
+  if(D){ allItems=[].concat(D.items); }
+  if(W){ wkItems=[].concat(W.items); }
+  rendered.bid=true; initBid();
+  // 中标面板采用「首次切换时渲染」：隐藏容器中 Chart.js 取不到尺寸
+  updateHeader();
+  var hash=location.hash.replace('#','');
+  if(hash==='win'&&W){ var t=document.querySelectorAll('.tab')[1]; if(t) switchTab('win',t); }
+}).catch(function(e){
   document.getElementById('tableBody').innerHTML='<tr><td colspan="7" style="text-align:center;padding:40px;color:#999">数据加载失败: '+e.message+'</td></tr>';
 });
 
-// Sort toggle: 0=none, 1=asc(▲), 2=desc(▼)
-function toggleSort(col,th){
-  if(sortState.col===col){sortState.dir=(sortState.dir+1)%3;}
-  else{sortState.col=col;sortState.dir=1;}
-  // Update arrows
-  document.querySelectorAll('.sort-arrow').forEach(function(a){a.textContent='';a.classList.remove('active');});
-  if(sortState.dir>0){
-    var arrow=th.querySelector('.sort-arrow');
-    arrow.textContent=sortState.dir===1?'▲':'▼';
-    arrow.classList.add('active');
-  }
-  renderSortedTable();
+function switchTab(name,btn){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+  btn.classList.add('active');
+  document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('active');});
+  document.getElementById('pane-'+name).classList.add('active');
+  try{ history.replaceState(null,'',name==='win'?'#win':'#'); }catch(err){}
+  if(name==='win'&&W&&!rendered.win){ rendered.win=true; renderWin(); }
 }
 
-function reSortAndRender(){
-  var items=[].concat(allItems);
-  if(sortState.dir>0){
-    items.sort(function(a,b){
-      var cols=['title','buyer','budget','type','province','date'];
-      var col=cols[sortState.col];
-      var va=getSortVal(a,col), vb=getSortVal(b,col);
-      var cmp=va<vb?-1:(va>vb?1:0);
-      return sortState.dir===1?cmp:-cmp;
-    });
-  }
-  renderTable(items);
-}
-
-function getSortVal(it,col){
-  if(col==='budget'){
-    var b=it.budget||0;
-    if(b<=0)return (it.budget===0||it.budget==null)?-Infinity:0;
-    return b;
-  }
-  if(col==='date')return it.date||'0000-00-00';
-  return (it[col]||'').toString().toLowerCase();
-}
-
-function render(){
-  var s=D.stats, items=D.items;
-  var dates=Object.keys(D.date_dist).sort();
-  var dateRange=dates.length>=2?dates[0]+' ~ '+dates[dates.length-1]:'';
-
-  // Header
-  document.getElementById('headerSub').textContent='数据来源：全网招投标数据 | 排除：社保代缴/体检服务商/HR外包/劳务派遣 | '+dateRange;
+function updateHeader(){
+  var parts=[];
+  if(D){ var ds=Object.keys(D.date_dist).sort(); if(ds.length>=2) parts.push('招标 '+ds[0]+' ~ '+ds[ds.length-1]); }
+  if(W){ var ws=Object.keys(W.date_dist).sort(); if(ws.length>=2) parts.push('中标 '+ws[0]+' ~ '+ws[ws.length-1]); }
+  document.getElementById('headerSub').textContent='数据来源：全网招投标数据 | 排除：社保代缴/体检服务商/HR外包/劳务派遣 | '+parts.join('　|　');
   document.getElementById('headerTime').textContent='最近更新：'+new Date().toISOString().slice(0,10);
+}
 
-  // KPI
-  var budgetStr=s.total_budget>=10000?'¥'+(s.total_budget/10000).toFixed(2)+'亿':'¥'+s.total_budget.toFixed(0)+'万';
-  var highVal=s.diamond+s.fire, highPct=Math.round(highVal/s.total*100);
+/* ==================== 招标部分 ==================== */
+function initBid(){
+  if(!D){ document.getElementById('tableBody').innerHTML='<tr><td colspan="7" style="text-align:center;padding:40px;color:#999">招标数据未找到</td></tr>'; return; }
+  var s=D.stats, items=D.items, dates=Object.keys(D.date_dist).sort();
+  var budgetStr=fmtAmount(s.total_budget);
+  var highVal=s.diamond+s.fire, highPct=s.total?Math.round(highVal/s.total*100):0;
   var provCount=Object.keys(D.province_dist).length;
   var svcTypes=Object.keys(D.type_dist).length;
-  var execDays=dates.length;
 
   document.getElementById('kpiTotal').innerHTML=s.total+'<span class="kpi-unit">条</span>';
   document.getElementById('kpiTotalSub').textContent='覆盖 '+provCount+' 个省份';
@@ -217,52 +300,39 @@ function render(){
   document.getElementById('kpiBudget').textContent=budgetStr;
   document.getElementById('kpiBudgetSub').textContent='💎 100万+：'+s.diamond+'条 | 🔥 50-100万：'+s.fire+'条';
   document.getElementById('kpiSvcType').innerHTML=svcTypes+'<span class="kpi-unit">种</span>';
-  document.getElementById('kpiSvcTypeSub').textContent='共 '+execDays+' 个执行日';
+  document.getElementById('kpiSvcTypeSub').textContent='共 '+dates.length+' 个执行日';
 
-  // Province bars
-  var provSorted=Object.entries(D.province_dist).sort((a,b)=>b[1]-a[1]).slice(0,15);
-  var provMax=provSorted[0]?provSorted[0][1]:1;
-  var provHtml='';
-  provSorted.forEach(function(p){var w=Math.round(p[1]/provMax*100,1);provHtml+='<div class="prov-bar"><div class="prov-name">'+p[0]+'</div><div class="prov-fill" style="width:'+w+'%">'+p[1]+'条</div></div>';});
+  var provSorted=Object.entries(D.province_dist).sort(function(a,b){return b[1]-a[1];}).slice(0,15);
+  var provMax=provSorted[0]?provSorted[0][1]:1, provHtml='';
+  provSorted.forEach(function(p){var w=Math.round(p[1]/provMax*100);provHtml+='<div class="prov-bar"><div class="prov-name">'+p[0]+'</div><div class="prov-fill" style="width:'+w+'%">'+p[1]+'条</div></div>';});
   document.getElementById('provBars').innerHTML=provHtml;
 
-  // Filter dropdowns
   var provOpts='<option value="all">全部地区</option>';
   Object.keys(D.province_dist).sort().forEach(function(p){provOpts+='<option value="'+p+'">'+p+'</option>';});
   document.getElementById('provFilter').innerHTML=provOpts;
-
   var svcOpts='<option value="all">全部类型</option>';
   Object.keys(D.type_dist).sort().forEach(function(t){svcOpts+='<option value="'+t.replace(/'/g,"\\'")+'">'+t+'</option>';});
   document.getElementById('svcFilter').innerHTML=svcOpts;
 
-  // Table
   renderSortedTable();
 
-  // Charts
   var trendCounts=dates.map(function(d){return D.date_dist[d]||0;});
-
   charts.trend=new Chart(document.getElementById('trendChart'),{type:'line',data:{labels:dates,datasets:[{label:'有效标讯数',data:trendCounts,borderColor:'#1a73e8',backgroundColor:'rgba(26,115,232,0.1)',fill:true,tension:0.3,pointRadius:4}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
-
   charts.price=new Chart(document.getElementById('pricePie'),{type:'doughnut',data:{labels:['💎≥100万('+s.diamond+'条)','🔥50-100万('+s.fire+'条)','🏆<50万('+s.trophy+'条)','无预算('+s.no_budget+'条)'],datasets:[{data:[s.diamond,s.fire,s.trophy,s.no_budget],backgroundColor:['#f9a825','#ff6f00','#43a047','#bdbdbd']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:11}}}}}});
-
   var svcLabels=Object.keys(D.type_dist), svcValues=Object.values(D.type_dist);
   charts.svc=new Chart(document.getElementById('svcPie'),{type:'doughnut',data:{labels:svcLabels,datasets:[{data:svcValues,backgroundColor:COLORS.slice(0,svcLabels.length)}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:10},boxWidth:12}}}}});
-
-  // Stacked bar
   var allSvcs=Object.keys(D.type_dist).sort();
-  var stackDs=allSvcs.map(function(svc,i){
-    return {label:svc,data:dates.map(function(d){return D.date_type[d]?D.date_type[d][svc]||0:0;}),backgroundColor:COLORS[i%COLORS.length]};
-  });
+  var stackDs=allSvcs.map(function(svc,i){return {label:svc,data:dates.map(function(d){return D.date_type[d]?D.date_type[d][svc]||0:0;}),backgroundColor:COLORS[i%COLORS.length]};});
   charts.stack=new Chart(document.getElementById('stackChart'),{type:'bar',data:{labels:dates,datasets:stackDs},options:{responsive:true,maintainAspectRatio:false,scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,beginAtZero:true,grid:{color:'#f0f0f0'}}},plugins:{legend:{position:'bottom',labels:{font:{size:10},boxWidth:12}}}}});
-
-  // Budget trend
   var budgetByDate={};
   items.forEach(function(it){if(it.date&&it.date.startsWith('202')){budgetByDate[it.date]=(budgetByDate[it.date]||0)+it.budget;}});
   var budgetTrend=dates.map(function(d){return Math.round((budgetByDate[d]||0)*100)/100;});
   charts.budget=new Chart(document.getElementById('budgetChart'),{type:'bar',data:{labels:dates,datasets:[{label:'预算金额(万)',data:budgetTrend,backgroundColor:'rgba(26,115,232,0.7)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
 }
 
-function renderTable(items){
+function esc(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function renderBidTable(items){
   document.getElementById('tableTitle').textContent='📋 全量标讯明细（共 '+items.length+' 条）';
   var html='';
   items.forEach(function(it){
@@ -271,21 +341,16 @@ function renderTable(items){
     else if(it.budget>=50){tier='hot';tierTag='🔥';rc='row-hot';}
     else if(it.budget>0){tier='normal';tierTag='🏆';rc='';}
     else{tier='nobudget';tierTag='';rc='';}
-
     var budgetCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
     var linkCell=(it.url||it.link||'')&&(it.url||it.link)!=='点击查看'?'<a href="'+(it.url||it.link)+'" target="_blank" rel="noopener">查看</a>':'';
-    var escTitle=(it.title||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var escBuyer=(it.buyer||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-
-    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+it.province+'" data-svc="'+it.type+'" data-date="'+it.date+'">';
-    html+='<td class="title-col">'+tierTag+' '+escTitle+'</td>';
-    html+='<td>'+escBuyer+'</td>';
+    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'">';
+    html+='<td class="title-col">'+tierTag+' '+esc(it.title)+'</td>';
+    html+='<td>'+esc(it.buyer)+'</td>';
     html+='<td class="money-cell">'+budgetCell+'</td>';
-    html+='<td>'+it.type+'</td>';
-    html+='<td>'+it.province+'</td>';
+    html+='<td>'+esc(it.type)+'</td>';
+    html+='<td>'+esc(it.province)+'</td>';
     html+='<td class="date-col">'+it.date+'</td>';
-    html+='<td>'+linkCell+'</td>';
-    html+='</tr>';
+    html+='<td>'+linkCell+'</td></tr>';
   });
   document.getElementById('tableBody').innerHTML=html;
 }
@@ -299,10 +364,19 @@ function renderSortedTable(){
       return sortState.dir===1?(va<vb?-1:(va>vb?1:0)):(va>vb?-1:(va<vb?1:0));
     });
   }
-  renderTable(items);
+  renderBidTable(items);
 }
-
-// Filter logic
+function getSortVal(it,col){
+  if(col==='budget'){var b=it.budget||0;if(b<=0)return (it.budget===0||it.budget==null)?-Infinity:0;return b;}
+  if(col==='date')return it.date||'0000-00-00';
+  return (it[col]||'').toString().toLowerCase();
+}
+function toggleSort(col,th){
+  if(sortState.col===col){sortState.dir=(sortState.dir+1)%3;}else{sortState.col=col;sortState.dir=1;}
+  document.querySelectorAll('#pane-bid .sort-arrow').forEach(function(a){a.textContent='';a.classList.remove('active');});
+  if(sortState.dir>0){var ar=th.querySelector('.sort-arrow');ar.textContent=sortState.dir===1?'▲':'▼';ar.classList.add('active');}
+  renderSortedTable();
+}
 var currentTier='all';
 function filterTier(tier,btn){
   document.querySelectorAll('.tier-btn').forEach(function(b){b.classList.remove('active');});
@@ -310,8 +384,9 @@ function filterTier(tier,btn){
 }
 function clearDateFilter(){document.getElementById('dateFilter').value='';applyAllFilters();}
 function applyAllFilters(){
-  var tier=currentTier, date=document.getElementById('dateFilter').value, prov=document.getElementById('provFilter').value, svc=document.getElementById('svcFilter').value;
-  document.querySelectorAll('.table-scroll tbody tr').forEach(function(tr){
+  var tier=currentTier, date=document.getElementById('dateFilter').value,
+      prov=document.getElementById('provFilter').value, svc=document.getElementById('svcFilter').value;
+  document.querySelectorAll('#tableBody tr').forEach(function(tr){
     var show=true;
     if(tier!=='all'&&tr.dataset.tier!==tier)show=false;
     if(svc!=='all'&&tr.dataset.svc!==svc)show=false;
@@ -319,6 +394,135 @@ function applyAllFilters(){
     if(prov!=='all'&&tr.dataset.prov!==prov)show=false;
     tr.style.display=show?'':'none';
   });
+}
+
+/* ==================== 中标部分 ==================== */
+function renderWin(){
+  if(!W){ document.getElementById('wkTableBody').innerHTML='<tr><td colspan="9" style="text-align:center;padding:40px;color:#999">中标数据未找到（dashboard_wins.json）</td></tr>'; return; }
+  var s=W.stats, dates=Object.keys(W.date_dist).sort();
+
+  document.getElementById('wkTotal').innerHTML=s.total+'<span class="kpi-unit">条</span>';
+  document.getElementById('wkTotalSub').textContent='覆盖 '+Object.keys(W.province_dist).length+' 个省份 · '+dates.length+' 个公布日';
+  document.getElementById('wkHigh').innerHTML=(s.diamond+s.fire)+'<span class="kpi-unit">条</span>';
+  document.getElementById('wkHighSub').textContent='💎 100万+：'+s.diamond+'条 | 🔥 50-100万：'+s.fire+'条';
+  document.getElementById('wkAmount').textContent=fmtAmount(s.total_amount);
+  document.getElementById('wkAmountSub').textContent='已披露金额 '+s.with_amount+' 条 / 未披露 '+s.no_amount+' 条';
+  var wc=document.getElementById('wkWinnerCnt');
+  wc.innerHTML=(W.winners_top?W.winners_top.length:0)+'+<span class="kpi-unit">家</span>';
+  document.getElementById('wkWinnerCntSub').textContent='已识别中标方 '+s.with_winner+' 条';
+
+  // 中标方排行
+  var wt=(W.winners_top||[]).slice(0,15), wmax=wt[0]?wt[0].count:1, whtml='';
+  wt.forEach(function(p){
+    var pct=Math.round(p.count/wmax*100);
+    whtml+='<div class="prov-bar"><div class="prov-name" title="'+esc(p.name)+'">'+esc(p.name)+'</div>'+
+      '<div class="prov-fill win" style="width:'+pct+'%">'+p.count+'单'+(p.amount>0?' · ¥'+p.amount.toFixed(0)+'万':'')+'</div></div>';
+  });
+  document.getElementById('winnerBars').innerHTML=whtml||'<div style="color:#999;font-size:13px">暂无中标方数据</div>';
+
+  // 采购方排行
+  var bt=(W.buyers_top||[]).slice(0,12), bmax=bt[0]?bt[0].count:1, bhtml='';
+  bt.forEach(function(p){
+    var pct=Math.round(p.count/bmax*100);
+    bhtml+='<div class="prov-bar"><div class="prov-name" title="'+esc(p.name)+'">'+esc(p.name)+'</div>'+
+      '<div class="prov-fill buy" style="width:'+pct+'%">'+p.count+'单</div></div>';
+  });
+  document.getElementById('buyerBars').innerHTML=bhtml||'<div style="color:#999;font-size:13px">暂无数据</div>';
+
+  // 筛选下拉
+  var provOpts='<option value="all">全部地区</option>';
+  Object.keys(W.province_dist).sort().forEach(function(p){provOpts+='<option value="'+p+'">'+p+'</option>';});
+  document.getElementById('wkProvFilter').innerHTML=provOpts;
+  var svcOpts='<option value="all">全部类型</option>';
+  Object.keys(W.type_dist).sort().forEach(function(t){svcOpts+='<option value="'+t.replace(/'/g,"\\'")+'">'+t+'</option>';});
+  document.getElementById('wkSvcFilter').innerHTML=svcOpts;
+
+  renderWkTable();
+
+  var counts=dates.map(function(d){return W.date_dist[d]||0;});
+  charts.wkTrend=new Chart(document.getElementById('wkTrend'),{type:'line',data:{labels:dates,datasets:[{label:'中标结果数',data:counts,borderColor:'#e65100',backgroundColor:'rgba(230,81,0,0.12)',fill:true,tension:0.3,pointRadius:4}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
+  charts.wkPrice=new Chart(document.getElementById('wkPricePie'),{type:'doughnut',data:{labels:['💎≥100万('+s.diamond+'条)','🔥50-100万('+s.fire+'条)','🏆<50万('+s.trophy+'条)','未披露('+s.no_amount+'条)'],datasets:[{data:[s.diamond,s.fire,s.trophy,s.no_amount],backgroundColor:['#f9a825','#ff6f00','#43a047','#bdbdbd']}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:11}}}}}});
+  var lbl=Object.keys(W.type_dist), val=Object.values(W.type_dist);
+  charts.wkSvc=new Chart(document.getElementById('wkSvcPie'),{type:'doughnut',data:{labels:lbl,datasets:[{data:val,backgroundColor:COLORS.slice(0,lbl.length)}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:{size:10},boxWidth:12}}}}});
+  var allSvcs=Object.keys(W.type_dist).sort();
+  var sds=allSvcs.map(function(svc,i){return {label:svc,data:dates.map(function(d){return W.date_type[d]?W.date_type[d][svc]||0:0;}),backgroundColor:COLORS[i%COLORS.length]};});
+  charts.wkStack=new Chart(document.getElementById('wkStack'),{type:'bar',data:{labels:dates,datasets:sds},options:{responsive:true,maintainAspectRatio:false,scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,beginAtZero:true,grid:{color:'#f0f0f0'}}},plugins:{legend:{position:'bottom',labels:{font:{size:10},boxWidth:12}}}}});
+}
+
+function renderWkTable(items){
+  items=(items||wkItems);
+  document.getElementById('wkTableTitle').textContent='📋 中标结果明细（共 '+items.length+' 条）';
+  var html='';
+  items.forEach(function(it){
+    var tier;
+    if(it.budget>=100)tier='diamond';
+    else if(it.budget>=50)tier='hot';
+    else if(it.budget>0)tier='normal';
+    else tier='noamount';
+    var rc=(tier==='diamond')?'row-diamond':((tier==='hot')?'row-hot':'');
+    var tag=(tier==='diamond')?'💎':((tier==='hot')?'🔥':((tier==='normal')?'🏆':''));
+    var amtCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
+    var linkCell=it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">查看</a>':'';
+    var stageCls=(it.stage==='中标结果')?'':'lead';
+    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'" data-winner="'+esc(it.winner).toLowerCase()+'" data-title="'+esc(it.title).toLowerCase()+'">';
+    html+='<td class="title-col">'+tag+' '+esc(it.title)+'</td>';
+    html+='<td>'+esc(it.buyer)+'</td>';
+    html+='<td class="winner-col">'+esc(it.winner)+'</td>';
+    html+='<td class="money-cell">'+amtCell+'</td>';
+    html+='<td>'+esc(it.type)+'</td>';
+    html+='<td>'+esc(it.province)+'</td>';
+    html+='<td class="date-col">'+it.date+'</td>';
+    html+='<td><span class="badge stage '+stageCls+'">'+esc(it.stage||'-')+'</span></td>';
+    html+='<td>'+linkCell+'</td></tr>';
+  });
+  document.getElementById('wkTableBody').innerHTML=html;
+}
+
+function renderWkSortedTable(){
+  var items=[].concat(wkItems);
+  if(wkSortState.dir>0){
+    var cols=['title','buyer','winner','budget','type','province','date'];
+    items.sort(function(a,b){
+      var va=getWkSortVal(a,cols[wkSortState.col]), vb=getWkSortVal(b,cols[wkSortState.col]);
+      return wkSortState.dir===1?(va<vb?-1:(va>vb?1:0)):(va>vb?-1:(va<vb?1:0));
+    });
+  }
+  renderWkTable(items);
+  applyWkFilters();
+}
+function getWkSortVal(it,col){
+  if(col==='budget'){var b=it.budget||0;return b<=0?-Infinity:b;}
+  if(col==='date')return it.date||'0000-00-00';
+  return (it[col]||'').toString().toLowerCase();
+}
+function toggleWkSort(col,th){
+  if(wkSortState.col===col){wkSortState.dir=(wkSortState.dir+1)%3;}else{wkSortState.col=col;wkSortState.dir=1;}
+  document.querySelectorAll('#pane-win .sort-arrow').forEach(function(a){a.textContent='';a.classList.remove('active');});
+  if(wkSortState.dir>0){var ar=th.querySelector('.sort-arrow');ar.textContent=wkSortState.dir===1?'▲':'▼';ar.classList.add('active');}
+  renderWkSortedTable();
+}
+var wkTier='all';
+function filterWkTier(tier,btn){
+  document.querySelectorAll('.wk-tier-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active'); wkTier=tier; applyWkFilters();
+}
+function applyWkFilters(){
+  var date=document.getElementById('wkDateFilter').value,
+      prov=document.getElementById('wkProvFilter').value,
+      svc=document.getElementById('wkSvcFilter').value,
+      q=(document.getElementById('wkWinnerSearch').value||'').trim().toLowerCase();
+  var shown=0;
+  document.querySelectorAll('#wkTableBody tr').forEach(function(tr){
+    var show=true;
+    if(wkTier!=='all'&&tr.dataset.tier!==wkTier)show=false;
+    if(svc!=='all'&&tr.dataset.svc!==svc)show=false;
+    if(date&&tr.dataset.date!==date)show=false;
+    if(prov!=='all'&&tr.dataset.prov!==prov)show=false;
+    if(q&&!(tr.dataset.winner||'').includes(q)&&!(tr.dataset.title||'').includes(q))show=false;
+    tr.style.display=show?'':'none';
+    if(show)shown++;
+  });
+  document.getElementById('wkTableTitle').textContent='📋 中标结果明细（显示 '+shown+' / '+wkItems.length+' 条）';
 }
 </script>
 </body>
