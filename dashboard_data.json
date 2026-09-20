@@ -2,6 +2,18 @@
   "items": [
     {
       "id": 1,
+      "title": "延安市林业局市直林业系统森林消防队编外聘用队员招聘项目竞争性磋商公告",
+      "buyer": "延安市林业局",
+      "budget": 48.64,
+      "type": "综合招聘服务",
+      "province": "陕西",
+      "city": "延安",
+      "date": "2026-09-20",
+      "url": "https://www.zhiliaobiaoxun.com/content/604007126/b1/1BA02A51E04355F2F994F71A3AD8515DCEE7C2E4?sk=1BA02A51E04355F2F994F71A3AD8515DCEE7C2E4&from=skill",
+      "link": "https://www.zhiliaobiaoxun.com/content/604007126/b1/1BA02A51E04355F2F994F71A3AD8515DCEE7C2E4?sk=1BA02A51E04355F2F994F71A3AD8515DCEE7C2E4&from=skill"
+    },
+    {
+      "id": 2,
       "title": "招聘网站合作采购项目询价公告",
       "buyer": "长三角物理研究中心有限公司",
       "budget": 0.0,
@@ -13,7 +25,7 @@
       "link": "https://www.zhiliaobiaoxun.com/content/604015679/b1/A3787452ABA7BC32B433F949CD115C6DE5DA90D9?sk=A3787452ABA7BC32B433F949CD115C6DE5DA90D9&from=skill"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "厦门市总工会2026年度工会社会工作者招聘考务服务机构采购",
       "buyer": "厦门市总工会",
       "budget": 0.0,
@@ -23,18 +35,6 @@
       "date": "2026-09-20",
       "url": "https://www.zhiliaobiaoxun.com/content/604024205/b1/89DA1073FC6B140C4128CF814C278EB23B9689D3?sk=89DA1073FC6B140C4128CF814C278EB23B9689D3&from=skill",
       "link": "https://www.zhiliaobiaoxun.com/content/604024205/b1/89DA1073FC6B140C4128CF814C278EB23B9689D3?sk=89DA1073FC6B140C4128CF814C278EB23B9689D3&from=skill"
-    },
-    {
-      "id": 3,
-      "title": "振石集团东方特钢绿色高端镍铬新材智造项目35KV及以下变配电工程小三箱设备低压柜箱成套人力服务公开询比",
-      "buyer": "振石集团东方特钢",
-      "budget": 0.0,
-      "type": "综合招聘服务",
-      "province": "海南",
-      "city": "东方",
-      "date": "2026-09-20",
-      "url": "https://www.zhiliaobiaoxun.com/content/604023737/b1/00AAEDB54DA7209F092BA0CF4687FC43F4F30E3B?sk=00AAEDB54DA7209F092BA0CF4687FC43F4F30E3B&from=skill",
-      "link": "https://www.zhiliaobiaoxun.com/content/604023737/b1/00AAEDB54DA7209F092BA0CF4687FC43F4F30E3B?sk=00AAEDB54DA7209F092BA0CF4687FC43F4F30E3B&from=skill"
     },
     {
       "id": 4,
@@ -28179,16 +28179,16 @@
   ],
   "stats": {
     "total": 2348,
-    "total_budget": 99356.85,
+    "total_budget": 99405.49,
     "diamond": 161,
     "fire": 140,
-    "trophy": 559,
-    "no_budget": 1488
+    "trophy": 560,
+    "no_budget": 1487
   },
   "type_dist": {
+    "综合招聘服务": 1449,
     "招聘平台·系统": 123,
     "考务服务": 147,
-    "综合招聘服务": 1449,
     "猎头·人才寻访": 193,
     "培训服务": 130,
     "校招服务（含大学生招聘会）": 180,
@@ -28196,13 +28196,12 @@
     "RPO·招聘流程外包": 29
   },
   "province_dist": {
+    "陕西": 65,
     "江苏": 99,
     "福建": 39,
-    "海南": 38,
     "贵州": 85,
     "内蒙古": 65,
     "广西": 63,
-    "陕西": 64,
     "湖北": 62,
     "河北": 51,
     "吉林": 40,
@@ -28219,6 +28218,7 @@
     "新疆": 47,
     "西藏": 20,
     "重庆": 65,
+    "海南": 37,
     "云南": 59,
     "黑龙江": 62,
     "天津": 36,
@@ -28345,9 +28345,9 @@
   },
   "date_type": {
     "2026-09-20": {
+      "综合招聘服务": 1,
       "招聘平台·系统": 1,
       "考务服务": 1,
-      "综合招聘服务": 1,
       "猎头·人才寻访": 1
     },
     "2026-09-19": {
