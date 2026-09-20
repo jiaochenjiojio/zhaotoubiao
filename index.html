@@ -48,6 +48,9 @@ body{font-family:-apple-system,"Microsoft YaHei","微软雅黑",sans-serif;backg
 .filter-select:focus{outline:none;border-color:#1a73e8}
 .date-input{padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-size:12px;background:white;color:#666;width:auto}
 .date-input:focus{outline:none;border-color:#1a73e8}
+.filter-search{width:190px}
+.filter-search::placeholder{color:#aaa}
+.filter-group{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 th{background:#f5f7fa;color:#555;font-weight:600;padding:10px 12px;text-align:left;border-bottom:2px solid #e0e0e0;white-space:nowrap;position:relative}
 th.sortable{cursor:pointer;user-select:none;padding-right:22px}
 th.sortable:hover{background:#e8edf2}
@@ -155,6 +158,11 @@ a:hover{text-decoration:underline}
         <select class="filter-select" id="svcFilter" onchange="applyAllFilters()"><option value="all">全部类型</option></select>
         <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
         <select class="filter-select" id="provFilter" onchange="applyAllFilters()"><option value="all">全部地区</option></select>
+        <span class="filter-group">
+          <span style="font-size:12px;color:#888">关键词：</span>
+          <input type="text" class="date-input filter-search" id="kwSearch" placeholder="搜索项目/招标方" oninput="applyAllFilters()">
+          <button class="filter-btn" onclick="clearKwFilter()" title="清除关键词">✕</button>
+        </span>
       </div>
       <div class="table-scroll">
         <table style="width:100%;border-collapse:collapse">
@@ -223,8 +231,10 @@ a:hover{text-decoration:underline}
         <select class="filter-select" id="wkSvcFilter" onchange="applyWkFilters()"><option value="all">全部类型</option></select>
         <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
         <select class="filter-select" id="wkProvFilter" onchange="applyWkFilters()"><option value="all">全部地区</option></select>
-        <span style="margin-left:12px;font-size:12px;color:#888">中标方：</span>
-        <input type="text" class="date-input" id="wkWinnerSearch" placeholder="搜索中标方/项目" oninput="applyWkFilters()" style="width:170px">
+        <span class="filter-group">
+          <span style="font-size:12px;color:#888">中标方：</span>
+          <input type="text" class="date-input filter-search" id="wkWinnerSearch" placeholder="搜索中标方/项目" oninput="applyWkFilters()">
+        </span>
       </div>
       <div class="table-scroll">
         <table style="width:100%;border-collapse:collapse">
@@ -330,7 +340,7 @@ function initBid(){
   charts.budget=new Chart(document.getElementById('budgetChart'),{type:'bar',data:{labels:dates,datasets:[{label:'预算金额(万)',data:budgetTrend,backgroundColor:'rgba(26,115,232,0.7)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'#f0f0f0'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}});
 }
 
-function esc(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function esc(s){return (s||'').toString().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
 function renderBidTable(items){
   document.getElementById('tableTitle').textContent='📋 全量标讯明细（共 '+items.length+' 条）';
@@ -343,7 +353,7 @@ function renderBidTable(items){
     else{tier='nobudget';tierTag='';rc='';}
     var budgetCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
     var linkCell=(it.url||it.link||'')&&(it.url||it.link)!=='点击查看'?'<a href="'+(it.url||it.link)+'" target="_blank" rel="noopener">查看</a>':'';
-    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'">';
+    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'" data-title="'+esc((it.title||'')+' '+(it.buyer||'')).toLowerCase()+'">';
     html+='<td class="title-col">'+tierTag+' '+esc(it.title)+'</td>';
     html+='<td>'+esc(it.buyer)+'</td>';
     html+='<td class="money-cell">'+budgetCell+'</td>';
@@ -365,6 +375,7 @@ function renderSortedTable(){
     });
   }
   renderBidTable(items);
+  applyAllFilters();
 }
 function getSortVal(it,col){
   if(col==='budget'){var b=it.budget||0;if(b<=0)return (it.budget===0||it.budget==null)?-Infinity:0;return b;}
@@ -383,17 +394,29 @@ function filterTier(tier,btn){
   btn.classList.add('active'); currentTier=tier; applyAllFilters();
 }
 function clearDateFilter(){document.getElementById('dateFilter').value='';applyAllFilters();}
+function clearKwFilter(){document.getElementById('kwSearch').value='';applyAllFilters();}
 function applyAllFilters(){
   var tier=currentTier, date=document.getElementById('dateFilter').value,
-      prov=document.getElementById('provFilter').value, svc=document.getElementById('svcFilter').value;
+      prov=document.getElementById('provFilter').value, svc=document.getElementById('svcFilter').value,
+      kwEl=document.getElementById('kwSearch'),
+      q=kwEl?(kwEl.value||'').trim().toLowerCase():'';
+  var shown=0;
   document.querySelectorAll('#tableBody tr').forEach(function(tr){
     var show=true;
     if(tier!=='all'&&tr.dataset.tier!==tier)show=false;
     if(svc!=='all'&&tr.dataset.svc!==svc)show=false;
     if(date&&tr.dataset.date!==date)show=false;
     if(prov!=='all'&&tr.dataset.prov!==prov)show=false;
+    if(q&&(tr.dataset.title||'').indexOf(q)<0)show=false;
     tr.style.display=show?'':'none';
+    if(show)shown++;
   });
+  var t=document.getElementById('tableTitle');
+  if(tier==='all'&&!date&&prov==='all'&&svc==='all'&&!q){
+    t.textContent='📋 全量标讯明细（共 '+shown+' 条）';
+  }else{
+    t.textContent='📋 全量标讯明细（显示 '+shown+' / '+allItems.length+' 条）';
+  }
 }
 
 /* ==================== 中标部分 ==================== */
