@@ -231,6 +231,10 @@ a:hover{text-decoration:underline}
         <select class="filter-select" id="wkSvcFilter" onchange="applyWkFilters()"><option value="all">全部类型</option></select>
         <span style="margin-left:12px;font-size:12px;color:#888">地区：</span>
         <select class="filter-select" id="wkProvFilter" onchange="applyWkFilters()"><option value="all">全部地区</option></select>
+        <span style="margin-left:12px;font-size:12px;color:#888">来源：</span>
+        <button class="filter-btn wk-src-btn active" onclick="filterWkSrc('all',this)">全部</button>
+        <button class="filter-btn wk-src-btn" onclick="filterWkSrc('平台采集',this)">📡 平台采集</button>
+        <button class="filter-btn wk-src-btn" onclick="filterWkSrc('公司CRM',this)">📥 公司CRM</button>
         <span class="filter-group">
           <span style="font-size:12px;color:#888">中标方：</span>
           <input type="text" class="date-input filter-search" id="wkWinnerSearch" placeholder="搜索中标方/项目" oninput="applyWkFilters()">
@@ -425,7 +429,8 @@ function renderWin(){
   var s=W.stats, dates=Object.keys(W.date_dist).sort();
 
   document.getElementById('wkTotal').innerHTML=s.total+'<span class="kpi-unit">条</span>';
-  document.getElementById('wkTotalSub').textContent='覆盖 '+Object.keys(W.province_dist).length+' 个省份 · '+dates.length+' 个公布日';
+  document.getElementById('wkTotalSub').textContent='覆盖 '+Object.keys(W.province_dist).length+' 个省份 · '+dates.length+' 个公布日'
+    +((s.source_dist&&Object.keys(s.source_dist).length>1)?(' · '+Object.keys(s.source_dist).map(function(k){return k+' '+s.source_dist[k];}).join(' / ')):'');
   document.getElementById('wkHigh').innerHTML=(s.diamond+s.fire)+'<span class="kpi-unit">条</span>';
   document.getElementById('wkHighSub').textContent='💎 100万+：'+s.diamond+'条 | 🔥 50-100万：'+s.fire+'条';
   document.getElementById('wkAmount').textContent=fmtAmount(s.total_amount);
@@ -487,7 +492,8 @@ function renderWkTable(items){
     var amtCell=it.budget>0?it.budget.toFixed(2)+'万':'未披露';
     var linkCell=it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">查看</a>':'';
     var stageCls=(it.stage==='中标结果')?'':'lead';
-    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'" data-winner="'+esc(it.winner).toLowerCase()+'" data-title="'+esc(it.title).toLowerCase()+'">';
+    var srcBadge=(it.source&&it.source!=='平台采集')?' <span class="badge" style="background:#fff3e0;color:#bf360c;border:1px solid #ffcc80;white-space:nowrap">📥'+esc(it.source)+'</span>':'';
+    html+='<tr class="'+rc+'" data-tier="'+tier+'" data-src="'+esc(it.source||'平台采集')+'" data-prov="'+esc(it.province)+'" data-svc="'+esc(it.type)+'" data-date="'+it.date+'" data-winner="'+esc(it.winner).toLowerCase()+'" data-title="'+esc(it.title).toLowerCase()+'">';
     html+='<td class="title-col">'+tag+' '+esc(it.title)+'</td>';
     html+='<td>'+esc(it.buyer)+'</td>';
     html+='<td class="winner-col">'+esc(it.winner)+'</td>';
@@ -495,7 +501,7 @@ function renderWkTable(items){
     html+='<td>'+esc(it.type)+'</td>';
     html+='<td>'+esc(it.province)+'</td>';
     html+='<td class="date-col">'+it.date+'</td>';
-    html+='<td><span class="badge stage '+stageCls+'">'+esc(it.stage||'-')+'</span></td>';
+    html+='<td><span class="badge stage '+stageCls+'">'+esc(it.stage||'-')+'</span>'+srcBadge+'</td>';
     html+='<td>'+linkCell+'</td></tr>';
   });
   document.getElementById('wkTableBody').innerHTML=html;
@@ -524,10 +530,14 @@ function toggleWkSort(col,th){
   if(wkSortState.dir>0){var ar=th.querySelector('.sort-arrow');ar.textContent=wkSortState.dir===1?'▲':'▼';ar.classList.add('active');}
   renderWkSortedTable();
 }
-var wkTier='all';
+var wkTier='all', wkSrc='all';
 function filterWkTier(tier,btn){
   document.querySelectorAll('.wk-tier-btn').forEach(function(b){b.classList.remove('active');});
   btn.classList.add('active'); wkTier=tier; applyWkFilters();
+}
+function filterWkSrc(src,btn){
+  document.querySelectorAll('.wk-src-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active'); wkSrc=src; applyWkFilters();
 }
 function applyWkFilters(){
   var date=document.getElementById('wkDateFilter').value,
@@ -538,6 +548,7 @@ function applyWkFilters(){
   document.querySelectorAll('#wkTableBody tr').forEach(function(tr){
     var show=true;
     if(wkTier!=='all'&&tr.dataset.tier!==wkTier)show=false;
+    if(wkSrc!=='all'&&tr.dataset.src!==wkSrc)show=false;
     if(svc!=='all'&&tr.dataset.svc!==svc)show=false;
     if(date&&tr.dataset.date!==date)show=false;
     if(prov!=='all'&&tr.dataset.prov!==prov)show=false;
