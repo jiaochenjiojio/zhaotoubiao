@@ -74,18 +74,6 @@
     },
     {
       "id": 7,
-      "title": "2026092-PXFW-培训服务采购项目公告",
-      "buyer": "广东机场白云信息科技股份有限公司",
-      "budget": 0.0,
-      "type": "培训服务",
-      "province": "广东",
-      "city": "广州",
-      "date": "2026-11-02",
-      "url": "https://www.zhiliaobiaoxun.com/content/607064459/b1/CBAB20AACFDD865F52254501F8C57700C4191AEF?sk=CBAB20AACFDD865F52254501F8C57700C4191AEF&from=skill",
-      "link": "https://www.zhiliaobiaoxun.com/content/607064459/b1/CBAB20AACFDD865F52254501F8C57700C4191AEF?sk=CBAB20AACFDD865F52254501F8C57700C4191AEF&from=skill"
-    },
-    {
-      "id": 8,
       "title": "幸福人寿山西分公司集中采购项目公告",
       "buyer": "幸福人寿山西分公司",
       "budget": 0.0,
@@ -95,6 +83,18 @@
       "date": "2026-11-02",
       "url": "https://www.zhiliaobiaoxun.com/content/607061889/b1/1D46A3C57E8C388D1BD16D85610CC8F319A4F49F?sk=1D46A3C57E8C388D1BD16D85610CC8F319A4F49F&from=skill",
       "link": "https://www.zhiliaobiaoxun.com/content/607061889/b1/1D46A3C57E8C388D1BD16D85610CC8F319A4F49F?sk=1D46A3C57E8C388D1BD16D85610CC8F319A4F49F&from=skill"
+    },
+    {
+      "id": 8,
+      "title": "2026092-PXFW-培训服务采购项目公告",
+      "buyer": "广东机场白云信息科技股份有限公司",
+      "budget": 0.0,
+      "type": "培训服务",
+      "province": "广东",
+      "city": "广州",
+      "date": "2026-11-02",
+      "url": "https://www.zhiliaobiaoxun.com/content/607064459/b1/CBAB20AACFDD865F52254501F8C57700C4191AEF?sk=CBAB20AACFDD865F52254501F8C57700C4191AEF&from=skill",
+      "link": "https://www.zhiliaobiaoxun.com/content/607064459/b1/CBAB20AACFDD865F52254501F8C57700C4191AEF?sk=CBAB20AACFDD865F52254501F8C57700C4191AEF&from=skill"
     },
     {
       "id": 9,
@@ -46742,8 +46742,8 @@
     "天津": 57,
     "山东": 214,
     "重庆": 105,
-    "广东": 442,
     "山西": 73,
+    "广东": 442,
     "四川": 301,
     "河南": 60,
     "河北": 81,
